@@ -46,11 +46,62 @@ Assigned to: Themeforest
 /*--------- Body Strat -------*/
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+	/* font-size: 15px; */
 	line-height: 1.5;
-	color: #777777;
+	/* color: #777777; */
+    color: #000;
 	background-color:#ffffff;
 	-webkit-font-smoothing: antialiased;
+}
+
+/* Container */
+.social-fixed {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+/* Each item */
+.social-fixed li {
+  margin: 2px 0;
+}
+
+/* Square buttons */
+.social-fixed li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Colors */
+.social-fixed li:nth-child(1) a { background: #FF0000; } /* YouTube */
+.social-fixed li:nth-child(2) a { background: #1877F2; } /* Facebook */
+.social-fixed li:nth-child(3) a { background: #E4405F; } /* Instagram */
+.social-fixed li:nth-child(4) a { background: #0A66C2; } /* LinkedIn */
+.social-fixed li:nth-child(5) a { background: #000000; } /* X */
+
+/* Hover effect */
+.social-fixed li a:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width:320px) and (max-width:420px) {
+    .social-fixed li a{
+        width: 32px;
+        height: 32px;
+    }
 }
 /*--------- Body End -------*/
 
@@ -160,7 +211,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	padding-top:60px;
 }
 .ast_toppadder70{
-	padding-top:70px;
+	padding-top:40px;
 }
 .ast_toppadder80{
 	padding-top:80px;
@@ -190,7 +241,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	padding-bottom:60px;
 }
 .ast_bottompadder70{
-	padding-bottom:70px;
+	padding-bottom:40px;
 }
 .ast_bottompadder80{
 	padding-bottom:80px;
@@ -206,6 +257,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Normal css End -------*/
 /*---------- Header Start -------*/
+/* .Logo{
+    width: ;
+} */
 .ast_top_header {
 	float: left;
 	width: 100%;
@@ -2014,7 +2068,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .widget.text-widget{
 	float:left;
 	width:100%;
-    /* margin-bottom: 70px; */
+    /* margin-bottom: 28px; */
 }
 .widget-title{
     float: left;
@@ -2131,6 +2185,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    text-align: left;
 }
 .ast_servicelink ul li:first-child a{
 	padding-top: 0px;
@@ -2174,6 +2229,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    text-align: left;
 }
 .ast_sociallink ul li:first-child a{
 	padding-top: 0px;
@@ -2190,6 +2246,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.widget-title{
+        text-align: left;
+    }
 .ast_gettouch{
 	float:left;
 	width:100%;
@@ -2728,9 +2787,12 @@ input:focus, textarea:focus, select:focus, button:focus {
 	position:absolute;
 	bottom:0%;
 	left:0%;
-	width:70px;
+	width:110px;
 	background-color: #ec1f25;
 	height:2px;
+}
+.get-in-touch .widget-title:after{
+    width: 112px;
 }
 .widget.widget_search{
 	float:left;
@@ -3479,7 +3541,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_vastu_info{
 	float:left;
 	width:100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .ast_vastu_info h3{
 	float:left;
@@ -3494,14 +3556,14 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_vastu_info img{
 	margin-top:38px;
-    border-radius: 30px;
+    border-radius: 15px;
     max-width: 80% ;
 }
 .ast_vastu_info .lord-vishwakarma{
     max-width: 66%;
 }
 .ast_vastu_info .KL-Vishwakarma{
-    max-width: 70%;
+    max-width: 80%;
 
 }
 .ast_vastu_box_wrapper{
@@ -3545,6 +3607,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_vastu_box img{
     max-width: 100%;
     border-radius: 6px;
+    width: 100%;
 }
 .ast_vastu_box a h4{
     float: left;
@@ -3728,8 +3791,13 @@ input:focus, textarea:focus, select:focus, button:focus {
     height: 30px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #ff6f00;
+    /* background-color: #ff6f00; */
+    background-color: #ec1f25;
     border-radius: 3px;
+}
+.ast_btn{
+    min-width: 110px;
+    font-size: 15px;
 }
 .ast_menu_btn:hover, .ast_menu_btn:focus{
 	outline:none;
@@ -3841,6 +3909,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_header_bottom .col-sm-3{
 	width:100%;
+}
+.Logo{
+    width: 200px;;
 }
 }
 @media (max-width: 767px) {
@@ -4051,10 +4122,16 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_packages_mainbox .col-xs-12 {
     width: 50%;
 }
+.Logo{
+    width:200px;
+}
 }
 @media (min-width: 480px) and (max-width: 767px) {
 .ast_counter_wrapper .col-xs-12 {
     width: 50%;
+}
+.Logo{
+    width: 200px;
 }
 }
 @media (max-width: 479px) {
@@ -5250,7 +5327,8 @@ li.ast_search , li.ast_cart{
 	background-image:linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)) , url(https://dummyimage.com/1920x1080);
 } */
  .ast_slider_wrapper.ast_index_vastu{
-	background-image:url(../images/banners/vastushastra-home-bannner.jpg);  background-size: cover;
+	background-image:url(../images/banners/vastushastra-home-bannner.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .ast_slider_wrapper.ast_index_numerology{
@@ -5429,6 +5507,22 @@ li.ast_search , li.ast_cart{
 }
 
 @media(max-width:767px){
+    .ast_vastu_info .lord-vishwakarma, .ast_vastu_info img{
+        margin: 0;
+        max-width: 100%;
+    }
+    .ast_vastu_info h3{
+        margin: 10px 0;
+    }
+    .ast_vastu_info p{
+        text-align: justify;
+    }
+    .ast_vastu_box{
+        margin-bottom: 10px;
+    }
+.name-strip{
+    width: 64%;
+}
 	.about_slider .card {
 	    height: 207px;
 	}
@@ -5547,7 +5641,7 @@ li.ast_search , li.ast_cart{
 	    margin-top: 30px;
 	}
 	.ast_header_bottom {
-    margin-top: 130px;
+    margin-top: 0px;
 }
 }	
 
@@ -5589,7 +5683,7 @@ li.ast_search , li.ast_cart{
     flex-wrap: nowrap;
     justify-content: normal;
     background-color: #1C0D0A; */
-    padding: 60px 0;
+    padding: 60px 0 20px;
 }
 
 .ast_footer_wrapper::before{
@@ -5711,6 +5805,10 @@ li.ast_search , li.ast_cart{
 	.service-detail-grid {
 		grid-template-columns: 1fr;
 	}
+    .widget.text-widget{
+        margin-bottom: 30px;
+    }
+    
 }
 						
 

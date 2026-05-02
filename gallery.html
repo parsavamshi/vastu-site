@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Astrology">
+<meta name="keywords" content="Astrology, signs, gemstones, tarot, horoscopes, cards, numerology, Zodiac">
+<meta name="author" content="hsoft" >
+<meta name="MobileOptimized" content="320">
+<!--Srart Style -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Favicon Link -->
+<link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <style>
+        .lightbox_img_wrap img{
+            max-width: 100%;
+        }
+        .lightboxpreview {
+   transition: all .3s linear;
+padding-top:60%;
+  cursor:pointer;
+  background-size:cover;
+}
+   
+.lightbox-content {
+max-height:75svh;
+  height:75svh;
+}
+
+.lightbox-close { 
+  cursor:pointer;
+    margin-left: auto;
+  position:absolute;
+  right:-30px;
+  top:-30px;
+  color:white;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;}
+
+.modalscale {transform:scale(0);
+opacity:0;}
+
+
+
+.lightbox-container, .lightbox-btn, .lightbox-image-wrapper, .lightbox-enabled{transition:all .4s ease-in-out;}
+.lightbox_img_wrap {padding-top:65%;
+  position:relative;
+  overflow:hidden;
+}
+.lightbox-enabled:hover {
+  transform:scale(1.1)
+}
+.lightbox-enabled {width:100%;
+height:100%;
+  position:absolute;
+  top:0;
+object-fit:cover;
+cursor:pointer;}
+
+.lightbox-container {width:100svw;
+height:100svh;
+position:fixed;
+top:0;
+left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+background-color:rgba(0,0,0,.6);
+z-index:9999;
+opacity:0;
+pointer-events:none;
+}
+
+.lightbox-container.active {
+  opacity:1;
+  pointer-events:all;
+}
+.lightbox-image-wrapper {
+  display:flex;
+  transform:scale(0);
+  align-items:center;
+  justify-content:center;
+  max-width:90vw;
+  max-height:90vh;
+  position:relative;
+}
+.lightbox-container.active .lightbox-image-wrapper {transform:scale(1);}
+.lightbox-btn, #close {
+  color:white;
+  z-index:9999999;
+ cursor:pointer; 
+  position:absolute;
+  font-size:50px;
+}
+
+.left {left:50px;}
+.right {right:50px;}
+#close {top:50px;
+right:50px;}
+
+.lightbox-image {
+  width:100%;
+  max-height:95vh;
+  object-fit:cover;
+ }
+
+@keyframes slideleft {
+  33% {transform:translateX(-300px);
+  opacity:0;
+  }
+  66% {transform:translateX(300px);
+  opacity:0;
+  }
+}
+
+
+.slideleft {
+   animation-name: slideleft;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+@keyframes slideright {
+  33% {transform:translateX(300px);
+  opacity:0;}
+  66% {transform:translateX(-300px);
+  opacity:0;}
+}
+
+
+.slideright{
+   animation-name: slideright;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+	
+
+	
+    </style>
+</head>
+<body>
+
+
+    <div class="ast_header_bottom">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-10">
+				<div class="ast_logo">
+					<a href="index-vastu.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" title="Logo"></a>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 col-2">
+				<div class="ast_main_menu_wrapper">
+					<div class="ast_menu">
+						<ul>
+							<!-- <li class="as_submenu_li"><a href="#">home</a>
+								<ul class="submenu">
+									<li><a href="index.html">home</a></li>
+									<li><a href="index-horoscope.html">horoscope</a></li>
+									<li><a href="index-tarot.html">tarot card</a></li>
+									<li><a href="index-palmistry.html">palmistry</a></li>
+									<li><a href="index-vastu.html">vastu shastra</a></li>
+									<li><a href="index-gemstone.html">gemstone</a></li>
+									<li><a href="index-numerology.html">numerology</a></li>
+								</ul>
+							</li> -->
+							
+							<li><a href="index-vastu.html">home</a></li>
+							<li class="as_submenu_li"><a href="#">about</a>
+								<ul class="submenu">
+									<!-- <li><a href="">about</a></li> -->
+									<li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
+									<li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
+									<!-- <li><a href="index-tarot.html">tarot card</a></li>
+									<li><a href="index-palmistry.html">palmistry</a></li>
+									<li><a href="index-vastu.html">vastu shastra</a></li>
+									<li><a href="index-gemstone.html">gemstone</a></li>
+									<li><a href="index-numerology.html">numerology</a></li> -->
+								</ul>
+							</li>
+							<!-- <li><a href="services.html">services</a></li> -->
+							<li class="as_submenu_li"><a href="#">services</a>
+								<ul class="submenu">
+									<!-- <li><a href="index.html">services</a></li> -->
+									<li><a href="residential-vastu.html">Residential Vastu</a></li>
+									<li><a href="industrial-vastu.html">industrial vastu</a></li>
+									<li><a href="commercial-vastu.html">commercial vastu</a></li>
+									<li><a href="temple-vastu.html">temple vastu</a></li>
+									<li><a href="hospital-vastu.html">hospital vastu</a></li>
+									<li><a href="corporate-vastu.html">corporate vastu</a></li>
+								</ul>
+							</li>
+							<!-- <li><a href="services.html">services</a></li> -->
+							 <li class="as_submenu_li"><a href="vvs-onlin-class.html"><span style="font-size: 17px;">V</span>vs online classes</a>
+								<!-- <ul class="submenu">
+									<li><a href="index.html">Healing Prayers</a></li>
+									<li><a href="index-horoscope.html">Vastu</a></li>
+									<li><a href="index-tarot.html">Yantra</a></li>
+									<li><a href="index-palmistry.html">Mantra</a></li>
+									<li><a href="index-vastu.html">Nature Alignment</a></li>
+									<li><a href="index-gemstone.html">Ancient Knowledge System</a></li>
+								</ul> -->
+							</li>
+							<li><a href="gallery.html">Gallery</a></li>
+
+							<li class="as_submenu_li"><a href="blog.html">blog</a>
+								<!-- <ul class="submenu"> -->
+									<!-- <li class="as_submenu_li"><a href="#">blog</a> -->
+										<!-- <ul class="submenu"> -->
+											<!-- <li><a href="blog.html">blog default</a></li> -->
+											<!-- <li><a href="blog_rs.html">right sidebar</a></li>
+											<li><a href="blog_ls.html">left sidebar</a></li> -->
+										<!-- </ul> -->
+									<!-- </li> -->
+									<!-- <li class="as_submenu_li"><a href="#">blog single</a>
+										<ul class="submenu">
+											<li><a href="blog_single.html">full width</a></li>
+											<li><a href="blog_single_rs.html">right sidebar</a></li>
+											<li><a href="blog_single_ls.html">left sidebar</a></li>
+										</ul>
+									</li> -->
+								<!-- </ul> -->
+							</li>
+							<!-- <li class="as_submenu_li"><a href="#">shop</a>
+								<ul class="submenu">
+									<li><a href="shop.html">shop</a></li>
+									<li><a href="shop_single.html">shop single</a></li>
+									<li><a href="cart.html">cart</a></li>
+									<li><a href="checkout.html">checkout</a></li>
+								</ul>
+							</li>								 -->
+							<!-- <li class="as_submenu_li"><a href="#">pages</a>
+								<ul class="submenu">
+									<li><a href="team.html">Astrologers</a></li>
+									<li><a href="privacy_policy.html">privacy policy</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="error.html">404 error</a></li>
+								</ul>
+							</li> -->
+							<li><a href="contact.html">contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<button class="ast_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Header End -->    
+<!--Slider Start-->
+<div class="ast_slider_wrapper style_2 ast_index_vastu">
+	<div class="ast_banner_text">
+		<!-- <div class="starfield">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+		<div class="ast_waves">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div>
+		<div class="ast_waves2">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div>
+		<div class="ast_waves3">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div> -->
+		<div class="container">
+			<div class="ast_bannertext_wrapper">
+				<!-- <h1>Vastu for the house is important than geography.</h1>  -->
+				<!-- <h1>Vastu for the house is important than geography.Vastuyogi KL Vishwakarma 40+ Years of Authentic Vastu & Life Guidance</h1>  -->
+				<!-- <ul class="ast_toppadder40 ast_bottompadder50">
+					<li>vastu shastra</li>
+					<li>gemstones</li>
+					<li>tarot card</li>
+				</ul> -->
+				<!-- <p class="ast_bottompadder10 ast_toppadder10">Authentic, science-based Vastu , TV recognition, and global clientele.</p> -->
+				<h1>Vastuyogi <br> Dr. K.L Vishwakarma <br> Full Time consultant since 1985 (40+ years) </h1>
+				<!-- <h1>Dr. K.L Vishwakarma</h1>
+				<h1>Full Time consultant since 1985 (40+ years)</h1> -->
+				<p class="ast_bottompadder10 ast_toppadder10">SCIENCE HAS NO CASTE & CREED </p>
+
+
+				<!-- <div class = "container">
+  <h1 class="text-anime">Hi, my name is</h1>
+  <h1 class="text-anime">Jasmine.</h1>
+</div> -->
+
+			</div>
+			<div>
+
+				<a href="appointment.html" class="ast_btn">call now</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Slider End-->
+
+<!-- fun-facts start -->
+<!-- STATS BAR -->
+<!-- <div class="stats-bar">
+  <div class="container">
+    <div class="row text-center py-4">
+      <div class="col-4 stat-item">
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="col-4 stat-item stat-divider">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="col-4 stat-item stat-divider">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- fun-facts end -->
+<!--Vastu Start-->
+<!-- <div class="ast_vastu_wrapper ast_toppadder70 ast_bottompadder70">
+	<div class="container">
+		<div class="row flex-row-reverse">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="ast_vastu_info">
+					<h3>Residential Vastu</h3>
+					<p>Residential Vastu is an ancient Indian architectural science based on Vastu Shastra, which focuses on designing homes in harmony with natural energies. It combines elements of direction, space, sunlight, air, and cosmic energy to create a balanced and positive living environment.</p>
+					<p>In simple terms, Residential Vastu helps you build or arrange your home in a way that promotes health, happiness, peace, and prosperity.</p>
+					<!-- <div class="row align-items-center">
+						
+						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+							<h3 class="" style="color: #ec1f25;">The Vishwakarma Legacy –</h3>
+							<h3>Dr. K L Vishwakarma</h3>
+						<ul>
+							<li>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</li>
+							<li>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</li>
+							<li>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</li>
+							<li>If you are going to use a passage of Lorem Ipsum.</li>
+							<li>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</li>
+							<li>by injected humour, or randomised words which don't look even slightly believable.</li>
+						</ul>
+						<p class="mb-2">I belong to the Vishwakarma legacy, traditionally associated with creation, structure, architecture, and sacred sciences. This lineage formed the foundation of my understanding of space, balance, and discipline.</p>
+						<p class="mb-2">True mastery, however, came through life experience, struggle, responsibility, and decades of disciplined practice. Before dedicating my life fully to Vastu sciences, I experienced severe financial hardship and became penniless. Through sincere study and disciplined implementation of Vastu principles in my own life, I gradually regained stability, growth, and prosperity.</p>
+						<p class="mb-2">This transformation is lived experience—not theory. I guide others only through what I have personally practiced and proven.</p>
+						</div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+							<img src="./images/KL-Vishwakarma.png" alt="vishwakarma-vastu-image" class="KL-Vishwakarma">
+						</div>
+					</div> --
+
+
+				</div>
+				<div class="row align-items-center">
+
+					<div class="text-center" style="padding: 50px 0;">
+						<h2 style="    font-size: 25px; margin: 0px 0px 10px 0px;">"Vishwakarma Jaganatham Vishwakarma Jagathgurum <br> Vishwakarma Jagaththejam Vishwakarma Mayam Jagath"</h2>
+						<p>Lord Vishwakarma is the Divine Principal Architect of Universe.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- gallery starts -->
+
+    <section class="gallery py-5">
+  <div class="p-0 container">
+    <div class="row g-3" style="padding: 80px 0;"> 
+        <h3 class="text-center">Gallery</h3>
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/1.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/2.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/3.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/4.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/5.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/6.jpg">
+        </div>  
+      </div>      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/7.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/8.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/9.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/10.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/11.jpg">
+        </div>  
+      </div>
+
+      <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/12.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/13.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/14.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/15.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/16.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/17.jpg">
+        </div>  
+      </div>
+       <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/18.jpg">
+        </div>  
+      </div>
+     <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/19.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/20.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/21.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/22.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/23.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/24.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/25.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/26.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/27.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/28.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/29.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/30.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/31.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/32.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-4">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/33.JPG">
+        </div>  
+      </div>
+	  
+	  
+
+
+    </div>  
+  </div>
+</section>
+
+<section class="lightbox-container">
+  <span class="material-symbols-outlined material-icons lightbox-btn left" id="left">
+    <!-- arrow_back -->
+     <
+  </span>
+
+  <span class="material-symbols-outlined material-icons lightbox-btn right" id="right">
+    <!-- arrow_forward -->
+     >
+  </span>
+
+  <span id="close" class="close material-icons material-symbols-outlined">
+    <!-- close -->
+     X
+  </span>
+
+  <div class="lightbox-image-wrapper">
+    <img alt="lightbox image" class="lightbox-image">
+  </div>
+</section>
+<!-- gallery end -->
+
+
+<!-- Footer wrapper start-->
+<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="ast_footer_info">
+					
+					<ul>
+						<li><a href="https://www.facebook.com/people/Vishwakarma-Vastu/61578068234876/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>					
+						<li><a href="https://www.youtube.com/@vishwakarmavastuenglish-rv7se" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>					
+						<li><a href="https://www.linkedin.com/in/vishwakarma-vastu-88370b375/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>					
+						<li><a href="https://x.com/Vishwakarm83356" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/vishwakarma_vasthu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>					
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<div class="widget text-widget">
+					<!-- <h4 class="widget-title">our newsletter</h4> -->
+					 <div class="ast_logo">
+					<a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" title="Logo"></a>
+				</div>
+					<div class="ast_newsletter">
+						<p>Vastuyogi <br> Dr. K.L Vishwakarma <br>Full Time consultant since 1985 (40+ years)</p>
+						<!-- <p>Dr. K.L Vishwakarma</p>
+						<p>Full Time consultant since 1985 (40+ years)</p> -->
+						<!-- <div class="ast_newsletter_box">
+							<input type="text" placeholder="Email">
+							<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>						
+						</div> -->
+					</div>				
+				</div>			
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+				<div class="widget text-widget">
+					<h4 class="widget-title">our services</h4>
+					<div class="ast_servicelink">
+						<ul>
+							<li><a href="residential-vastu.html">Residential Vastu</a></li>
+							<li><a href="industrial-vastu.html">Industrial Vastu</a></li>
+							<li><a href="commercial-vastu.html">Commercial Vastu</a></li>
+							<li><a href="temple-vastu.html">Temple Vastu</a></li>
+							<li><a href="hospital-vastu.html">Hospital Vastu</a></li>
+							<li><a href="corporate-vastu.html">Corporate Vastu</a></li>
+						</ul>
+					</div>				
+				</div>			
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+				<div class="widget text-widget">
+					<h4 class="widget-title">quick links</h4>
+					<div class="ast_sociallink">
+						<ul>
+							<li><a href="lord-vishwakarma.html">about</a></li>
+							<li><a href="gallery.html">gallery</a></li>
+							<li><a href="blog.html">blog</a></li>
+							<li><a href="error.html">Vishwakarma vastu online classes </a></li>
+							<li><a href="contact.html">contact</a></li>
+						</ul>
+					</div>				
+				</div>			
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+				<div class="widget text-widget">
+					<h4 class="widget-title">get in touch</h4>
+					<div class="ast_gettouch">
+						<ul>
+							<li><i class="fa fa-home" aria-hidden="true"></i> <p>1-11-241/1/10A,Sai Dwaar,Shyamlal Building, Hyderabad, Telangana 500016</p></li>
+							<li><i class="fa fa-at" aria-hidden="true"></i> <a href="mailto:vasthuyogi@gmail.com">vasthuyogi@gmail.com</a>
+								<!-- <a href="#">info@website.com</a></li> -->
+							<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919848045677">+91 98480 45677</a> 
+								<!-- <p>+1800 326 3234</p> -->
+							</li>
+						</ul>
+					</div>				
+				</div>			
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="ast_copyright_wrapper">
+					<p>&copy; Copyright 2026, All Rights Reserved, <a href="#">Vishwakarma Vastu Sciences</a></p>				
+				</div>			
+			</div>	
+		</div>	
+	</div>
+</div>
+<!-- Footer wrapper End-->
+<!--Main js file Style--> 
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--Main js file End-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    const images = [...document.querySelectorAll('.lightbox-enabled')];
+const container = document.querySelector('.lightbox-container');
+const lightboxImg = document.querySelector('.lightbox-image');
+const btns = document.querySelectorAll('.lightbox-btn');
+const closeBtn = document.querySelector('#close');
+
+let activeIndex = 0;
+
+// Show / Hide
+const show = () => container.classList.add('active');
+const hide = () => container.classList.remove('active');
+
+// Set active image
+const setImage = (index) => {
+  activeIndex = (index + images.length) % images.length;
+  lightboxImg.src = images[activeIndex].src;
+};
+
+// Slide animation
+const animateSlide = (direction) => {
+  const className = direction === 'left' ? 'slideright' : 'slideleft';
+  lightboxImg.classList.add(className);
+
+  setTimeout(() => {
+    setImage(activeIndex + (direction === 'left' ? -1 : 1));
+  }, 250);
+
+  setTimeout(() => {
+    lightboxImg.classList.remove(className);
+  }, 500);
+};
+
+// Click thumbnails
+images.forEach((img, i) => {
+  img.addEventListener('click', () => {
+    show();
+    setImage(i);
+  });
+});
+
+// Close behavior
+container.addEventListener('click', hide);
+closeBtn.addEventListener('click', hide);
+
+// Buttons
+btns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    animateSlide(btn.id === 'left' ? 'left' : 'right');
+    btn.focus();
+  });
+});
+
+// Prevent closing when clicking image
+lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+</script>
+</body>
+</html>

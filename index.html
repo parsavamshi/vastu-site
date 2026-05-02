@@ -1,941 +1,601 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Astrology
-Version: 1.0.0
-Author: Kamleshyadav
-Website: http://himanshusofttech.com/
-Purchase: http://themeforest.net/user/kamleshyadav
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"><!--<![endif]-->
-<!-- Begin Head -->
+<html lang="en">
 <head>
-<title>Vishwakarma Vastu Sciences</title>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta name="description" content="Astrology">
-<meta name="keywords" content="Astrology, signs, gemstones, tarot, horoscopes, cards, numerology, Zodiac">
-<meta name="author" content="hsoft" >
-<meta name="MobileOptimized" content="320">
-<!--Srart Style -->
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/fonts.css">
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Favicon Link -->
-<link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
-<link rel="import" href="./fonts/Agenor-Black.ttf">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwakarma Vastu Sciences | VastuYogi KL Vishwakarma</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-orange: #ff8c00;
+            --dark-orange: #e67e00;
+            --gold: #f1c40f;
+        }
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
 
+        .navbar {
+            transition: all 0.4s ease;
+            background: rgba(255, 140, 0, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
 
-<style>
-	 /* STATS BAR */
-    /* .stats-bar { background:var(--orange); padding:22px 0; } */
-    .stats-bar {
-      background:
-        linear-gradient(rgba(236, 31, 37, 0.78), rgba(236, 31, 37, 0.78)),
-        url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .stat-item { text-align:center; color:#fff; }
-    .stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1; }
-    .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
-    .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
+        .navbar.scrolled {
+            background: rgba(230, 126, 0, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 0.5rem 0 !important;
+        }
 
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
+            height: 100vh;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
 
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(255, 140, 0, 0.3) 0%, transparent 70%);
+        }
 
-	
-/* .container{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 100px;
-} */
+        .hero-content {
+            z-index: 2;
+        }
 
-.container .text-anime:nth-child(1) {
-  color: #355c7d;
-  font-family: 'Fira Code', monospace;
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0 0 0 35%;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 170px;
-  animation: type 2s steps(40,end) forwards;
-}
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: #e67e00;
+            position: relative;
+            display: inline-block;
+        }
 
-.container .text-anime:nth-child(2) {
-  opacity: 0;
-  font-family: "Work Sans", sans-serif;
-  margin: 0 auto auto auto;
-  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-  font-weight: 800;
-  font-size: 100px;  
-  width: 430px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-}
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #ff8c00, #f1c40f);
+        }
 
-@keyframes shring-animation {
-  0% {
-    background-position: 0 0;
-    opacity: 0;
-    width: 0;
-  }
-  1% {
-    background-position: 0 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  50% {
-    background-position: 150px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  100% {
-    background-position: 400px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-}
+        .service-card {
+            transition: all 0.4s ease;
+            border: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
 
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  1%, 99%{
-    border-right: 1px solid orange;
-  }
-  100%{
-    border-right: none;
-  }
-}
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(230, 126, 0, 0.25);
+        }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+        .paisley-bg {
+            background-image: 
+                linear-gradient(rgba(255, 140, 0, 0.85), rgba(230, 126, 0, 0.95)),
+                url('https://picsum.photos/id/1015/1200/800');
+            background-size: cover;
+            background-position: center;
+        }
 
-/* Banner entry animation on page load */
-.ast_bannertext_wrapper {
-  opacity: 0;
-  transform: translateY(24px);
-}
+        /* Floating Follow Button */
+        .follow-btn-container {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
 
-.ast_bannertext_wrapper.entry-visible {
-  animation: bannerEntry 1s ease forwards;
-}
+        .follow-btn {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8c00, #e67e00);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 8px 25px rgba(230, 126, 0, 0.4);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
 
-@keyframes bannerEntry {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        .follow-btn:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 15px 35px rgba(230, 126, 0, 0.5);
+        }
 
-/* Directional reveal for About section */
-.fade-left,
-.fade-right {
-  opacity: 0;
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
+        .social-icons {
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
 
-.fade-left {
-  transform: translateX(36px);
-}
+        .social-icons.show {
+            display: flex;
+            opacity: 1;
+        }
 
-.fade-right {
-  transform: translateX(-36px);
-}
+        .social-icons a {
+            width: 45px;
+            height: 45px;
+            background: white;
+            color: #e67e00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
 
-.fade-left.in-view,
-.fade-right.in-view {
-  opacity: 1;
-  transform: translateX(0);
-}
+        .social-icons a:hover {
+            transform: scale(1.2) translateX(-8px);
+            background: #ff8c00;
+            color: white;
+        }
 
-/* Zoom-in effect for Services cards */
-.ast_vastu_box {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
+        /* Animation for sections */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
 
-.ast_vastu_box.zoom-in-visible {
-  opacity: 1;
-  transform: scale(1);
-}
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-
-
-/* Responsive alignment improvements (without touching navbar behavior) */
-@media (max-width: 991px) {
-  .ast_bannertext_wrapper h1 {
-    font-size: 38px;
-    line-height: 1.25;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 990px) {
-  .stats-bar .row {
-    row-gap: 16px;
-    justify-content: center;
-  }
-
-  .stats-bar .stat-item {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .ast_vastu_info .row.align-items-center {
-    row-gap: 24px;
-  }
-
-  .ast_footer_wrapper .widget {
-    margin-bottom: 26px;
-  }
-
-  .ast_footer_wrapper .ast_newsletter p {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 767px) {
-  .stat-num {
-    font-size: 28px;
-  }
-
-  .stat-label {
-    font-size: 11px;
-    letter-spacing: 0.2px;
-  }
-
-  .stat-divider {
-    border-left: none;
-  }
-
-  .stats-bar .row {
-    row-gap: 14px;
-  }
-
-  .ast_footer_wrapper .widget,
-  .ast_footer_info,
-  .ast_copyright_wrapper {
-    text-align: center;
-  }
-
-  .ast_footer_wrapper .ast_gettouch li {
-    justify-content: center;
-  }
-
-  .ast_bannertext_wrapper h1 {
-    font-size: 30px;
-    line-height: 1.3;
-  }
-}
-.about-2{
-	/* background-color: rgba(226, 201, 108, 0.671); */
-}
-
-
-</style>
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ff8c00;
+        }
+    </style>
 </head>
-<body>
-	<div class="loader" id="siteLoader"><div class="spinner-border" role="status"></div></div>
-<!-- Header Start -->
-<!-- <div class="ast_top_header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_contact_details">
-					<ul>
-						<li><i class="fa fa-phone" aria-hidden="true"></i> +1800 326 3264</li>
-						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@website.com</a></li>
-					</ul>
-				</div>
-				<div class="ast_autho_wrapper">
-					<ul>
-						<li><a class="popup-with-zoom-anim" href="#login-dialog"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In</a></li>
-						<li><a class="popup-with-zoom-anim" href="#signup-dialog"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
-						<li class="ast_search">
-							<a href="javascript:;"><i class="fa fa-search"></i></a>
-							<div class="ast_search_field">
-								<form>
-									<input type="text" placeholder="Search Here">
-									<button type="button"><i class="fa fa-search"></i></button>
-								</form>
-							</div>
-						</li>
-						<li class="ast_cart">
-							<a href="javascript:;"><i class="fa fa-shopping-cart"></i></a>
-							<div class="ast_cart_box">
-								<div class="ast_cart_list">
-									<ul>
-										<li>
-											<div class="ast_cart_img">
-												<img src="images/content/Products/thumb1.jpg" class="img-responsive">
-											</div>
-											<div class="ast_cart_info">
-												<a href="#">Yellow Sapphire</a>
-												<p>1 X $20.00</p>
-												<a href="javascript:;" class="ast_cart_remove"><i class="fa fa-trash"></i></a>
-											</div>
-										</li>
-										<li>
-											<div class="ast_cart_img">
-												<img src="images/content/Products/thumb1.jpg" class="img-responsive">
-											</div>
-											<div class="ast_cart_info">
-												<a href="#">yantra</a>
-												<p>1 X $10.00</p>
-												<a href="javascript:;" class="ast_cart_remove"><i class="fa fa-trash"></i></a>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="ast_cart_total">
-									<p>total<span>$30.00</span></p>
-								</div>
-								<div class="ast_cart_btn">
-									<button type="button">view cart</button>
-									<button type="button">checkout</button>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<!---->
-					<!--<div id="login-dialog" class="zoom-anim-dialog mfp-hide">
-						<h1>Login Form</h1>
-						<form>
-							<input type="text" placeholder="Email">
-							<input type="password" placeholder="Password">
-							<div class="ast_login_data">
-								<label class="tp_custom_check" for="remember_me">Remember me <input type="checkbox" name="ast_remember_me" value="yes" id="ast_remember_me"><span class="checkmark"></span>
-								</label>
-								<a href="#">Forgot password ?</a>
-							</div>
-							<button type="submit" class="ast_btn">Login</button>
-							<p>Create An Account ? <a href="#">SignUp</a></p>
-						</form>
-					</div>
-					<div id="signup-dialog" class="zoom-anim-dialog mfp-hide">
-						<h1>signup form</h1>
-						<form>
-							<input type="text" placeholder="Name">
-							<input type="text" placeholder="Email">
-							<input type="password" placeholder="Password">
-							<input type="text" placeholder="Mobile Number">
-							<select>
-								<option value="male">Male</option>
-								<option value="female">Female</option>
-							</select>
-							<button type="submit" class="ast_btn">submit</button>
-							<p>Have An Account ? <a href="#">Login</a></p>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<div class="ast_header_bottom">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-10">
-				<div class="ast_logo">
-					<a href="index-vastu.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" title="Logo"></a>
-				</div>
-			</div>
-			<div class="col-lg-9 col-md-9 col-sm-9 col-2">
-				<div class="ast_main_menu_wrapper">
-					<div class="ast_menu">
-						<ul>
-							<!-- <li class="as_submenu_li"><a href="#">home</a>
-								<ul class="submenu">
-									<li><a href="index.html">home</a></li>
-									<li><a href="index-horoscope.html">horoscope</a></li>
-									<li><a href="index-tarot.html">tarot card</a></li>
-									<li><a href="index-palmistry.html">palmistry</a></li>
-									<li><a href="index-vastu.html">vastu shastra</a></li>
-									<li><a href="index-gemstone.html">gemstone</a></li>
-									<li><a href="index-numerology.html">numerology</a></li>
-								</ul>
-							</li> -->
-							
-							<li><a href="index-vastu.html">home</a></li>
-							<li class="as_submenu_li"><a href="#">about</a>
-								<ul class="submenu">
-									<!-- <li><a href="">about</a></li> -->
-									<li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
-									<li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
-									<!-- <li><a href="index-tarot.html">tarot card</a></li>
-									<li><a href="index-palmistry.html">palmistry</a></li>
-									<li><a href="index-vastu.html">vastu shastra</a></li>
-									<li><a href="index-gemstone.html">gemstone</a></li>
-									<li><a href="index-numerology.html">numerology</a></li> -->
-								</ul>
-							</li>
-							<!-- <li><a href="services.html">services</a></li> -->
-							<li class="as_submenu_li"><a href="#">services</a>
-								<ul class="submenu">
-									<!-- <li><a href="index.html">services</a></li> -->
-									<li><a href="residential-vastu.html">Residential Vastu</a></li>
-									<li><a href="industrial-vastu.html">industrial vastu</a></li>
-									<li><a href="commercial-vastu.html">commercial vastu</a></li>
-									<li><a href="temple-vastu.html">temple vastu</a></li>
-									<li><a href="hospital-vastu.html">hospital vastu</a></li>
-									<li><a href="corporate-vastu.html">corporate vastu</a></li>
-								</ul>
-							</li>
-							<!-- <li><a href="services.html">services</a></li> -->
-							 <li class="as_submenu_li"><a href="vvs-onlin-class.html"><span style="font-size: 17px;">V</span>vs online classes</a>
-								<!-- <ul class="submenu">
-									<li><a href="index.html">Healing Prayers</a></li>
-									<li><a href="index-horoscope.html">Vastu</a></li>
-									<li><a href="index-tarot.html">Yantra</a></li>
-									<li><a href="index-palmistry.html">Mantra</a></li>
-									<li><a href="index-vastu.html">Nature Alignment</a></li>
-									<li><a href="index-gemstone.html">Ancient Knowledge System</a></li>
-								</ul> -->
-							</li>
-							<li><a href="gallery.html">Gallery</a></li>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
 
-							<li class="as_submenu_li"><a href="blog.html">blog</a>
-								<!-- <ul class="submenu"> -->
-									<!-- <li class="as_submenu_li"><a href="#">blog</a> -->
-										<!-- <ul class="submenu"> -->
-											<!-- <li><a href="blog.html">blog default</a></li> -->
-											<!-- <li><a href="blog_rs.html">right sidebar</a></li>
-											<li><a href="blog_ls.html">left sidebar</a></li> -->
-										<!-- </ul> -->
-									<!-- </li> -->
-									<!-- <li class="as_submenu_li"><a href="#">blog single</a>
-										<ul class="submenu">
-											<li><a href="blog_single.html">full width</a></li>
-											<li><a href="blog_single_rs.html">right sidebar</a></li>
-											<li><a href="blog_single_ls.html">left sidebar</a></li>
-										</ul>
-									</li> -->
-								<!-- </ul> -->
-							</li>
-							<!-- <li class="as_submenu_li"><a href="#">shop</a>
-								<ul class="submenu">
-									<li><a href="shop.html">shop</a></li>
-									<li><a href="shop_single.html">shop single</a></li>
-									<li><a href="cart.html">cart</a></li>
-									<li><a href="checkout.html">checkout</a></li>
-								</ul>
-							</li>								 -->
-							<!-- <li class="as_submenu_li"><a href="#">pages</a>
-								<ul class="submenu">
-									<li><a href="team.html">Astrologers</a></li>
-									<li><a href="privacy_policy.html">privacy policy</a></li>
-									<li><a href="faq.html">FAQ</a></li>
-									<li><a href="error.html">404 error</a></li>
-								</ul>
-							</li> -->
-							<li><a href="contact.html">contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<button class="ast_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Header End -->    
-<!--Slider Start-->
-<div class="ast_slider_wrapper style_2 ast_index_vastu">
-	<div class="ast_banner_text">
-		<!-- <div class="starfield">
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		</div>
-		<div class="ast_waves">
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-		</div>
-		<div class="ast_waves2">
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-		</div>
-		<div class="ast_waves3">
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-			<div class="ast_wave"></div>
-		</div> -->
-		<div class="container">
-			<div class="ast_bannertext_wrapper">
-				<!-- <h1>Vastu for the house is important than geography.</h1>  -->
-				<!-- <h1>Vastu for the house is important than geography.Vastuyogi KL Vishwakarma 40+ Years of Authentic Vastu & Life Guidance</h1>  -->
-				<!-- <ul class="ast_toppadder40 ast_bottompadder50">
-					<li>vastu shastra</li>
-					<li>gemstones</li>
-					<li>tarot card</li>
-				</ul> -->
-				<!-- <p class="ast_bottompadder10 ast_toppadder10">Authentic, science-based Vastu , TV recognition, and global clientele.</p> -->
-				<!-- <h1 class="animate-entry"> <span style="font-size: 26px;">Vastuyogi</span> <br> <span class="heading" style="font-size: 34px; " >DR. K.L VISHWAKARMA </span><br> <span class="" style="font-size: 26px;">Full Time consultant since 1985 (40+ years) </span></h1> -->
-				 <img src="./images/Name-Strip.png" alt="" class="name-strip">
-				<!-- <h1>Dr. K.L Vishwakarma</h1>
-				<h1>Full Time consultant since 1985 (40+ years)</h1> -->
-				<p class="ast_bottompadder10 ast_toppadder10">SCIENCE HAS NO CASTE & CREED </p>
-
-
-				<!-- <div class = "container">
-  <h1 class="text-anime">Hi, my name is</h1>
-  <h1 class="text-anime">Jasmine.</h1>
-</div> -->
-
-			</div>
-			<div>
-
-				<a href="appointment.html" class="ast_btn">call now</a>
-			</div>
-		</div>
-	</div>
-</div>
-<!--Slider End-->
-
-<!-- fun-facts start -->
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="container">
-    <div class="row text-center py-4">
-      <div class="col-4 stat-item">
-        <div class="stat-num">40+</div>
-        <div class="stat-label">Years of Experience</div>
-      </div>
-      <div class="col-4 stat-item stat-divider">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Happy Clients</div>
-      </div>
-      <div class="col-4 stat-item stat-divider">
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Countries</div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- fun-facts end -->
-<!--Vastu Start-->
-<div class="ast_vastu_wrapper ast_toppadder70 ast_bottompadder70">
-	<div class="container">
-					<h3 class="text-center py-4">About</h3>
-
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_vastu_info">
-					<!-- <h3>Vastu tips and solutions for successful anything</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-					<p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-12 fade-right">
-							<h3 class="" style="color: #ec1f25;">Lord Vishwakarma</h3>
-							<!-- <h3>Lord Vishwakarma</h3> -->
-							<p class="mb-2">Vishwakarma is a revered deity in Hinduism known as the divine architect and master craftsman of the universe. He is believed to be the creator of celestial cities, palaces, and powerful weapons used by the gods.</p>
-							<p class="mb-2">In Hindu mythology, Vishwakarma is associated with engineering, design, construction, and creativity. He is said to have built famous mythological places like the golden city of Lanka and the sacred city of Dwarka, and crafted divine weapons such as Indra’s Vajra and Vishnu’s Sudarshan Chakra.</p>
-							<p class="mb-2">He is widely worshipped by engineers, architects, artisans, mechanics, and craftsmen, who see him as their guiding deity. During Vishwakarma Puja, people pray to him for success, safety, and excellence in their work.</p>
-							<p>In simple terms, Vishwakarma represents the spirit of creation, skill, and innovation, combining both art and science in building and designing the world.</p>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-12 fade-left text-end">
-							<img src="./images/lord-vishwakarma.jpeg" alt="vishwakarma-vastu-image" class="lord-vishwakarma">
-						</div>
-					</div>
-
-
-				</div>
-				<!--  -->
-			</div>
-
-		
-		</div>
-	</div>
-</div>
-<div class="ast_vastu_wrapper about-2  ast_toppadder70 ast_bottompadder70">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_vastu_info">
-					<!-- <h3>Vastu tips and solutions for successful anything</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-					<p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
-					<div class="row align-items-center">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-12 fade-left">
-							<img src="./images/vishwakarma-vastu-image.jpeg" alt="vishwakarma-vastu-image">
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-12 fade-right">
-							<h3 class="" style="color: #ec1f25;">The Vishwakarma Legacy –</h3>
-							<h3>Dr. K L Vishwakarma</h3>
-						<!-- <ul>
-							<li>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</li>
-							<li>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</li>
-							<li>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</li>
-							<li>If you are going to use a passage of Lorem Ipsum.</li>
-							<li>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</li>
-							<li>by injected humour, or randomised words which don't look even slightly believable.</li>
-						</ul> -->
-						<p class="mb-2">I belong to the Vishwakarma legacy, traditionally associated with creation, structure, architecture, and sacred sciences. This lineage formed the foundation of my understanding of space, balance, and discipline.</p>
-						<p class="mb-2">True mastery, however, came through life experience, struggle, responsibility, and decades of disciplined practice. Before dedicating my life fully to Vastu sciences, I experienced severe financial hardship and became penniless. Through sincere study and disciplined implementation of Vastu principles in my own life, I gradually regained stability, growth, and prosperity.</p>
-						<p class="mb-2">This transformation is lived experience—not theory. I guide others only through what I have personally practiced and proven.</p>
-						</div>
-					</div>
-
-
-				</div>
-				<div class="row align-items-center">
-
-					<div class="text-center" style="padding: 50px 0;">
-						<h2 style="    font-size: 25px; margin: 0px 0px 10px 0px;">"Vishwakarma Jaganatham Vishwakarma Jagathgurum <br> Vishwakarma Jagaththejam Vishwakarma Mayam Jagath"</h2>
-						<p>Lord Vishwakarma is the Divine Principal Architect of Universe.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="ast_vastu_wrapper gray_wrapper ast_toppadder70 ast_bottompadder40">
-	<div class="container">
-		<div class="row">	
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_vastu_box_wrapper">
-					<h3 class="text-center py-4">Services</h3>
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Residential-Vatstu.jpg" alt="vastu" title="Vastu">
-									<h4>Residential Vastu</h4>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Industrial-Vastu.jpg" alt="vastu" title="Vastu">
-									<h4>Industrial Vastu</h4>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Commercial-Vastu.jpg" alt="vastu" title="Vastu">
-									<h4>Commercial Vastu</h4>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Tempe-Vastu.jpg" alt="vastu" title="Vastu">
-									<h4>Temple Vastu</h4>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Hospital-Vastu.jpg" alt="vastu" title="Vastu">
-									<h4>Hospital Vastu</h4>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-							<div class="ast_vastu_box">
-								<a href="vastu_single.html">
-									<img src="./images/SERVICES/Corporate-Vastu.jpg" alt="vastu" title="Vastu">
-									<h4>Corporate Vastu</h4>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--Vastu End-->
-<!--Video Tour Start-->
-<!-- <div class="ast_videotour_wrapper ast_toppadder70 ast_bottompadder70">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_heading">
-					<h1>take a <span>video tour</span></h1>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected hummer.</p>
-				</div>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_videotour_img">
-					<div class="ast_img_overlay"></div>
-					<img src="https://dummyimage.com/1296x686" alt="Video Tour">
-					<a class="popup-youtube" href="https://youtu.be/YpdU6Kw4KSk"><i class="fa fa-play" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<!--Video Tour End-->
-<!-- Download wrapper start-->
-<!-- <div class="ast_download_wrapper ast_toppadder70 ast_bottompadder70">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_heading">
-					<h1>Download our <span>Mobile App</span></h1>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected hummer.</p>
-				</div>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_download_box">
-					<ul>
-						<li><a href="#"><img src="images/content/download1.png" alt="Download" title="Download"></a></li>
-						<li><a href="#"><img src="images/content/download2.png" alt="Download" title="Download"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-<!-- Download wrapper End-->
-<!-- Footer wrapper start-->
-<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12" style="padding: 24px 0;">
-				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="widget text-widget">
-					<!-- <h4 class="widget-title">our newsletter</h4> -->
-					 <div class="ast_logo">
-					<a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" title="Logo"></a>
-				</div>
-					<div class="ast_newsletter">
-						<p>Maids table how learn drift but purse stand yet set. Music me house could among oh as their. .</p>
-						<!-- <div class="ast_newsletter_box">
-							<input type="text" placeholder="Email">
-							<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>						
-						</div> -->
-					</div>				
-				</div>			
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-6 col-12">
-				<div class="widget text-widget">
-					<h4 class="widget-title">our services</h4>
-					<div class="ast_servicelink">
-						<ul>
-							<li><a href="residential-vastu.html">Residential Vastu</a></li>
-							<li><a href="industrial-vastu.html">Industrial Vastu</a></li>
-							<li><a href="commercial-vastu.html">Commercial Vastu</a></li>
-							<li><a href="temple-vastu.html">Temple Vastu</a></li>
-							<li><a href="hospital-vastu.html">Hospital Vastu</a></li>
-							<li><a href="corporate-vastu.html">Corporate Vastu</a></li>
-						</ul>
-					</div>				
-				</div>			
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-6 col-12">
-				<div class="widget text-widget">
-					<h4 class="widget-title">quick links</h4>
-					<div class="ast_sociallink">
-						<ul>
-							<li><a href="lord-vishwakarma.html">about</a></li>
-							<li><a href="gallery.html">gallery</a></li>
-							<li><a href="blog.html">blog</a></li>
-							<li><a href="error.html">Vishwakarma vastu online classes </a></li>
-							<li><a href="contact.html">contact</a></li>
-						</ul>
-					</div>				
-				</div>			
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-12">
-				<div class="widget text-widget">
-					<h4 class="widget-title">get in touch</h4>
-					<div class="ast_gettouch">
-						<ul>
-							<li><i class="fa fa-home" aria-hidden="true"></i> <p>1-11-241/1/10A,Sai Dwaar,Shyamlal Building, Hyderabad, Telangana 500016</p></li>
-							<li><i class="fa fa-at" aria-hidden="true"></i> <a href="mailto:vasthuyogi@gmail.com">vasthuyogi@gmail.com</a>
-								<!-- <a href="#">info@website.com</a></li> -->
-							<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+919848045677">+91 98480 45677</a> 
-								<!-- <p>+1800 326 3234</p> -->
-							</li>
-						</ul>
-					</div>				
-				</div>	
-				<div class="ast_footer_info">
-					<!-- <img src="https://dummyimage.com/160x64" alt="Logo">
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p> -->
-					<ul>
-						<!-- <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>					
-						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>					
-						<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>					
-						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>					
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-											 -->
-
-											 <li><a href="https://www.youtube.com/@vishwakarmavastuenglish-rv7se" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>					
-						<li><a href="https://www.facebook.com/people/Vishwakarma-Vastu/61578068234876/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>					
-						<li><a href="https://www.instagram.com/vishwakarma_vasthu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>					
-						<li><a href="https://www.linkedin.com/in/vishwakarma-vastu-88370b375/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>					
-						<li><a href="https://x.com/Vishwakarm83356" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>		
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="ast_copyright_wrapper">
-					<p>&copy; Copyright 2026, All Rights Reserved, <a href="#">Vishwakarma Vastu Sciences</a></p>				
-				</div>			
-			</div>	
-		</div>	
-	</div>
-</div>
-<!-- Footer wrapper End-->
-    <button id="scrollTopBtn" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
-
-<!--Main js file Style--> 
-<script type="text/javascript" src="js/jquery.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.appear.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<!--Main js file End-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<script>
-  window.addEventListener('load', () => {
-    const bannerTextWrapper = document.querySelector('.ast_bannertext_wrapper');
-    if (bannerTextWrapper) {
-      bannerTextWrapper.classList.add('entry-visible');
-    }
-  });
-
-	// Scroll-reveal animation
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.service-card, .vastu-pillar, .book-card, .whatif-card').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(28px)';
-    el.style.transition = `opacity .55s ease ${i * 0.08}s, transform .55s ease ${i * 0.08}s`;
-    revealObserver.observe(el);
-  });
-
-  // Fade-left and fade-right reveal for ast_vastu_info children
-  const vastuInfoObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-        vastuInfoObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  document.querySelectorAll('.ast_vastu_info .fade-left, .ast_vastu_info .fade-right').forEach((el) => {
-    vastuInfoObserver.observe(el);
-  });
-
-  // Zoom-in effect for Services cards
-  const serviceCardObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        entry.target.style.transitionDelay = `${i * 0.08}s`;
-        entry.target.classList.add('zoom-in-visible');
-        serviceCardObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll('.ast_vastu_box').forEach((card) => {
-    serviceCardObserver.observe(card);
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const href = a.getAttribute('href');
-      if (href.length > 1) {
-        const target = document.querySelector(href);
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-      }
-    });
-  });
-
-	// Counter Animation
-function animateCount(el, target, suffix = '+') {
-    let start = 0;
-    const duration = 2800;
-    const startTime = performance.now();
-
-    function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        let progress = Math.min(elapsed / duration, 1);
-        
-        // Ease-out cubic for natural feel
-        progress = 1 - Math.pow(1 - progress, 3);
-
-        const value = Math.floor(target * progress);
-        el.textContent = value + suffix;
-
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        } else {
-            el.textContent = target + suffix;
-        }
-    }
-
-    requestAnimationFrame(update);
-}
-
-// Stats Observer
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const statNums = document.querySelectorAll('.stat-num');
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="#">
+                <i class="fas fa-compass me-2"></i>
+                Vishwakarma Vastu
+            </a>
             
-            animateCount(statNums[0], 40, '+');
-            animateCount(statNums[1], 500, '+');
-            animateCount(statNums[2], 10, '+');
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-4" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#healing">Spiritual Healing</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link px-4" href="#faq">FAQ</a></li>
+                </ul>
+                <a href="#" class="btn btn-light ms-4 px-4 rounded-pill fw-semibold" style="color: #e67e00;">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
 
-            statsObserver.disconnect(); // Run only once
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container position-relative hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-3 fw-bold mb-4">Vastuyogi KL Vishwakarma</h1>
+                    <p class="lead fs-3 mb-4">40+ Years of Authentic Vastu & Life Guidance</p>
+                    <p class="fs-5 mb-5 max-w-700 mx-auto">Science-based Vastu | TV Recognition | Global Clientele</p>
+                    
+                    <div class="d-flex justify-content-center gap-4 flex-wrap">
+                        <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" 
+                                class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-semibold shadow">
+                            <i class="fas fa-compass me-2"></i> Explore Services
+                        </button>
+                        <button onclick="window.open('tel:+919194045677')" 
+                                class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+                            <i class="fas fa-phone me-2"></i> Call Now
+                        </button>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <div class="d-flex justify-content-center gap-5 text-center">
+                            <div>
+                                <div class="stat-number">40+</div>
+                                <div class="text-white-50">Years Experience</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">500+</div>
+                                <div class="text-white-50">Happy Clients</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">10+</div>
+                                <div class="text-white-50">Countries</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="position-absolute bottom-0 start-50 translate-middle-x pb-5">
+            <a href="#about" class="text-white d-flex flex-column align-items-center text-decoration-none">
+                <span class="mb-2 small">Scroll to discover</span>
+                <i class="fas fa-chevron-down fa-2x animate__animated animate__bounce animate__infinite"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 paisley-bg text-white">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title display-5 mb-4 text-white">The Vishwakarma Legacy</h2>
+                    <h3 class="h2 mb-4">Dr. K L Vishwakarma</h3>
+                    <p class="lead mb-4">
+                        I belong to the Vishwakarma legacy, traditionally associated with creation, structure, architecture, and sacred sciences. 
+                        True mastery comes through life experience, struggle, responsibility, and decades of disciplined practice.
+                    </p>
+                    <p>
+                        Before dedicating my life fully to Vastu sciences, I experienced severe financial hardship and became penniless. 
+                        Through sincere study and disciplined implementation of Vastu principles in my own life, I gradually regained stability, growth, and prosperity.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-light px-5 py-3 rounded-pill me-3">Watch Guidance Videos</a>
+                        <a href="#" class="btn btn-outline-light px-5 py-3 rounded-pill">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="rounded-circle overflow-hidden border border-5 border-light shadow-lg mx-auto" style="width: 320px; height: 320px;">
+                        <img src="https://picsum.photos/id/64/600/600" alt="Dr. KL Vishwakarma" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="mt-4">
+                        <p class="fst-italic">"Vishwakarma Jaganatham Vishwakarma Jagathegurum<br>Vishwakarma Jagathehejam Vishwakarma Mayam Jagath"</p>
+                        <small class="text-white-50">— Lord Vishwakarma is the Divine Principal Architect of Universe</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5">Our Services</h2>
+                <p class="lead text-muted">Expert Vastu guidance for harmonious living and prosperity</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Service cards -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-home fa-3x mb-3 text-warning"></i>
+                        <h4>Houses / Flats Vastu</h4>
+                        <p class="text-muted">Balanced layouts, proper directional alignment, and harmonious living energy for apartments, villas, and independent houses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-building fa-3x mb-3 text-warning"></i>
+                        <h4>Office Vastu</h4>
+                        <p class="text-muted">Enhance productivity, smooth operations, and financial growth through energy-aligned design.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3 text-warning"></i>
+                        <h4>Plot Vastu</h4>
+                        <p class="text-muted">Practical remedies and corrective measures for energy balancing, directional alignment, and layout optimization.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-industry fa-3x mb-3 text-warning"></i>
+                        <h4>Factories Vastu</h4>
+                        <p class="text-muted">Ensure balanced layouts and proper directional alignment for factories and industrial units.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-hotel fa-3x mb-3 text-warning"></i>
+                        <h4>Hotels Vastu</h4>
+                        <p class="text-muted">Expert solutions for hospitality spaces to enhance productivity and prosperity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <i class="fas fa-store fa-3x mb-3 text-warning"></i>
+                        <h4>Shops & Commercial Vastu</h4>
+                        <p class="text-muted">Practical measures for commercial spaces that cannot be structurally changed.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-warning px-5 py-3 rounded-pill">See All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiritual Healing -->
+    <section id="healing" class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 mb-4">Spiritual Healing</h2>
+                    <p class="lead mb-4">Spiritual support offered with devotion and compassion for peace, strength, and emotional balance.</p>
+                    <p class="text-muted">(Not a medical substitute)</p>
+                    <button onclick="alert('Healing prayer request form would open here in a real website')" 
+                            class="btn btn-warning btn-lg px-5 py-3 rounded-pill mt-3">
+                        Request Healing Prayers
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Vastu -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title display-5">What Is Vastu & Why Follow?</h2>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="fas fa-heart fa-4x text-danger mb-3"></i>
+                        <h5>Health & Well-Being</h5>
+                        <p>Promotes peace of mind, emotional stability, and overall vitality.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="fas fa-sync fa-4x text-primary mb-3"></i>
+                        <h5>Energy Harmony</h5>
+                        <p>Creates balanced, positive spaces by aligning with nature's five elements.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="fas fa-seedling fa-4x text-success mb-3"></i>
+                        <h5>Prosperity & Growth</h5>
+                        <p>Enhances abundance, productivity, and long-term success through aligned design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title display-5 mb-5">Publications</h2>
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="shadow-sm bg-white p-3 rounded">
+                        <img src="https://picsum.photos/id/201/300/400" class="img-fluid rounded" alt="VVS Book">
+                        <h5 class="mt-3">VVS Book 2025</h5>
+                        <p class="text-muted small">Comprehensive guide to Vastu principles</p>
+                    </div>
+                </div>
+                <!-- Repeat for 2 more books -->
+                <div class="col-md-4 text-center">
+                    <div class="shadow-sm bg-white p-3 rounded">
+                        <img src="https://picsum.photos/id/201/300/400" class="img-fluid rounded" alt="VVS Book">
+                        <h5 class="mt-3">VVS Book 2025</h5>
+                        <p class="text-muted small">Practical Vastu remedies</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="shadow-sm bg-white p-3 rounded">
+                        <img src="https://picsum.photos/id/201/300/400" class="img-fluid rounded" alt="VVS Book">
+                        <h5 class="mt-3">VVS Book 2025</h5>
+                        <p class="text-muted small">Advanced Vastu techniques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title display-5 mb-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            What is Vastu Shastra?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Vastu Shastra is an ancient Indian science of designing spaces in alignment with natural energies.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Vishwakarma Vastu Sciences</h5>
+                    <p>Authentic, science-based Vastu guidance by Vastuyogi KL Vishwakarma.</p>
+                    <p><strong>Hyderabad, Telangana</strong></p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-phone"></i> +91 91940 45677</p>
+                    <p><i class="fas fa-envelope"></i> info@vishwakarmavastu.com</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-3 justify-content-lg-end">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center small">
+                © 2026 Vishwakarma Vastu Sciences. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Follow Button with Social Icons -->
+    <div class="follow-btn-container">
+        <button id="followBtn" class="follow-btn">
+            <i class="fas fa-heart"></i>
+        </button>
+        
+        <div id="socialIcons" class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate sections on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.85) {
+                    el.classList.add('visible');
+                }
+            });
         }
-    });
-}, { threshold: 0.5 });
 
-const statsBar = document.querySelector('.stats-bar');
-if (statsBar) statsObserver.observe(statsBar);
-</script>
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', () => {
+            // Trigger initial animations
+            setTimeout(() => {
+                document.querySelectorAll('.service-card').forEach((card, i) => {
+                    card.style.transitionDelay = `${i * 100}ms`;
+                    card.classList.add('animate-on-scroll', 'visible');
+                });
+            }, 500);
+        });
+
+        // Floating Follow Button with Social Icons
+        const followBtn = document.getElementById('followBtn');
+        const socialIcons = document.getElementById('socialIcons');
+        let isOpen = false;
+
+        followBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            
+            if (isOpen) {
+                socialIcons.classList.add('show');
+                followBtn.innerHTML = '<i class="fas fa-times"></i>';
+                followBtn.style.background = 'linear-gradient(135deg, #e67e00, #c0392b)';
+            } else {
+                socialIcons.classList.remove('show');
+                followBtn.innerHTML = '<i class="fas fa-heart"></i>';
+                followBtn.style.background = 'linear-gradient(135deg, #ff8c00, #e67e00)';
+            }
+        });
+
+        // Close social icons when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!followBtn.contains(e.target) && !socialIcons.contains(e.target)) {
+                if (isOpen) {
+                    isOpen = false;
+                    socialIcons.classList.remove('show');
+                    followBtn.innerHTML = '<i class="fas fa-heart"></i>';
+                    followBtn.style.background = 'linear-gradient(135deg, #ff8c00, #e67e00)';
+                }
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Initialize Bootstrap ScrollSpy
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNavbar',
+            offset: 100
+        });
+
+        console.log('%cVishwakarma Vastu Sciences - One Page Website Ready!', 'color: #ff8c00; font-weight: bold; font-size: 16px;');
+    </script>
 </body>
 </html>

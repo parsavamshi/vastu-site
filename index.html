@@ -1408,6 +1408,375 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
+
+    
+    /* ===== NAVBAR ===== */
+    .navbar-custom {
+      background: var(--navy);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .Logo {
+      max-width: 220px;
+      width: 100%;
+    }
+
+    .nav-contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-contact a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+    }
+
+    .nav-contact a:hover { color: var(--gold); }
+
+    .btn-book-nav {
+      background: var(--gold);
+      color: var(--navy) !important;
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 1px;
+      padding: 10px 18px !important;
+      border-radius: 4px;
+      border: none;
+      transition: background 0.3s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-book-nav:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    /* Desktop Navigation */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      position: relative;
+    }
+
+    .nav-menu > li > a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.3s;
+      white-space: nowrap;
+      text-transform: capitalize;
+    }
+
+    .nav-menu > li > a:hover, .nav-menu > li > a.active { color: var(--gold); }
+    .nav-menu > li > a i { font-size: 0.6rem; transition: transform 0.3s; }
+
+    /* Submenu styling */
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: linear-gradient(145deg, #0F1625 0%, #0A0E1A 100%);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 8px;
+      min-width: 220px;
+      padding: 8px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 100;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      list-style: none;
+    }
+
+    .nav-menu li:hover > .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .submenu li a {
+      padding: 8px 20px;
+      font-size: 0.68rem;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      display: block;
+      color: var(--white);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .submenu li a:hover {
+      background: rgba(201,168,76,0.1);
+      color: var(--gold);
+      padding-left: 25px;
+    }
+
+    /* ===== MOBILE SIDEBAR MENU ===== */
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 1100;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s, opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .mobile-menu-sidebar {
+      position: fixed;
+      top: 0;
+      left: -320px;
+      width: 320px;
+      height: 100%;
+      background: linear-gradient(145deg, #0F1625 0%, #0A0E1A 100%);
+      border-right: 1px solid rgba(201,168,76,0.3);
+      z-index: 1101;
+      transition: left 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 5px 0 25px rgba(0,0,0,0.5);
+      overflow-y: auto;
+    }
+
+    .mobile-menu-sidebar.open {
+      left: 0;
+    }
+
+    .mobile-menu-header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding-bottom: 15px;
+    }
+
+    .close-menu-btn {
+      background: transparent;
+      border: none;
+      color: var(--gold);
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: transform 0.2s;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .close-menu-btn:hover {
+      transform: rotate(90deg);
+      color: var(--gold-light);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex: 1;
+    }
+
+    .mobile-nav-list li {
+      margin-bottom: 2px;
+    }
+
+    .mobile-nav-link {
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      color: var(--white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 8px;
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+      transition: all 0.2s;
+      font-weight: 500;
+      cursor: pointer;
+      background: transparent;
+      width: 100%;
+      border: none;
+    }
+
+    .mobile-nav-link:hover {
+      color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .mobile-nav-link i {
+      font-size: 0.7rem;
+      color: var(--gold);
+      transition: transform 0.3s;
+    }
+
+    .mobile-submenu {
+      list-style: none;
+      padding-left: 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      background: rgba(0,0,0,0.2);
+      border-radius: 6px;
+      margin-bottom: 5px;
+    }
+
+    .mobile-submenu.open {
+      max-height: 500px;
+    }
+
+    .mobile-submenu li a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      padding: 10px 12px;
+      display: block;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    .mobile-submenu li a:hover {
+      color: var(--gold);
+      padding-left: 18px;
+      background: rgba(201,168,76,0.05);
+    }
+
+    .mobile-contact-info {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .mobile-contact-info a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 10px 0;
+      font-weight: 500;
+    }
+
+    .mobile-contact-info a i {
+      width: 24px;
+      color: var(--gold);
+    }
+
+    .mobile-book-btn {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 12px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+      width: 100%;
+      border: none;
+      font-size: 0.75rem;
+      transition: 0.2s;
+      text-decoration: none;
+    }
+
+    .mobile-book-btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      color: var(--navy);
+    }
+
+    /* Hamburger button */
+    .hamburger-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s;
+      z-index: 1102;
+      position: relative;
+    }
+
+    .hamburger-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--gold);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger-btn.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger-btn.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: url('./images/banners/Background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
     /* ===== HERO SECTION ===== */
     /* .hero-section {
       background: linear-gradient(135deg, var(--navy) 0%, #0D1524 50%, #0A1020 100%);
@@ -1651,31 +2020,13 @@
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<!-- ===== NAVBAR with EXACT MENU from your code ===== -->
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar-custom">
   <div class="container px-3 px-lg-4">
     <div class="d-flex align-items-center justify-content-between w-100">
       <!-- Brand -->
       <div class="navbar-brand-wrap">
-        <!-- <svg class="compass-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="48" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
-          <circle cx="50" cy="50" r="42" fill="none" stroke="#C9A84C" stroke-width="0.5" stroke-dasharray="3,4"/>
-          <text x="50" y="14" text-anchor="middle" fill="#C9A84C" font-family="Cinzel,serif" font-size="11" font-weight="700">N</text>
-          <text x="50" y="93" text-anchor="middle" fill="#C9A84C" font-family="Cinzel,serif" font-size="11" font-weight="700">S</text>
-          <text x="90" y="54" text-anchor="middle" fill="#C9A84C" font-family="Cinzel,serif" font-size="11" font-weight="700">E</text>
-          <text x="10" y="54" text-anchor="middle" fill="#C9A84C" font-family="Cinzel,serif" font-size="11" font-weight="700">W</text>
-          <line x1="50" y1="18" x2="50" y2="82" stroke="#C9A84C" stroke-width="0.7"/>
-          <line x1="18" y1="50" x2="82" y2="50" stroke="#C9A84C" stroke-width="0.7"/>
-          <polygon points="50,20 46,50 50,44 54,50" fill="#C9A84C"/>
-          <polygon points="50,80 46,50 50,56 54,50" fill="#5A4A1C"/>
-          <circle cx="50" cy="50" r="4" fill="#C9A84C"/>
-        </svg>
-        <div class="brand-text">
-          <h1>KL VISHWAKARMA</h1>
-          <span class="vastu-line">— VASTU —</span>
-          <span class="tagline">Ancient Wisdom. Practical Solutions.</span>
-        </div> -->
-        <img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="" class="Logo">
+        <img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo">
       </div>
 
       <!-- Desktop Navigation -->
@@ -1706,41 +2057,38 @@
               <li><a href="corporate-vastu.html">corporate vastu</a></li>
             </ul>
           </li>
-          <li><a href="vvs-onlin-class.html"><span style="font-size: 17px;"></span>Vvs online classes</a></li>
+          <li><a href="vvs-onlin-class.html">Vvs online classes</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">blog </a></li>
-          <!-- <li class="as_submenu_li"> -->
-            <!-- <ul class="submenu">
-              <li><a href="blog.html">blog default</a></li>
-              <li><a href="blog_rs.html">right sidebar</a></li>
-              <li><a href="blog_ls.html">left sidebar</a></li>
-            </ul> -->
-          <!-- </li> -->
+          <li><a href="blog.html">blog</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </div>
 
       <!-- Mobile Hamburger -->
-      <button class="hamburger-btn d-lg-none" id="hamburgerToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="hamburger-btn d-lg-none" id="hamburgerToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
 
-<!-- Mobile Sidebar with Only One Submenu Open at a Time -->
+<!-- Mobile Sidebar -->
 <div class="mobile-menu-overlay" id="mobileOverlay"></div>
 <div class="mobile-menu-sidebar" id="mobileSidebar">
-  <div class="mobile-menu-header"><button class="close-menu-btn" id="closeSidebarBtn"><i class="fas fa-times"></i></button></div>
+  <div class="mobile-menu-header">
+    <button class="close-menu-btn" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
+  </div>
   <ul class="mobile-nav-list">
     <li><a href="index.html" class="mobile-nav-link" data-link="true">home</a></li>
     <li class="mobile-has-submenu">
-      <div class="mobile-nav-link" data-submenu="submenu-about">about <i class="fas fa-chevron-down"></i></div>
+      <button class="mobile-nav-link" data-submenu="submenu-about">about <i class="fas fa-chevron-down"></i></button>
       <ul class="mobile-submenu" id="submenu-about">
         <li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
         <li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
       </ul>
     </li>
     <li class="mobile-has-submenu">
-      <div class="mobile-nav-link" data-submenu="submenu-services">services <i class="fas fa-chevron-down"></i></div>
+      <button class="mobile-nav-link" data-submenu="submenu-services">services <i class="fas fa-chevron-down"></i></button>
       <ul class="mobile-submenu" id="submenu-services">
         <li><a href="residential-vastu.html">Residential Vastu</a></li>
         <li><a href="industrial-vastu.html">industrial vastu</a></li>
@@ -1750,23 +2098,15 @@
         <li><a href="corporate-vastu.html">corporate vastu</a></li>
       </ul>
     </li>
-    <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true"><span style="font-size:17px;"></span>Vvs online classes</a></li>
+    <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true">Vvs online classes</a></li>
     <li><a href="gallery.html" class="mobile-nav-link" data-link="true">Gallery</a></li>
-    <li><a href="./blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
-    <!-- <li class="mobile-has-submenu">
-      <div class="mobile-nav-link" data-submenu="submenu-blog">blog <i class="fas fa-chevron-down"></i></div>
-      <ul class="mobile-submenu" id="submenu-blog">
-        <li><a href="blog.html">blog default</a></li>
-        <li><a href="blog_rs.html">right sidebar</a></li>
-        <li><a href="blog_ls.html">left sidebar</a></li>
-      </ul>
-    </li> -->
+    <li><a href="blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
     <li><a href="contact.html" class="mobile-nav-link" data-link="true">contact</a></li>
   </ul>
   <div class="mobile-contact-info">
-    <a href="tel:+919440743701"><i class="fas fa-phone"></i> +91 94407 43701</a>
-    <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    <a href="#" class="mobile-book-btn"><i class="far fa-calendar-alt"></i> BOOK CONSULTATION</a>
+    <a href="tel:919848045677"><i class="fas fa-phone"></i> +91 98480 45677</a>
+    <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="./contact.html" class="mobile-book-btn"><i class="far fa-calendar-alt"></i> BOOK CONSULTATION</a>
   </div>
 </div>
 
@@ -2303,7 +2643,7 @@ if (statsBar) statsObserver.observe(statsBar);
   }, 3300); // 👈 show loader for at least 1 second
 });
 </script>
-<script>
+<!-- <script>
   (function() {
     const hamburger = document.getElementById('hamburgerToggle');
     const sidebar = document.getElementById('mobileSidebar');
@@ -2346,54 +2686,85 @@ if (statsBar) statsObserver.observe(statsBar);
       });
     });
   })();
-</script>
+</script> -->
 <script>
+  // Mobile Menu JavaScript - Fixed and Working
   (function() {
+    // Get elements
     const hamburger = document.getElementById('hamburgerToggle');
     const sidebar = document.getElementById('mobileSidebar');
     const overlay = document.getElementById('mobileOverlay');
     const closeBtn = document.getElementById('closeSidebarBtn');
 
+    // Make sure elements exist
+    if (!hamburger || !sidebar || !overlay) {
+      console.error('Mobile menu elements not found!');
+      return;
+    }
+
+    // Function to open menu
     function openMenu() {
       sidebar.classList.add('open');
       overlay.classList.add('active');
       hamburger.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
+
+    // Function to close menu
     function closeMenu() {
       sidebar.classList.remove('open');
       overlay.classList.remove('active');
       hamburger.classList.remove('active');
       document.body.style.overflow = '';
     }
-    hamburger.addEventListener('click', (e) => { e.stopPropagation(); sidebar.classList.contains('open') ? closeMenu() : openMenu(); });
-    closeBtn.addEventListener('click', closeMenu);
+
+    // Hamburger click event
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (sidebar.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close button event
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMenu);
+    }
+
+    // Overlay click event
     overlay.addEventListener('click', closeMenu);
 
-    // Mobile submenu toggle - ONLY ONE OPEN AT A TIME
+    // Mobile submenu toggle - only one open at a time
     const mobileSubmenuTriggers = document.querySelectorAll('.mobile-nav-link[data-submenu]');
     
-    mobileSubmenuTriggers.forEach(trigger => {
-      trigger.addEventListener('click', (e) => {
+    mobileSubmenuTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         
-        const targetId = trigger.getAttribute('data-submenu');
+        const targetId = this.getAttribute('data-submenu');
         const targetSubmenu = document.getElementById(targetId);
         
-        // If this submenu is already open, close it
+        if (!targetSubmenu) return;
+        
+        // Check if this submenu is already open
         if (targetSubmenu.classList.contains('open')) {
           targetSubmenu.classList.remove('open');
-          trigger.querySelector('i').classList.remove('fa-chevron-right');
-          trigger.querySelector('i').classList.add('fa-chevron-down');
+          const icon = this.querySelector('i');
+          if (icon) {
+            icon.classList.remove('fa-chevron-right');
+            icon.classList.add('fa-chevron-down');
+          }
         } else {
-          // Close all other submenus first
+          // Close all other submenus
           const allSubmenus = document.querySelectorAll('.mobile-submenu');
-          allSubmenus.forEach(submenu => {
+          allSubmenus.forEach(function(submenu) {
             if (submenu.classList.contains('open')) {
               submenu.classList.remove('open');
-              // Find the corresponding trigger and reset its icon
-              const associatedTrigger = document.querySelector(`.mobile-nav-link[data-submenu="${submenu.id}"]`);
+              // Find corresponding trigger and reset icon
+              const associatedTrigger = document.querySelector('.mobile-nav-link[data-submenu="' + submenu.id + '"]');
               if (associatedTrigger) {
                 const icon = associatedTrigger.querySelector('i');
                 if (icon) {
@@ -2404,9 +2775,9 @@ if (statsBar) statsObserver.observe(statsBar);
             }
           });
           
-          // Open the clicked submenu
+          // Open clicked submenu
           targetSubmenu.classList.add('open');
-          const icon = trigger.querySelector('i');
+          const icon = this.querySelector('i');
           if (icon) {
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-right');
@@ -2415,19 +2786,28 @@ if (statsBar) statsObserver.observe(statsBar);
       });
     });
 
-    // Handle regular links (non-submenu items)
+    // Close menu when clicking regular links (non-submenu items)
     const regularLinks = document.querySelectorAll('.mobile-nav-link[data-link="true"]');
-    regularLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        closeMenu();
-      });
+    regularLinks.forEach(function(link) {
+      link.addEventListener('click', closeMenu);
     });
 
-    // Close sidebar when clicking any anchor inside mobile-submenu or book button
-    document.querySelectorAll('.mobile-submenu a, .mobile-book-btn, .mobile-contact-info a').forEach(anchor => {
-      anchor.addEventListener('click', (e) => {
-        closeMenu();
-      });
+    // Close menu when clicking any anchor inside mobile-submenu
+    const submenuLinks = document.querySelectorAll('.mobile-submenu a');
+    submenuLinks.forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking book button
+    const mobileBookBtn = document.querySelector('.mobile-book-btn');
+    if (mobileBookBtn) {
+      mobileBookBtn.addEventListener('click', closeMenu);
+    }
+    
+    // Close menu when clicking contact info links
+    const contactLinks = document.querySelectorAll('.mobile-contact-info a');
+    contactLinks.forEach(function(link) {
+      link.addEventListener('click', closeMenu);
     });
   })();
 </script>

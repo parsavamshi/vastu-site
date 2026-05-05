@@ -5504,7 +5504,7 @@ li.ast_search , li.ast_cart{
 .ast_slider_wrapper10{
      position: relative;
     /* height: 70vh; */
-    height: 248px;
+    height: 276px;
 
     /* height: 400px; */
   background: url('../images/banners/kl-banner.jpeg') center/cover no-repeat;
@@ -5571,7 +5571,7 @@ li.ast_search , li.ast_cart{
 }
 .ast_slider_wrapper9.lord-vishwakarma-banner{
      position: relative;
-    height: 248px;
+    height: 276px;
     /* height: 90vh; */
     /* height: 400px; */
   background: url('../images/banners/lord-Banner.jpeg') center/cover no-repeat;
@@ -6003,13 +6003,13 @@ text-decoration: underline;
 }
 
 .fade-left {
-	/* transform: translateX(36px); */
-	transform: translateX(-10px);
+	transform: translateX(36px);
+	/* transform: translateX(-10px); */
 }
 
 .fade-right {
-	/* transform: translateX(-36px); */
-	transform: translateX(10px);
+	transform: translateX(-36px);
+	/* transform: translateX(10px); */
 }
 
 .fade-left.in-view,
@@ -6407,7 +6407,7 @@ background-position: center;
     /* height: 90vh; */
     height: 248px;
 	/* background:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)), url('../images/banners/Residential-banner.jpg') center/cover no-repeat; */
-    background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url(../images/banners/MOBILE/Mobile-Residential.jpg) center / cover no-repeat;
+    background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url(../images/banners/MOBILE/Mobile-Residential.jpeg) center / cover no-repeat;
   /* background: url('../images/banners/Residential-banner.jpg') center/cover no-repeat; */
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
@@ -6416,7 +6416,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)),url('../images/banners/MOBILE/Mobile-Industrial.jpg') center/cover no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)),url('../images/banners/MOBILE/Mobile-Industrial.jpeg') center/cover no-repeat;
   
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
@@ -6425,7 +6425,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Commercial.jpg') center/cover no-repeat;
+  background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Commercial.jpeg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }
@@ -6433,7 +6433,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)),  url('../images/banners/MOBILE/Mobile-Temple.jpg') center/cover no-repeat;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)),  url('../images/banners/MOBILE/Mobile-Temple.jpeg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }
@@ -6441,7 +6441,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Hospital.jpg') center/cover no-repeat;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Hospital.jpeg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }
@@ -6449,7 +6449,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Corporate.jpg') center/cover no-repeat;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Corporate.jpeg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }

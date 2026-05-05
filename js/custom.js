@@ -385,3 +385,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+// LOADER
+ window.addEventListener("load", function () {
+  const loader = document.getElementById("siteLoader");
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.5s ease";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 3300); // 👈 show loader for at least 1 second
+});

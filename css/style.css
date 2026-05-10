@@ -83,6 +83,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
+  border-radius: 4px;
 }
 
 /* Colors */
@@ -242,6 +243,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 600;
 	line-height: 1.1;
 	color: #333333;
+    font-family: 'Cinzel';
 }
 img {
 	/* max-width: 100%; */
@@ -4392,7 +4394,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_header_bottom.menu_fixed{
 	position:fixed;
-    /* top: 0; */
+    top: 0;
 }
 .ast_top_header{
 	padding:0;
@@ -5781,9 +5783,9 @@ text-decoration: underline;
     .ast_vastu_info h3{
         margin: 10px 0;
     }
-    .ast_vastu_info p{
+    /* .ast_vastu_info p{
         text-align: justify;
-    }
+    } */
     .ast_vastu_box{
         margin-bottom: 10px;
     }
@@ -5994,6 +5996,7 @@ text-decoration: underline;
 .reveal-image.in-view {
 	opacity: 1;
 	transform: none;
+    /* font-family: 'cinzel'; */
 }
 
 .fade-left,
@@ -6369,13 +6372,13 @@ background-position: center;
   position: fixed;
   right: 20px;
   bottom: 50px;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   background: #25D366;
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  line-height: 40px;
+  line-height: 34px;
   font-size: 28px;
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -6458,7 +6461,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Gallery.jpeg') center/cover no-repeat;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-Gallery.jpg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }
@@ -6467,7 +6470,7 @@ background-position: center;
      position: relative;
     /* height: 90vh; */
     height: 248px;
-  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-lord-vishwakarma.jpeg') center/cover no-repeat;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/banners/MOBILE/Mobile-lord-vishwakarma.jpg') center/cover no-repeat;
   /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
 
 }
@@ -6552,5 +6555,12 @@ background-position: center;
 .loader-gif {
   display: none;
   
+}
+
+.learn-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+.blog-content{
+    padding: 20px;
 }
 }

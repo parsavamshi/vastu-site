@@ -6563,4 +6563,14 @@ background-position: center;
 .blog-content{
     padding: 20px;
 }
+.phone-number{
+    font-size: 24px;
+}
+}
+
+@media (min-width:1600px){
+    .hero-section{
+        /* height: 500px; */
+            /* min-height: calc(100vh - 420px); */
+    }
 }

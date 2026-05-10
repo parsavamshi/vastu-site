@@ -49,7 +49,11 @@
     .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
     .stats-bar1{
-      position: relative;
+      /* position: relative; */
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
       z-index: 3;
     }
 
@@ -638,8 +642,9 @@
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
-      overflow: hidden;
+      overflow: hidden; 
       min-height: calc(100vh - 100px);
+      /* height: 100vh; */
     }
 
     .hero-section::before {
@@ -666,8 +671,9 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      /* padding: 60px 0 40px; */
-      padding: 0px;
+      padding: 60px 0 30px;
+      /* padding: 87px 0 47px; */
+      /* padding: 0px; */
     }
 
     .hero-left {
@@ -806,6 +812,7 @@
       flex-wrap: wrap;
       align-items: center;
       margin-bottom: 20px;
+      justify-content: center;
     }
 
     .btn-gold {
@@ -1008,7 +1015,7 @@
       .brand-text h1 { font-size: 1.1rem; }
       .brand-text .vastu-line { font-size: 1.3rem; }
       .service-icon-item { min-width: 65px; padding: 6px 8px; }
-      .hero-cta-row { flex-direction: column; align-items: flex-start; }
+      .hero-cta-row { flex-direction: column; align-items: flex-start; justify-content: center;}
       .btn-gold, .btn-outline-gold { width: 100%; justify-content: center; }
       .stats-bar .stat-item { padding: 10px; }
     }
@@ -2183,7 +2190,7 @@ font-size: 14px;
 
     .home-photo-of-vishwakarma{
         max-width: 100%;
-        margin-bottom: -116px;
+        /* margin-bottom: -116px; */
     }
     .hero-image-panel{
         align-items: center;
@@ -2198,6 +2205,7 @@ font-size: 14px;
       border-radius:18px;
       background:#fff;
       overflow:hidden;
+      margin-top: -120px;
     }
 
     .stats-container{
@@ -2452,7 +2460,7 @@ font-size: 14px;
            <img src="./images/Strip-Icons/globe.png" alt="" style="max-width:unset; width:22px; height: 22px;">
            SERVING CLIENTS ACROSS INDIA &amp; ABROAD</p>
       </div>
-      <div class="col-lg-5 col-sm-12 col-12 hero-image-panel">
+      <div class="col-lg-6 col-sm-12 col-12 hero-image-panel">
         <!-- <div class="hero-image-frame">
           <div class="hero-bg-scene"></div>
           <div class="hero-glow-circle"></div>

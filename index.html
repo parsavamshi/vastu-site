@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <title>KL Vishwakarma Vastu - Ancient Wisdom. Practical Solutions.</title>
+  <!-- <title>KL Vishwakarma Vastu - Ancient Wisdom. Practical Solutions.</title> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
@@ -2109,6 +2109,7 @@ font-size: 14px;
   text-align: center;
   padding: 0 10px;
   font-family: 'Cinzel';
+  display: block;
 }
 .hero-image-panel p b{
   color: var(--gold);
@@ -2253,7 +2254,17 @@ font-size: 14px;
       .stat-box:last-child{
         border-bottom:none;
       }
+      .hero-image-panel p{
+      display: block;
+      }
     }
+
+     @media (min-width:991.99px){
+      .hero-image-panel p{
+      display: none;
+      }
+ }
+
   </style>
 </head>
 <body>

@@ -48,7 +48,10 @@
     .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
     .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
-
+    .stats-bar1{
+      position: relative;
+      z-index: 3;
+    }
 
 	
 /* .container{
@@ -2105,11 +2108,31 @@ font-size: 14px;
       .hero-image-panel p{
 
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   padding: 0 10px;
   font-family: 'Cinzel';
   display: block;
+  font-weight: 700;
+}
+.hero-image-panel .transform-small{
+  margin: 0;
+  margin-top: -78px;
+}
+.hero-image-panel .homt-text{
+  font-size: 36px;
+    margin: 0;
+    line-height: 1;
+}
+.hero-image-panel .life-text{
+  font-size: 16px;
+    margin: 0;
+}
+.hero-image-panel .vishwakarma-text{}
+
+.hero-image-panel .life-text, .hero-image-panel .homt-text{
+  color: var(--gold);
+  
 }
 .hero-image-panel p b{
   color: var(--gold);
@@ -2118,10 +2141,20 @@ font-size: 14px;
 /* #C9A84C */
 
 .home-photo-of-vishwakarma{
-  max-width: 50% !important;
+  /* max-width: 50% !important;
           margin-bottom: -68px !important;
         margin-left: 0;
-        margin-top: -87px;
+        margin-top: -87px; */
+        
+        max-width: 162px !important;
+        margin-bottom: -68px !important;
+        margin-left: 0;
+        margin-top: -137px;
+        width: 100%;
+        height: 100%;
+}
+.text p{
+  font-size: 11px;
 }
 .hero-content{
   /* padding: 0 ; */
@@ -2132,8 +2165,11 @@ font-size: 14px;
       .navbar-custom .nav-menu { display: none; }
     }
     @media (max-width: 767.98px) {
+      .text p{
+  font-size: 11px;
+}
       .stats-wrapper{
-        margin-top: -64px;
+        margin-top: -82px;
         position: relative;
         z-index: 3;
       }
@@ -2256,6 +2292,12 @@ font-size: 14px;
       }
       .hero-image-panel p{
       display: block;
+      /* margin-top: -80px; */
+        /* padding: 0; */
+        /* margin-right: -38px; */
+      }
+      .hero-image-panel p{
+
       }
     }
 
@@ -2269,6 +2311,12 @@ font-size: 14px;
 </head>
 <body>
 
+  <div class="loader" id="siteLoader">
+  <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
+</div>
+<div class="loader" id="siteLoader2">
+  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
+</div>
 <!-- ===== NAVBAR ===== -->
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar-custom">
@@ -2435,221 +2483,227 @@ font-size: 14px;
           <span class="main-line">HOME, BUSINESS &amp; LIFE</span>
           <span class="guidance-line">WITH VISHWAKARMA VASTU GUIDANCE</span>
         </div> -->
-        <p ><small>TRANSFORM YOUR</small> <br> <b>HOME, BUSINESS &amp; LIFE</b> <br><small> WITH VISHWAKARMA VASTU GUIDANCE</small></p>
+        <div>
+
+          <p class="transform-small"><small>TRANSFORM YOUR</small></p>
+            <p class="homt-text">HOME, </p>
+            <p class="life-text"> BUSINESS &amp; LIFE</p>
+            <p class="vishwakarma-text"><small> WITH VISHWAKARMA VASTU GUIDANCE</small></p>
+        </div>
         <img src="./images/home-banner-photo.png" alt="" class="home-photo-of-vishwakarma" width="100%" height="100%">
         </div>
       </div>
     </div>
   </div>
-</section>
-<section class="stats-bar1">
-  <div class="container">
-    <div class="stats-bar d-none">
-
-      <div class="row justify-content-evenly">
-          <div class="col-6 col-md-2 col-lg">
-              <div class="stat-item">
-                  <div class="stat-icon">
-                      <img src="./images/Strip-Icons/40+years.png" alt="">
-                  </div>
-                  <div class="stat-text">
-                    <p class="stat-num">40+</p>
-                      <!-- <span class="stat-num">40+ </span> -->
-                      <!-- <span class="stat-label">Years of Experience</span> -->
-                       <p>Years of Experience</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 col-md-2 col-lg">
-              <div class="stat-item">
-                  <div class="stat-icon">
-                      <!-- <i class="fas fa-users"></i> -->
-                       <img src="./images/Strip-Icons/Thousands.png" alt="">
-                  </div>
-                  <div class="stat-text">
-                      <span class="stat-num">THOUSANDS</span>
-                      <!-- <span class="stat-label">Of Happy Clients</span> -->
-                       <p class="stat-label">Of Happy Clients</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 col-md-2 col-lg">
-              <div class="stat-item">
-                  <div class="stat-icon">
-                      <!-- <i class="fas fa-globe"></i> -->
-                       <img src="./images/Strip-Icons/Global-clients.png" alt="">
-                  </div>
-                  <div class="stat-text">
-                      <span class="stat-num">GLOBAL CLIENTS</span>
-                      <!-- <span class="stat-label">Across 15+ Countries</span> -->
-                       <p>Across 15+ Countries</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 col-md-2 col-lg">
-              <div class="stat-item">
-                  <div class="stat-icon">
-                      <!-- <i class="fas fa-shield-alt"></i> -->
-                       <img src="./images/Strip-Icons/100.png" alt="">
-                  </div>
-                  <div class="stat-text">
-                      <span class="stat-num">100% </span>
-                      <!-- <span class="stat-label">Result Oriented Solutions</span> -->
-                      <p>PRACTICAL Result Oriented Solutions</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 col-md-2 col-lg">
-              <div class="stat-item">
-                  <div class="stat-icon">
-                      <!-- <i class="fas fa-search"></i> -->
-                       <img src="./images/Strip-Icons/No-demolition.png" alt="">
-                  </div>
-                  <div class="stat-text">
-                      <span class="stat-num">NO DEMOLITION</span>
-                      <!-- <span class="stat-label">Scientific Remedies</span> -->
-                      <p>Scientific Remedies</p>
-                  </div>
-              </div>
-          </div>
+  <section class="stats-bar1">
+    <div class="container">
+      <div class="stats-bar d-none">
+  
+        <div class="row justify-content-evenly">
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <img src="./images/Strip-Icons/40+years.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                      <p class="stat-num">40+</p>
+                        <!-- <span class="stat-num">40+ </span> -->
+                        <!-- <span class="stat-label">Years of Experience</span> -->
+                         <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-users"></i> -->
+                         <img src="./images/Strip-Icons/Thousands.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">THOUSANDS</span>
+                        <!-- <span class="stat-label">Of Happy Clients</span> -->
+                         <p class="stat-label">Of Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-globe"></i> -->
+                         <img src="./images/Strip-Icons/Global-clients.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">GLOBAL CLIENTS</span>
+                        <!-- <span class="stat-label">Across 15+ Countries</span> -->
+                         <p>Across 15+ Countries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-shield-alt"></i> -->
+                         <img src="./images/Strip-Icons/100.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">100% </span>
+                        <!-- <span class="stat-label">Result Oriented Solutions</span> -->
+                        <p>PRACTICAL Result Oriented Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-search"></i> -->
+                         <img src="./images/Strip-Icons/No-demolition.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">NO DEMOLITION</span>
+                        <!-- <span class="stat-label">Scientific Remedies</span> -->
+                        <p>Scientific Remedies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
+  
+      <!--  start-->
+        <div class="stats-wrapper">
+  
+      <div class="stats-container">
+  
+        <!-- Item 1 -->
+        <div class="stat-box">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-award"></i> -->
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>40+</h2>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+  
+        <!-- Item 2 -->
+        <div class="stat-box">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-users"></i> -->
+             <img src="./images/Strip-Icons/Thousands.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>Thousands</h2>
+            <p>Of Happy Clients</p>
+          </div>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="stat-box">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-globe"></i> -->
+             <img src="./images/Strip-Icons/Global-clients.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>Global Clients</h2>
+            <p>Across 15+ Countries</p>
+          </div>
+        </div>
+  
+        <!-- Item 4 -->
+        <div class="stat-box col-3">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-shield-halved"></i> -->
+             <img src="./images/Strip-Icons/100.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>100% Practical</h2>
+            <p>Result Oriented Solutions</p>
+          </div>
+        </div>
+  
+        <!-- Item 5 -->
+        <div class="stat-box">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+             <img src="./images/Strip-Icons/No-demolition.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>No Demolition</h2>
+            <p>Scientific Remedies</p>
+          </div>
+        </div>
+  
+      </div>
+      <!-- end -->
+  <!-- <div class="stats-bar">
+  
+    <div class="row">
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex stat-text">
+               <p class="stat-num">40+</p>
+               <p>Years of Experience</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>Of Happy Clients</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>10+</p>
+               <p>Across 15+ Countries</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+   
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>PRACTICAL Result Oriented Solutions</p>
+           </div>
+       </div>
+     </div>
+      <div class="col-sm">
+   
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>PRACTICAL Result Oriented Solutions</p>
+           </div>
+       </div>
+     </div>
     </div>
-
-    <!--  start-->
-      <div class="stats-wrapper">
-
-    <div class="stats-container">
-
-      <!-- Item 1 -->
-      <div class="stat-box">
-        <div class="icon">
-          <!-- <i class="fa-solid fa-award"></i> -->
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-        </div>
-        <div class="text col-9">
-          <h2>40+</h2>
-          <p>Years of Experience</p>
-        </div>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="stat-box">
-        <div class="icon">
-          <!-- <i class="fa-solid fa-users"></i> -->
-           <img src="./images/Strip-Icons/Thousands.png" alt="">
-        </div>
-        <div class="text col-9">
-          <h2>Thousands</h2>
-          <p>Of Happy Clients</p>
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="stat-box">
-        <div class="icon">
-          <!-- <i class="fa-solid fa-globe"></i> -->
-           <img src="./images/Strip-Icons/Global-clients.png" alt="">
-        </div>
-        <div class="text col-9">
-          <h2>Global Clients</h2>
-          <p>Across 15+ Countries</p>
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="stat-box col-3">
-        <div class="icon">
-          <!-- <i class="fa-solid fa-shield-halved"></i> -->
-           <img src="./images/Strip-Icons/100.png" alt="">
-        </div>
-        <div class="text col-9">
-          <h2>100% Practical</h2>
-          <p>Result Oriented Solutions</p>
-        </div>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="stat-box">
-        <div class="icon">
-          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-           <img src="./images/Strip-Icons/No-demolition.png" alt="">
-        </div>
-        <div class="text col-9">
-          <h2>No Demolition</h2>
-          <p>Scientific Remedies</p>
-        </div>
-      </div>
-
-    </div>
-    <!-- end -->
-<!-- <div class="stats-bar">
-
-  <div class="row">
-   <div class="col-sm">
-     <div class="d-flex">
-         <div>
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-         </div>
-         <div class="d-flex stat-text">
-             <p class="stat-num">40+</p>
-             <p>Years of Experience</p>
-         </div>
-     </div>
-   </div>
-   <div class="col-sm">
-     <div class="d-flex">
-         <div>
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-         </div>
-         <div class="d-flex">
-             <p>40+</p>
-             <p>Of Happy Clients</p>
-         </div>
-     </div>
-   </div>
-   <div class="col-sm">
-     <div class="d-flex">
-         <div>
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-         </div>
-         <div class="d-flex">
-             <p>10+</p>
-             <p>Across 15+ Countries</p>
-         </div>
-     </div>
-   </div>
-   <div class="col-sm">
- 
-     <div class="d-flex">
-         <div>
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-         </div>
-         <div class="d-flex">
-             <p>40+</p>
-             <p>PRACTICAL Result Oriented Solutions</p>
-         </div>
-     </div>
-   </div>
-    <div class="col-sm">
- 
-     <div class="d-flex">
-         <div>
-           <img src="./images/Strip-Icons/40+years.png" alt="">
-         </div>
-         <div class="d-flex">
-             <p>40+</p>
-             <p>PRACTICAL Result Oriented Solutions</p>
-         </div>
-     </div>
+       
+     </div> -->
+  
+     
    </div>
   </div>
-     
-   </div> -->
-
-   
- </div>
-</div>
-</div>
+  </div>
+  </section>
 </section>
 
 

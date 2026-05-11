@@ -1424,7 +1424,8 @@ font-size: 14px;
       align-items:center;
       /* gap:18px;
       padding:28px 30px; */
-      gap: 0px;
+      /* gap: 0px; */
+	  gap:8px;
     padding: 12px 12px;
       position:relative;
       justify-content: space-between;
@@ -1508,13 +1509,27 @@ font-size: 14px;
 <style>
 	 /* STATS BAR */
     /* .stats-bar { background:var(--orange); padding:22px 0; } */
-    .stats-bar { background:#ec1f25;  }
+    .stats-bar {
+      background:
+        linear-gradient(rgba(236, 31, 37, 0.78), rgba(236, 31, 37, 0.78)),
+        url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     .stat-item { text-align:center; color:#fff; }
     .stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1; }
     .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
     .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
-
+    .stats-bar1{
+      position: relative;
+      /* position: absolute; */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+    }
 
 	
 /* .container{
@@ -1594,25 +1609,166 @@ font-size: 14px;
   }
 }
 
-p{
-	/* font-size: 14px; */
+/* Banner entry animation on page load */
+.ast_bannertext_wrapper {
+  opacity: 0;
+  transform: translateY(24px);
 }
-.ast_vastu_info .KL-Vishwakarma{
-	max-width: 100% !important;
-	/* height: 100%; */
+
+.ast_bannertext_wrapper.entry-visible {
+  animation: bannerEntry 1s ease forwards;
+}
+
+@keyframes bannerEntry {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Directional reveal for About section */
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-left {
+  transform: translateX(36px);
+}
+
+.fade-right {
+  transform: translateX(-36px);
+}
+
+.fade-left.in-view,
+.fade-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+} 
+
+/* Zoom-in effect for Services cards */
+.ast_vastu_box {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ast_vastu_box.zoom-in-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+	
+
+
+/* Responsive alignment improvements (without touching navbar behavior) */
+@media (max-width: 991px) {
+  .ast_bannertext_wrapper h1 {
+    font-size: 38px;
+    line-height: 1.25;
+  }
+  .hero-left{
+    display: none;
+
+  }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .stats-bar .row {
+    row-gap: 16px;
+    justify-content: center;
+  }
+
+  .stats-bar .stat-item {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .ast_vastu_info .row.align-items-center {
+    row-gap: 24px;
+  }
+
+  .ast_footer_wrapper .widget {
+    margin-bottom: 26px;
+  }
+
+  .ast_footer_wrapper .ast_newsletter p {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-left{
+    display: none;
+
+  }
+  .home-photo-of-vishwakarma{
+
+    /* margin-bottom: 81px !important;
+    margin-left: 236px;
+    margin-top: -100px; */
+    margin-bottom: -68px !important;
+        margin-left: 115px;
+        margin-top: -70px;
+  }
+  .hero-image-panel{
+    min-height: 200px;
+  }
+  .hero-image-panel{
+    display: none;
+  }
+  .stat-num {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.2px;
+  }
+
+  .stat-divider {
+    border-left: none;
+  }
+
+  .stats-bar .row {
+    row-gap: 14px;
+  }
+
+  .ast_footer_wrapper .widget,
+  .ast_footer_info,
+  .ast_copyright_wrapper {
+    text-align: center;
+  }
+
+  .ast_footer_wrapper .ast_gettouch li {
+    justify-content: center;
+  }
+
+  .ast_bannertext_wrapper h1 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+.about-2{
+	/* background-color: rgba(226, 201, 108, 0.671); */
+}
+.ast_vastu_info .lord-vishwakarma{
+	max-width:100% ;
+	width: 100%;
 	margin: 0 !important;
 }
-.name-strip {
-width: 30%;
+.ast_vastu_info img{
+	margin: 0;
+	max-width: 100%;
+	width: 100%;
 }
-@media (max-width:991px) {
-	.ast_menu_btn{
-		top: 20px !important; 
-		right: 15px !important;
-		left:unset !important;
-	}
-}
-</style>
 </style>
   <style>
     :root {
@@ -1964,8 +2120,9 @@ width: 30%;
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
-      overflow: hidden;
+      overflow: hidden; 
       min-height: calc(100vh - 100px);
+      /* height: 100vh; */
     }
 
     .hero-section::before {
@@ -1992,8 +2149,9 @@ width: 30%;
     .hero-content {
       position: relative;
       z-index: 2;
-      /* padding: 60px 0 40px; */
-      padding: 0px;
+      padding: 60px 0 30px;
+      /* padding: 87px 0 47px; */
+      /* padding: 0px; */
     }
 
     .hero-left {
@@ -2025,6 +2183,7 @@ width: 30%;
       letter-spacing: 1px;
       line-height: 1;
       display: block;
+      text-wrap-mode: nowrap;
       text-shadow: 0 0 40px rgba(201,168,76,0.3);
     }
 
@@ -2035,6 +2194,7 @@ width: 30%;
       color: var(--white);
       letter-spacing: 3px;
       display: block;
+      text-wrap-mode: nowrap;
     }
 
     .gold-divider {
@@ -2067,6 +2227,7 @@ width: 30%;
       color: #fff;
       letter-spacing: 1px;
       text-align: center;
+      text-wrap-mode: nowrap;
     }
 
     .hero-stats-text strong {
@@ -2098,8 +2259,8 @@ width: 30%;
     /* padding: 20px 16px; */
     display: flex;
     gap: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
     margin: 24px 0;
     }
 
@@ -2129,9 +2290,11 @@ width: 30%;
     .hero-cta-row {
       display: flex;
       gap: 16px;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       align-items: center;
       margin-bottom: 20px;
+      justify-content: center;
+      text-wrap-mode: nowrap;
     }
 
     .btn-gold {
@@ -2334,19 +2497,14 @@ width: 30%;
       .brand-text h1 { font-size: 1.1rem; }
       .brand-text .vastu-line { font-size: 1.3rem; }
       .service-icon-item { min-width: 65px; padding: 6px 8px; }
-      .hero-cta-row { flex-direction: column; align-items: flex-start; }
+      .hero-cta-row { flex-direction: column; align-items: flex-start; justify-content: center;}
       .btn-gold, .btn-outline-gold { width: 100%; justify-content: center; }
       .stats-bar .stat-item { padding: 10px; }
     }
 
     @media (max-width: 575.98px) {
       .compass-logo { width: 50px; height: 50px; }
-      .hero-section { 
-		/* min-height: auto;  */
-		height: 172px;
-		min-height: auto;
-		
-	}
+      .hero-section { min-height: auto; }
       .hero-content { padding: 30px 0 20px; }
     }
 
@@ -3319,8 +3477,8 @@ font-size: 14px;
     /* padding: 20px 16px; */
     display: flex;
     gap: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
     margin: 24px 0;
     }
     .service-icon-item {
@@ -3514,7 +3672,8 @@ font-size: 14px;
 
     .home-photo-of-vishwakarma{
         max-width: 100%;
-        margin-bottom: -116px;
+        width: 113%;
+        /* margin-bottom: -116px; */
     }
     .hero-image-panel{
         align-items: center;
@@ -3529,6 +3688,8 @@ font-size: 14px;
       border-radius:18px;
       background:#fff;
       overflow:hidden;
+      /* margin-top: -120px; */
+      margin-top: 10px;
     }
 
     .stats-container{
@@ -3536,6 +3697,7 @@ font-size: 14px;
       display: flex;
       grid-template-columns: repeat(5, 1fr);
       align-items:center;
+	  justify-content: space-evenly;
     }
 
     .stat-box{
@@ -3543,7 +3705,7 @@ font-size: 14px;
       align-items:center;
       /* gap:18px;
       padding:28px 30px; */
-      gap: 0px;
+      gap: 8px;
     padding: 12px 12px;
       position:relative;
       justify-content: space-between;
@@ -3607,6 +3769,12 @@ font-size: 14px;
         /* grid-template-columns:1fr; */
         flex-wrap: wrap;
       }
+      .stats-bar1{
+        position: relative;
+      }
+      .stats-wrapper{
+        margin-top: -82px !important;
+      }
       .stat-box{
         width: 100%;
       }
@@ -3639,6 +3807,7 @@ font-size: 14px;
  }
 
   </style>
+ 
 </head>
 <body>
 
@@ -3648,6 +3817,9 @@ font-size: 14px;
 <div class="loader" id="siteLoader2">
   <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
 </div>
+
+
+
 
 <!-- ===== NAVBAR ===== -->
 <!-- ===== NAVBAR ===== -->
@@ -3741,6 +3913,7 @@ font-size: 14px;
 </div>
 
 <!-- ===== HERO SECTION ===== -->
+<!-- ===== HERO SECTION ===== -->
 <section class="hero-section">
   <svg class="hero-mandala-bg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
     <circle cx="250" cy="250" r="240" fill="none" stroke="white" stroke-width="1"/>
@@ -3784,7 +3957,7 @@ font-size: 14px;
            <img src="./images/Strip-Icons/globe.png" alt="" style="max-width:unset; width:22px; height: 22px;">
            SERVING CLIENTS ACROSS INDIA &amp; ABROAD</p>
       </div>
-      <div class="col-lg-5 col-sm-12 col-12 hero-image-panel">
+      <div class="col-lg-6 col-sm-12 col-12 hero-image-panel">
         <!-- <div class="hero-image-frame">
           <div class="hero-bg-scene"></div>
           <div class="hero-glow-circle"></div>
@@ -3827,6 +4000,215 @@ font-size: 14px;
       </div>
     </div>
   </div>
+  <section class="stats-bar1">
+    <div class="container">
+      <div class="stats-bar d-none">
+  
+        <div class="row justify-content-evenly">
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <img src="./images/Strip-Icons/40+years.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                      <p class="stat-num">40+</p>
+                        <!-- <span class="stat-num">40+ </span> -->
+                        <!-- <span class="stat-label">Years of Experience</span> -->
+                         <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-users"></i> -->
+                         <img src="./images/Strip-Icons/Thousands.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">THOUSANDS</span>
+                        <!-- <span class="stat-label">Of Happy Clients</span> -->
+                         <p class="stat-label">Of Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-globe"></i> -->
+                         <img src="./images/Strip-Icons/Global-clients.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">GLOBAL CLIENTS</span>
+                        <!-- <span class="stat-label">Across 15+ Countries</span> -->
+                         <p>Across 15+ Countries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-shield-alt"></i> -->
+                         <img src="./images/Strip-Icons/100.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">100% </span>
+                        <!-- <span class="stat-label">Result Oriented Solutions</span> -->
+                        <p>PRACTICAL Result Oriented Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <!-- <i class="fas fa-search"></i> -->
+                         <img src="./images/Strip-Icons/No-demolition.png" alt="">
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">NO DEMOLITION</span>
+                        <!-- <span class="stat-label">Scientific Remedies</span> -->
+                        <p>Scientific Remedies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  
+      <!--  start-->
+        <div class="stats-wrapper">
+  
+      <div class="stats-container">
+  
+        <!-- Item 1 -->
+        <div class="stat-box col-2">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-award"></i> -->
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>40+</h2>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+  
+        <!-- Item 2 -->
+        <div class="stat-box col-2">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-users"></i> -->
+             <img src="./images/Strip-Icons/Thousands.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>Thousands</h2>
+            <p>Of Happy Clients</p>
+          </div>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="stat-box col-2">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-globe"></i> -->
+             <img src="./images/Strip-Icons/Global-clients.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>Global Clients</h2>
+            <p>Across 15+ Countries</p>
+          </div>
+        </div>
+  
+        <!-- Item 4 -->
+        <div class="stat-box col-3">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-shield-halved"></i> -->
+             <img src="./images/Strip-Icons/100.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>100% Practical</h2>
+            <p>Result Oriented Solutions</p>
+          </div>
+        </div>
+  
+        <!-- Item 5 -->
+        <div class="stat-box col-2">
+          <div class="icon">
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+             <img src="./images/Strip-Icons/No-demolition.png" alt="">
+          </div>
+          <div class="text col-9">
+            <h2>No Demolition</h2>
+            <p>Scientific Remedies</p>
+          </div>
+        </div>
+  
+      </div>
+      <!-- end -->
+  <!-- <div class="stats-bar">
+  
+    <div class="row">
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex stat-text">
+               <p class="stat-num">40+</p>
+               <p>Years of Experience</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>Of Happy Clients</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>10+</p>
+               <p>Across 15+ Countries</p>
+           </div>
+       </div>
+     </div>
+     <div class="col-sm">
+   
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>PRACTICAL Result Oriented Solutions</p>
+           </div>
+       </div>
+     </div>
+      <div class="col-sm">
+   
+       <div class="d-flex">
+           <div>
+             <img src="./images/Strip-Icons/40+years.png" alt="">
+           </div>
+           <div class="d-flex">
+               <p>40+</p>
+               <p>PRACTICAL Result Oriented Solutions</p>
+           </div>
+       </div>
+     </div>
+    </div>
+       
+     </div> -->
+  
+     
+   </div>
+  </div>
+  </div>
+  </section>
 </section>
 <!--Slider End-->
 <!--Slider End-->

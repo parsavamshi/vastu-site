@@ -2218,10 +2218,12 @@ font-size: 14px;
     }
 
     .stats-container{
-      /* display:grid; */
-      display: flex;
+      display:grid;
+      /* display: flex; */
       grid-template-columns: repeat(5, 1fr);
       align-items:center;
+      /* justify-content: space-evenly; */
+      justify-content: space-around;
     }
 
     .stat-box{
@@ -2229,11 +2231,16 @@ font-size: 14px;
       align-items:center;
       /* gap:18px;
       padding:28px 30px; */
-      gap: 0px;
+      gap: 8pxpx;
     padding: 12px 12px;
       position:relative;
-      justify-content: space-between;
+      /* justify-content: space-between; */
+      text-wrap-mode: nowrap;
+      justify-content: center;
     }
+    /* .stat-box.global{
+      margin-left: -10px;
+    } */
 
     .stat-box:not(:last-child)::after{
       content:"";
@@ -2241,7 +2248,7 @@ font-size: 14px;
       right:0;
       top:20%;
       height:60%;
-      width:1.4px;
+      width:2px;
       /* background:#d6c3a0; */
       background: #855617;
     }
@@ -2290,8 +2297,8 @@ font-size: 14px;
 
     @media(max-width:768px){
       .stats-container{
-        /* grid-template-columns:1fr; */
-        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-wrap: wrap; */
       }
       .stats-bar1{
         position: relative;
@@ -2347,7 +2354,7 @@ font-size: 14px;
     <div class="d-flex align-items-center justify-content-between w-100">
       <!-- Brand -->
       <div class="navbar-brand-wrap">
-        <img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo">
+        <a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo"></a>
       </div>
 
       <!-- Desktop Navigation -->
@@ -2597,60 +2604,60 @@ font-size: 14px;
       <div class="stats-container">
   
         <!-- Item 1 -->
-        <div class="stat-box">
+        <div class="stat-box ">
           <div class="icon">
             <!-- <i class="fa-solid fa-award"></i> -->
              <img src="./images/Strip-Icons/40+years.png" alt="">
           </div>
-          <div class="text col-9">
+          <div class="text ">
             <h2>40+</h2>
             <p>Years of Experience</p>
           </div>
         </div>
   
         <!-- Item 2 -->
-        <div class="stat-box">
+        <div class="stat-box ">
           <div class="icon">
             <!-- <i class="fa-solid fa-users"></i> -->
              <img src="./images/Strip-Icons/Thousands.png" alt="">
           </div>
-          <div class="text col-9">
+          <div class="text ">
             <h2>Thousands</h2>
             <p>Of Happy Clients</p>
           </div>
         </div>
   
         <!-- Item 3 -->
-        <div class="stat-box">
+        <div class="stat-box  global">
           <div class="icon">
             <!-- <i class="fa-solid fa-globe"></i> -->
              <img src="./images/Strip-Icons/Global-clients.png" alt="">
           </div>
-          <div class="text col-9">
+          <div class="text ">
             <h2>Global Clients</h2>
             <p>Across 15+ Countries</p>
           </div>
         </div>
   
         <!-- Item 4 -->
-        <div class="stat-box col-3">
+        <div class="stat-box ">
           <div class="icon">
             <!-- <i class="fa-solid fa-shield-halved"></i> -->
              <img src="./images/Strip-Icons/100.png" alt="">
           </div>
-          <div class="text col-9">
+          <div class="text ">
             <h2>100% Practical</h2>
             <p>Result Oriented Solutions</p>
           </div>
         </div>
   
         <!-- Item 5 -->
-        <div class="stat-box">
+        <div class="stat-box ">
           <div class="icon">
             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
              <img src="./images/Strip-Icons/No-demolition.png" alt="">
           </div>
-          <div class="text col-9">
+          <div class="text ">
             <h2>No Demolition</h2>
             <p>Scientific Remedies</p>
           </div>

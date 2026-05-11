@@ -11,9 +11,9 @@
   <title>Vishwakarma Vastu Sciences</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<!-- <meta name="description" content="Astrology">
+<meta name="description" content="Astrology">
 <meta name="keywords" content="Astrology, signs, gemstones, tarot, horoscopes, cards, numerology, Zodiac">
-<meta name="author" content="hsoft" > -->
+<meta name="author" content="hsoft" >
 <meta name="MobileOptimized" content="320">
 <!--Srart Style -->
 <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -49,8 +49,8 @@
     .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
     .stats-bar1{
-      /* position: relative; */
-      position: absolute;
+      position: relative;
+      /* position: absolute; */
       left: 0;
       right: 0;
       bottom: 0;
@@ -197,6 +197,10 @@
   .ast_bannertext_wrapper h1 {
     font-size: 38px;
     line-height: 1.25;
+  }
+  .hero-left{
+    display: none;
+
   }
 
   
@@ -705,6 +709,7 @@
       letter-spacing: 1px;
       line-height: 1;
       display: block;
+      text-wrap-mode: nowrap;
       text-shadow: 0 0 40px rgba(201,168,76,0.3);
     }
 
@@ -715,6 +720,7 @@
       color: var(--white);
       letter-spacing: 3px;
       display: block;
+      text-wrap-mode: nowrap;
     }
 
     .gold-divider {
@@ -747,6 +753,7 @@
       color: #fff;
       letter-spacing: 1px;
       text-align: center;
+      text-wrap-mode: nowrap;
     }
 
     .hero-stats-text strong {
@@ -778,8 +785,8 @@
     /* padding: 20px 16px; */
     display: flex;
     gap: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
     margin: 24px 0;
     }
 
@@ -809,10 +816,11 @@
     .hero-cta-row {
       display: flex;
       gap: 16px;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       align-items: center;
       margin-bottom: 20px;
       justify-content: center;
+      text-wrap-mode: nowrap;
     }
 
     .btn-gold {
@@ -1995,8 +2003,8 @@ font-size: 14px;
     /* padding: 20px 16px; */
     display: flex;
     gap: 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
     margin: 24px 0;
     }
     .service-icon-item {
@@ -2190,6 +2198,7 @@ font-size: 14px;
 
     .home-photo-of-vishwakarma{
         max-width: 100%;
+        width: 113%;
         /* margin-bottom: -116px; */
     }
     .hero-image-panel{
@@ -2283,6 +2292,12 @@ font-size: 14px;
       .stats-container{
         /* grid-template-columns:1fr; */
         flex-wrap: wrap;
+      }
+      .stats-bar1{
+        position: relative;
+      }
+      .stats-wrapper{
+        margin-top: -82px !important;
       }
       .stat-box{
         width: 100%;
@@ -2757,7 +2772,7 @@ font-size: 14px;
 				<div class="row align-items-center">
 
 					<div class="text-center" style="padding: 50px 0 20px;">
-						<h2 style="    font-size: 22px; margin: 0px 0px 10px 0px;">"Vishwakarma Jaganatham Vishwakarma Jagathgurum <br> Vishwakarma Jagaththejam Vishwakarma Mayam Jagath"</h2>
+						<h2 class="special-text" style="    font-size: 22px; margin: 0px 0px 10px 0px;">"Vishwakarma Jaganatham Vishwakarma Jagathgurum <br> Vishwakarma Jagaththejam Vishwakarma Mayam Jagath"</h2>
 						<p>Lord Vishwakarma is the Divine Principal Architect of Universe.</p>
 					</div>
 				</div>

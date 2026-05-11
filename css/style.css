@@ -6573,6 +6573,20 @@ background-position: center;
     }
 }
 
+@media (min-width:1000px) and (max-width:1240px){
+    .service-icon-item{
+        min-width: 76px !important;
+    }
+    .service-icons-grid{
+        justify-content: space-evenly;
+    }
+}
+@media (min-width:1002px) {
+    .service-icons-grid{
+        justify-content: space-evenly;
+    }
+}
+
 @media (min-width:1600px){
     .hero-section{
         /* height: 500px; */

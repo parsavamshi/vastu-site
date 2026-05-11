@@ -6593,3 +6593,7 @@ background-position: center;
             /* min-height: calc(100vh - 420px); */
     }
 }
+
+.mobile-menu-sidebar{
+    background: #00000033 !important;
+}

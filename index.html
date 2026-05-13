@@ -676,7 +676,8 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      padding: 60px 0 30px;
+      /* padding: 60px 0 30px; */
+      padding: 0px 0 30px;
       /* padding: 87px 0 47px; */
       /* padding: 0px; */
     }
@@ -694,6 +695,7 @@
 
     .hero-sub-title{
       font-size: 24px;
+      margin-bottom: 20px;
     }
     .hero-sub-title span{
       display: block;
@@ -756,12 +758,13 @@
 
     .hero-stats-text {
       /* font-family: 'Cormorant Garamond', serif; */
-      font-size: 1rem;
+      font-size: 14px;
       /* color: var(--gold-light); */
       color: #fff;
       letter-spacing: 1px;
       text-align: center;
       text-wrap-mode: nowrap;
+      margin-bottom: 10px;
     }
 
     .hero-stats-text strong {
@@ -824,7 +827,7 @@
     .hero-cta-row {
       display: flex;
       gap: 16px;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       align-items: center;
       margin-bottom: 20px;
       justify-content: center;
@@ -835,9 +838,9 @@
       background: var(--gold);
       color: var(--navy);
       /* /* font-family: 'Cinzel', serif; */ */
-      font-size: 0.82rem;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
       padding: 14px 28px;
       border: none;
       border-radius: 6px;
@@ -861,7 +864,7 @@
       background-color: #fff;
       color: #000;
       /* font-family: 'Cinzel', serif;  */
-      font-size: 0.82rem;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 1.5px;
       padding: 13px 28px;
@@ -1861,22 +1864,29 @@ font-size: 14px;
     }
 
     /* Hero Section */
-    .hero-section {
-      /* background: url('./images/banners/Background.png'); */
+    /* .hero-section {
+      /* background: url('./images/banners/Background.png'); *
       background: url('./images/banners/Background.jpeg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
       overflow: hidden;
-    }
+    } */
+
     
     /* ===== HERO SECTION ===== */
-    /* .hero-section {
-      background: linear-gradient(135deg, var(--navy) 0%, #0D1524 50%, #0A1020 100%);
+    .hero-section {
+      /* background: linear-gradient(135deg, var(--navy) 0%, #0D1524 50%, #0A1020 100%); */
+      background: url('./images/banners/Background.jpeg');
+       background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top center;
       position: relative;
       overflow: hidden;
-      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+      padding: 0px 0 60px;
     }
     .hero-section::before {
       content: '';
@@ -1884,7 +1894,8 @@ font-size: 14px;
       inset: 0;
       background: radial-gradient(ellipse 80% 60% at 30% 40%, rgba(201,168,76,0.08) 0%, transparent 70%);
       pointer-events: none;
-    } */
+    }
+    .hero-content{}
     .hero-mandala-bg {
       position: absolute;
       right: -80px;
@@ -2046,10 +2057,10 @@ font-size: 14px;
       background: var(--gold);
       color: var(--navy);
       /* font-family: 'Cinzel', serif; */
-      font-size: 0.82rem;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 1.5px;
-      padding: 14px 28px;
+      padding: 14px 6px;
       border-radius: 6px;
       display: inline-flex;
       align-items: center;
@@ -2064,10 +2075,10 @@ font-size: 14px;
       /* font-family: 'Cinzel', serif; */
       background-color: #fff;
       color: #000;
-      font-size: 0.82rem;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 1.5px;
-      padding: 13px 28px;
+      padding: 13px 6px;
       border: 2px solid var(--gold);
       border-radius: 6px;
       display: inline-flex;
@@ -2259,8 +2270,8 @@ font-size: 14px;
       top:20%;
       height:60%;
       width:2px;
-      /* background:#d6c3a0; */
       background: #855617;
+      /* background:#d6c3a0; */
     }
 
     .stat-box img{
@@ -2296,13 +2307,23 @@ font-size: 14px;
 
     @media(max-width:1200px){
       .stats-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,2fr);
       }
 
       .stat-box:nth-child(2)::after,
       .stat-box:nth-child(4)::after{
         display:none;
       }
+      /* .stat-box:not(:nth-child(3))::after{
+content: "";
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 2px;
+    /* background: #d6c3a0; *
+    background: #855617;
+      } */
     }
 
     @media(max-width:768px){
@@ -2325,6 +2346,7 @@ font-size: 14px;
 
       .stat-box{
         border-bottom:1.4px solid #855617;
+        justify-content: space-between;
       }
 
       .stat-box:last-child{
@@ -2339,14 +2361,46 @@ font-size: 14px;
       .hero-image-panel p{
 
       }
+      .stat-box .icon {
+        width: 30%;
+      }
+      .stat-box .text{
+        width: 70%;
+      }
+      
     }
 
      @media (min-width:991.99px){
       .hero-image-panel p{
-      display: none;
+      /* display: none; */
       }
  }
 
+
+ @media   (min-width:1000px) and (max-width:1400px){
+    .text h2{
+        font-size: 12px !important ;
+    }
+    .stat-box img{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .hero-cta-row{
+        margin-bottom: 10px !important;
+    }
+    .serving-text{
+        font-size: 12px !important;
+    }
+    .gold-divider{
+      margin:10px 0 !important ;
+    }
+    .hero-left{
+      padding-top: 0 !important;
+    }
+    .service-icons-grid{
+      margin: 6px 0 !important;
+    }
+  }
   </style>
 </head>
 <body>
@@ -2465,10 +2519,11 @@ font-size: 14px;
     <line x1="160" y1="60" x2="340" y2="440" stroke="white" stroke-width="0.3"/>
     <line x1="340" y1="60" x2="160" y2="440" stroke="white" stroke-width="0.3"/>
   </svg>
+  
   <div class="container hero-content">
-    <div class="row ">
+    <div class="row align-items-center">
       <div class="col-lg-6 hero-left">
-        <div class="hero-sub-title mb-5 text-center">
+        <div class="hero-sub-title text-center">
           <span class="guidance-line1">Vvs has No Cast, Creed, Status or Country.</span>
           <span class="guidance-line1">It is for One and All.</span>
         </div>
@@ -2478,7 +2533,7 @@ font-size: 14px;
           <span class="guidance-line">WITH VISHWAKARMA VASTU GUIDANCE</span>
         </div>
         <div class="gold-divider"><span class="mandala-icon">❋</span></div>
-        <p class="hero-stats-text mb-4"><strong>40+</strong> Years of Practical Experience <span class="sep">|</span> Trusted Worldwide</p>
+        <p class="hero-stats-text "><strong>40+</strong> Years of Practical Experience <span class="sep">|</span> Trusted Worldwide</p>
         <div class="service-icons-grid">
           <div class="service-icon-item"> <img src="./images/logo/icons/Residential-Vastu.png" alt=""> <span>RESIDENTIAL<br>VASTU</span></div>
           <div class="service-icon-item"><img src="./images/logo/icons/Commercial-Vastu.png" alt=""><span>COMMERCIAL<br>VASTU</span></div>
@@ -2619,18 +2674,18 @@ font-size: 14px;
   
         <!-- Item 1 -->
         <div class="stat-box ">
-          <div class="icon">
+          <div class="icon ">
             <!-- <i class="fa-solid fa-award"></i> -->
              <img src="./images/Strip-Icons/40+years.png" alt="">
           </div>
-          <div class="text ">
+          <div class="text  ">
             <h2>40+ Real Time</h2>
             <p>Practical Experience</p>
           </div>
         </div>
         <!-- Item 5 -->
         <div class="stat-box ">
-          <div class="icon">
+          <div class="icon ">
             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
              <img src="./images/Strip-Icons/No-demolition.png" alt="">
           </div>
@@ -2644,7 +2699,7 @@ font-size: 14px;
   
          <!-- Item 4 -->
         <div class="stat-box ">
-          <div class="icon">
+          <div class="icon ">
             <!-- <i class="fa-solid fa-shield-halved"></i> -->
              <img src="./images/Strip-Icons/100.png" alt="">
           </div>
@@ -2656,7 +2711,7 @@ font-size: 14px;
 
         <!-- Item 2 -->
         <div class="stat-box ">
-          <div class="icon">
+          <div class="icon ">
             <!-- <i class="fa-solid fa-users"></i> -->
              <img src="./images/Strip-Icons/Thousands.png" alt="">
           </div>
@@ -2668,7 +2723,7 @@ font-size: 14px;
   
         <!-- Item 3 -->
         <div class="stat-box  global">
-          <div class="icon">
+          <div class="icon ">
             <!-- <i class="fa-solid fa-globe"></i> -->
              <img src="./images/Strip-Icons/Global-clients.png" alt="">
           </div>
@@ -2677,11 +2732,6 @@ font-size: 14px;
             <p>Across Countries</p>
           </div>
         </div>
-  
-       
-  
-        
-  
       </div>
       <!-- end -->
   <!-- <div class="stats-bar">

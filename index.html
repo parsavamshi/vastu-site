@@ -1031,6 +1031,7 @@
       .hero-title.right{
         display: block;
       } 
+      
     }
 
     @media (max-width: 767.98px) {
@@ -1050,7 +1051,7 @@
     @media (max-width: 575.98px) {
       .compass-logo { width: 50px; height: 50px; }
       .hero-section { min-height: auto; }
-      .hero-content { padding: 30px 0 20px; }
+      .hero-content { padding: 6px 0 20px; }
     }
 
     /* Animations */
@@ -2145,7 +2146,18 @@ font-size: 14px;
        font-weight: 700; 
        text-transform: uppercase;
       }
+@media (min-width:566px) and (max-width:767px){
+  .stats-wrapper{
 
+    margin-top: -100px !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .stats-wrapper{
+    margin-top: -100px !important;
+  }
+}
 
     @media (max-width: 991.98px) {
       .hero-image-panel p{
@@ -2159,8 +2171,21 @@ font-size: 14px;
   font-weight: 700;
 }
 .hero-image-panel .transform-small{
-  margin: 0;
-  margin-top: -78px;
+  margin: 10px 0 0 0;
+  /* margin-top: px; */
+  /* margin-top: -78px; */
+}
+.topheading{
+  margin-top: -72px;
+
+}
+.topheading .topheading-guidance-line1, .topheading-guidance-line2{
+  font-size: 8px !important;
+  margin-bottom: 0;
+
+}
+.hero-section::before{
+  height: 500px;
 }
 .hero-image-panel .homt-text{
   font-size: 36px;
@@ -2200,14 +2225,20 @@ font-size: 14px;
   font-size: 11px;
 }
 .hero-content{
-  /* padding: 0 ; */
+  padding: 0 ;
+  margin-top: 10px;
 }
 
-      .hero-image-panel { margin-top: 0px; min-height: 200px; }
+
+      .hero-image-panel { margin-top: 0px; min-height: 250px; }
       .stats-bar .stat-item { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
       .navbar-custom .nav-menu { display: none; }
     }
     @media (max-width: 767.98px) {
+
+      .hero-section{
+        /* height: 100vh; */
+      }
       .text p{
   font-size: 11px;
 }
@@ -2215,6 +2246,13 @@ font-size: 14px;
         margin-top: -82px;
         position: relative;
         z-index: 3;
+      }
+      .stat-box{
+        padding: 8px !important;
+      }
+      .stat-box img{
+        width: 30px !important;
+        height: 30px !important;
       }
       .brand-text h1 { font-size: 1rem; }
       .brand-text .vastu-line { font-size: 1.2rem; }
@@ -2341,9 +2379,9 @@ content: "";
       .stats-bar1{
         position: relative;
       }
-      .stats-wrapper{
+      /* .stats-wrapper{
         margin-top: -82px !important;
-      }
+      } */
       .stat-box{
         width: 100%;
       }
@@ -2375,6 +2413,13 @@ content: "";
         width: 70%;
       }
       
+    }
+
+    @media (min-width:568px) and (max-width:900px) {
+      .hero-image-panel{
+                margin-top: 0px;
+        min-height: 274px;
+      }
     }
 
      @media (min-width:991.99px){
@@ -2595,10 +2640,10 @@ content: "";
         <p>It is for One and All.</p>
         </div> -->
         <div>
-          <!-- <div class="hero-sub-title text-center">
-          <span class="guidance-line1">Vvs has No Cast, Creed, Status or Country.</span>
-          <span class="guidance-line1">It is for One and All.</span>
-        </div> -->
+          <div class="topheading text-center">
+          <p class="topheading-guidance-line1">Vvs has No Cast, Creed, Status or Country.</p>
+          <p class="topheading-guidance-line2">It is for One and All.</p>
+        </div>
 
           <p class="transform-small"><small>TRANSFORM YOUR</small></p>
             <p class="homt-text">HOME, </p>

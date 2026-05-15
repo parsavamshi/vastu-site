@@ -1461,6 +1461,139 @@ margin: 10px;
     text-wrap-mode: nowrap;
 }
 }
+
+
+/* ================================================
+   FIX: Mobile Responsive Horizontal Scroll & Right Space
+   ================================================ */
+
+/* Prevent horizontal overflow on all containers */
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+    position: relative;
+}
+
+/* Force all sections to stay within viewport */
+.container,
+.container-fluid,
+.ast_footer_wrapper,
+.ast_slider_wrapper,
+section,
+footer,
+header,
+.hero-bg,
+.pain-section,
+.bridge,
+.good-news,
+.schedule-bg,
+.course-highlights,
+.who-can-join,
+.special-benefits,
+#register,
+.ads {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+/* Remove any negative margins that might cause overflow */
+.row,
+[class*="row"] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Ensure images don't exceed container width */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Fix for stats wrapper on mobile */
+.stats-wrapper {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for stats container on mobile */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .stat-box {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* Fix for grid layouts that might cause overflow */
+@media (max-width: 991px) {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .col-12,
+    .col-md-6,
+    .col-lg-4,
+    [class*="col-"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* Fix for any fixed positioned elements causing overflow */
+.social-fixed,
+.whatsapp-float {
+    z-index: 999;
+}
+
+/* Ensure all padding doesn't cause overflow */
+* {
+    box-sizing: border-box;
+}
+
+/* Fix for mobile sidebar */
+.mobile-menu-sidebar {
+    max-width: 85vw !important;
+    overflow-y: auto !important;
+}
+
+/* Fix for hero banner text on mobile */
+@media (max-width: 767px) {
+    .ast_banner_text {
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+    }
+    
+    .ast_bannertext_wrapper h1 {
+        font-size: 28px !important;
+    }
+}
+
+/* Remove any hidden overflow from elements */
+.ast_header_bottom,
+.ast_menu,
+.ast_menu ul {
+    overflow-x: visible !important;
+}
+
+/* Fix for footer and other wrappers */
+.ast_footer_wrapper {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Ensure the main content doesn't cause scroll */
+.main-content,
+#main-content {
+    overflow-x: hidden !important;
+}
 </style>
 </head>
 <body>

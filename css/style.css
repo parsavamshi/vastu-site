@@ -6285,7 +6285,7 @@ margin-bottom: 0 !important;
     box-shadow: aliceblue;
     /* box-shadow: 8px 11px 10px gray; */
     /* box-shadow: 0px 20px 18px gray;; */
-    box-shadow: -4px 0px 18px 0px #808080c4;
+    /* box-shadow: -4px 0px 18px 0px #808080c4; */
     margin: 10px 0;
     border-radius: 22px;
   }
@@ -7098,7 +7098,7 @@ box-shadow: 5px 7px 20px 7px rgba(201, 149, 42, 0.12);
     margin-bottom: 20px !important;
 }
 .good-news-tag2 , .good-news-tag{
-font-size: 11px;
+font-size: 14px;
 font-weight: 500;
 letter-spacing: normal;
 padding: 6px 10px;

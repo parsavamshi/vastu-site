@@ -6152,7 +6152,7 @@ text-decoration: underline;
   /* ── PAIN SECTION ── */
   .pain-section {
     background: #f7f0e2;
-    padding: 90px 5% 30px;
+    padding: 40px 5% 10px;
     /* padding: 90px 5% 80px; */
     position: relative; 
   }
@@ -6265,7 +6265,7 @@ margin-bottom: 0 !important;
     margin-bottom: 56px;
 }
   .pain-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 60px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 0px;
   }
   .pain-card {
     background: #fff; border: 1px solid rgba(139,26,26,0.12);
@@ -6295,6 +6295,10 @@ margin-bottom: 0 !important;
     width: 22% !important;
   }
  
+  .ads .row .col-md-5 img{
+    max-width: 90% !important;
+}
+
   .wrapper {
     width: 80%;
     /* max-width: 780px; */
@@ -6463,7 +6467,8 @@ margin-bottom: 0 !important;
   .bridge {
     /* background: var(--dark); */
     background-color: #f7f0e2;
-    padding: 30px 5% 70px;
+    /* padding: 30px 5% 70px; */
+    padding: 30px 5% 10px;
     /* padding: 70px 5%; */
     position: relative; overflow: hidden;
   }
@@ -7144,6 +7149,7 @@ padding: 6px 10px;
 #register img{
     width: 50% !important;
 }
+
 .course-highlights ul li{
     font-size: 13px;
 } 

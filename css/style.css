@@ -3839,6 +3839,19 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.ast_gettouch ul li p{
+    font-size: 14px !important;
+}
+.ast_footer_wrapper .ast_gettouch li {
+    justify-content: start;
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+  }
+  .ast_footer_wrapper .ast_gettouch ul li p{
+    font-size: 14px !important;
+  }
+  
 }
 @media (max-width: 1200px) {
 	.ast_team_box h4 {
@@ -4272,6 +4285,22 @@ input:focus, textarea:focus, select:focus, button:focus {
     text-align: center;
     padding-top: 0;
 }
+
+    .ast_footer_wrapper .widget, .ast_footer_info, .ast_copyright_wrapper {
+        text-align: center;
+    }
+    .ast_servicelink ul li a{
+        font-size: 14px;
+    }
+    .ast_sociallink ul li a{
+        font-size: 14px;
+    }
+    .ast_footer_wrapper .ast_gettouch li {
+        justify-content: start;
+        font-size: 14px;
+        display: flex;
+        text-align: left;
+    }
 
 }
 @media (min-width: 568px) and (max-width: 767px) {
@@ -6288,7 +6317,7 @@ color: var(--red);
     box-shadow: aliceblue;
     /* box-shadow: 8px 11px 10px gray; */
     /* box-shadow: 0px 20px 18px gray;; */
-    box-shadow: -4px 0px 18px 0px #808080c4;
+    /* box-shadow: -4px 0px 18px 0px #808080c4; */
     margin: 10px 0;
     border-radius: 22px;
   }

@@ -1350,6 +1350,155 @@ font-size: 14px;
 
 
 </style>
+
+  <style>
+        .lightbox_img_wrap img{
+            max-width: 100%;
+        }
+        .lightboxpreview {
+   transition: all .3s linear;
+padding-top:60%;
+  cursor:pointer;
+  background-size:cover;
+}
+   
+.lightbox-content {
+max-height:75svh;
+  height:75svh;
+}
+.ast_vastu_info img{
+  margin-top:0 !important ;
+  border-radius:3px;
+}
+.lightbox-close { 
+  cursor:pointer;
+    margin-left: auto;
+  position:absolute;
+  right:-30px;
+  top:-30px;
+  color:white;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;}
+
+.modalscale {transform:scale(0);
+opacity:0;}
+
+
+
+.lightbox-container, .lightbox-btn, .lightbox-image-wrapper, .lightbox-enabled{transition:all .4s ease-in-out;}
+.lightbox_img_wrap {padding-top:70%;
+  position:relative;
+  overflow:hidden;
+}
+.lightbox-enabled:hover {
+  transform:scale(1.1)
+}
+.lightbox-enabled {width:100%;
+height:100%;
+  position:absolute;
+  top:0;
+object-fit:cover;
+cursor:pointer;}
+
+.lightbox-container {width:100svw;
+height:100svh;
+position:fixed;
+top:0;
+left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+background-color:rgba(0,0,0,.6);
+z-index:9999;
+opacity:0;
+pointer-events:none;
+}
+
+.lightbox-container.active {
+  opacity:1;
+  pointer-events:all;
+}
+.lightbox-image-wrapper {
+  display:flex;
+  transform:scale(0);
+  align-items:center;
+  justify-content:center;
+  max-width:90vw;
+  max-height:90vh;
+  position:relative;
+}
+.lightbox-container.active .lightbox-image-wrapper {transform:scale(1);}
+.lightbox-btn, #close {
+  color:white;
+  z-index:9999999;
+ cursor:pointer; 
+  position:absolute;
+  font-size:50px;
+}
+
+.left {left:50px;}
+.right {right:50px;}
+#close {top:50px;
+right:50px;}
+
+.lightbox-image {
+  width:100%;
+  max-height:95vh;
+  object-fit:cover;
+  max-width: 100% !important;
+ }
+
+@keyframes slideleft {
+  33% {transform:translateX(-300px);
+  opacity:0;
+  }
+  66% {transform:translateX(300px);
+  opacity:0;
+  }
+}
+
+
+.slideleft {
+   animation-name: slideleft;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+@keyframes slideright {
+  33% {transform:translateX(300px);
+  opacity:0;}
+  66% {transform:translateX(-300px);
+  opacity:0;}
+}
+
+
+.slideright{
+   animation-name: slideright;
+ animation-duration: .5s; 
+ animation-timing-function: ease; 
+}
+	
+
+	@media (max-width:991px) {
+	.ast_menu_btn{
+		top: 20px !important; 
+		right: 15px !important;
+		left:unset !important;
+	}
+  .left{
+    left: 10px;
+  }
+  .right{
+    right: 10px;
+  }
+  .lightbox-btn, #close{
+    font-size: 25px;
+  }
+  .lightbox-image{
+    max-width: 100% !important;
+  }
+}
+    </style>
 </head>
 <body>
 
@@ -1366,10 +1515,10 @@ font-size: 14px;
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar-custom">
   <div class="container px-3 px-lg-4">
-    <div class="d-flex align-items-center justify-content-between w-100">
+    <div class="d-flex align-items-end justify-content-between w-100">
       <!-- Brand -->
       <div class="navbar-brand-wrap">
-        <img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo">
+        <a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo"></a>
       </div>
 
       <!-- Desktop Navigation -->
@@ -1378,7 +1527,7 @@ font-size: 14px;
           <a href="tel:919848045677"><i class="fas fa-phone me-1" style="color: #c9a84c;"></i> +91 98480 45677</a>
           <span class="separator">|</span>
           <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp me-1" style="color:#c9a84c; font-size: 18px;"></i> WhatsApp</a>
-          <a href="./contact.html" class="btn-book-nav"><i class="far fa-calendar-alt"></i> BOOK CONSULTATION</a>
+          <a href="./contact.html" class="btn-book-nav"><i class="far fa-calendar-alt"></i> BOOK APPOINTMENT</a>
         </div>
         <ul class="nav-menu">
           <li><a href="index.html">home</a></li>
@@ -1402,6 +1551,7 @@ font-size: 14px;
           </li>
           <li><a href="vvs-onlin-class.html">Vvs online classes</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="blog.html">blog</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
@@ -1443,6 +1593,8 @@ font-size: 14px;
     </li>
     <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true">Vvs online classes</a></li>
     <li><a href="gallery.html" class="mobile-nav-link" data-link="true">Gallery</a></li>
+    <li><a href="testimonials.html" class="mobile-nav-link" data-link="true">Testimonials</a></li>
+    
     <li><a href="blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
     <li><a href="contact.html" class="mobile-nav-link" data-link="true">contact</a></li>
   </ul>
@@ -1541,6 +1693,104 @@ font-size: 14px;
 					<h3>Temple Vastu</h3>
 					<p>Temple Vastu is the application of <strong>Vishwakarma Vastu Shastra</strong> principles to the design and construction of temples and sacred spaces. It focuses on creating a spiritually powerful environment by aligning the structure with natural energies, cosmic forces and divine vibrations.</p>
 					<p>In simple terms, Temple Vastu ensures that a temple is built in a way that enhances spiritual energy, devotion and positive vibrations for devotees.</p>
+
+          <!-- gallery starts -->
+
+    <section class="gallery ">
+  <div class="p-0 container">
+    <div class="row g-3" style="padding:  0;"> 
+        <!-- <h3 class="text-center">Gallery</h3> -->
+      
+     <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/19.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/20.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/21.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/22.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/23.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/24.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/25.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/26.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/27.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/28.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/29.jpg">
+        </div>  
+      </div>
+	  <div class="col-md-2">
+        <div class="lightbox_img_wrap">
+          <img class="lightbox-enabled" src="./images/gallery/30.jpg">
+        </div>  
+      </div>
+	  
+	  
+
+
+    </div>  
+  </div>
+</section>
+
+<section class="lightbox-container">
+  <span class="material-symbols-outlined material-icons lightbox-btn left" id="left">
+    <!-- arrow_back -->
+     <
+  </span>
+
+  <span class="material-symbols-outlined material-icons lightbox-btn right" id="right">
+    <!-- arrow_forward -->
+     >
+  </span>
+
+  <span id="close" class="close material-icons material-symbols-outlined">
+    <!-- close -->
+     X
+  </span>
+
+  <div class="lightbox-image-wrapper">
+    <img alt="lightbox image" class="lightbox-image">
+  </div>
+</section>
+<!-- gallery end -->
+
 					<!-- <div class="row align-items-center">
 						
 						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -2010,5 +2260,9 @@ if (statsBar) statsObserver.observe(statsBar);
   })();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<!--  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

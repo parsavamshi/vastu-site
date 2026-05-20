@@ -5368,14 +5368,17 @@ li.ast_search , li.ast_cart{
 	margin:0;
 	width:100%;
 	float:left;
-	margin-top:40px;
+	/* margin-top:40px; */
+	margin-top:0px;
 	padding-left:30px;
 }
 .ast_vastu_info ul li{
-	font-size:16px;
+	font-size:22px;
+	/* font-size:16px; */
 	padding-bottom:10px;
 	list-style:none;
 	position:relative;
+    font-weight: 600;
 }
 .ast_vastu_info ul li:after{
 	position: absolute;
@@ -6297,7 +6300,7 @@ color: var(--red);
     margin-bottom: 56px;
 }
   .pain-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 60px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 0px;
   }
   .pain-card {
     background: #fff; border: 1px solid rgba(139,26,26,0.12);
@@ -6526,6 +6529,11 @@ color: var(--red);
     /* color: rgba(232,196,106,0.6); */
     color: #000;
      line-height: 1.9; margin-bottom: 28px;
+     font-weight: 600;
+  }
+  .phone-call-inner h3{
+    font-weight: bold;
+    
   }
   .bridge-body strong { 
     /* color: var(--gold-light); */

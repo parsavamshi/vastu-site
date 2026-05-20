@@ -5373,8 +5373,8 @@ li.ast_search , li.ast_cart{
 	padding-left:30px;
 }
 .ast_vastu_info ul li{
-	font-size:22px;
-	/* font-size:16px; */
+	/* font-size:22px; */
+	font-size:16px;
 	padding-bottom:10px;
 	list-style:none;
 	position:relative;
@@ -6209,7 +6209,7 @@ text-decoration: underline;
     font-family: 'Cinzel'; font-size: clamp(26px, 3.5vw, 46px); font-weight: 900;
     text-align: center; color: var(--dark); line-height: 1.2;
 
-    font-size: clamp(26px, 3.5vw, 2.4rem);
+    font-size: clamp(26px, 3.5vw, 1.8rem);
     font-weight: 900;
     /* color: var(--gold); */
     letter-spacing: 1px;
@@ -6260,7 +6260,7 @@ color: var(--red);
     font-family: 'Cinzel', serif;
     /* font-family: 'Playfair Display', serif; */
     /* font-size: clamp(26px, 3.5vw, 40px); */
-    /* font-weight: 900; */
+    font-weight: 900;
     /* text-align: center; */
     /* color: var(--dark); */
     /* line-height: 1.2;
@@ -6498,7 +6498,7 @@ color: var(--red);
   .bridge {
     /* background: var(--dark); */
     background-color: #f7f0e2;
-    padding: 30px 5% 70px;
+    padding: 30px 5% 30px;
     /* padding: 70px 5%; */
     position: relative; overflow: hidden;
   }
@@ -6515,11 +6515,11 @@ color: var(--red);
      position: relative;
       z-index: 1; }
   .bridge-question {
-    font-family: 'Cinzel'; font-size: clamp(20px, 3vw, 44px);
+    font-family: 'Cinzel'; font-size: clamp(20px, 1.8vw, 44px);
     /* font-style: italic;  */
     /* color: var(--gold-pale); */
     color: #000;
-     line-height: normal; 
+     line-height: 01; 
      margin-bottom: 32px;
      font-weight: 700;
   }
@@ -6530,6 +6530,9 @@ color: var(--red);
     color: #000;
      line-height: 1.9; margin-bottom: 28px;
      font-weight: 600;
+     max-width: 900px;
+     margin: auto;
+     margin-bottom: 20px;
   }
   .phone-call-inner h3{
     font-weight: bold;
@@ -6608,7 +6611,7 @@ color: var(--red);
     border-radius: 26px;
   }
   .good-news-heading, .good-news-heading2 {
-    font-family: 'Cinzel'; font-size: clamp(24px, 3.5vw, 40px);
+    font-family: 'Cinzel'; font-size:clamp(26px, 1.8vw, 1.8rem);;
     font-weight: 700; color: var(--dark); line-height:normal; margin-bottom: 0;
     text-wrap-mode: nowrap;
     text-align: center;

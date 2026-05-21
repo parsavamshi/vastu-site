@@ -1375,11 +1375,25 @@ font-size: 14px;
       .stat-box:last-child{
         border-bottom:none;
       }
+      .loader {
+      position: fixed;
+      top: 0;
+      left: -20px;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999999999;
+    }
     }
     .ast_vastu_info ul li{
       font-weight: normal !important;
       font-size: 16px !important;
     }
+
+    
   </style>
 </head>
 <body>
@@ -1387,9 +1401,9 @@ font-size: 14px;
 	<div class="loader" id="siteLoader">
   <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
 </div>
-<div class="loader2" id="siteLoader2">
+<!-- <div class="loader2" id="siteLoader2">
   <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
-</div>
+</div> -->
 
 <!-- Header Start -->
 <!-- ===== NAVBAR ===== -->

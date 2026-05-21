@@ -141,6 +141,7 @@ body {
 
 .loader-gif {
   width: 100%;
+	max-width:100%;
 }
 .loader-gif2 , .loader2 {
 display: none;

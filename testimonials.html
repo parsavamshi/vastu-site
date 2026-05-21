@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+ <link rel="import" href="./fonts/TheNautigal-Regular.ttf">
 
  <style>
     :root {
@@ -38,6 +39,10 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    @font-face {
+  font-family: TheNautigal;
+  src: url(../fonts/TheNautigal-Regular.ttf);
+}
     body {
       /* font-family: 'Lato', sans-serif; */
       font-family: 'Open Sans', sans-serif;
@@ -462,7 +467,7 @@ font-size: 14px;
       padding: 10px 0;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100001;
     }
 
     .navbar-brand-wrap {
@@ -1242,13 +1247,16 @@ font-size: 14px;
 
 <style>
   .contact-hero {
-    background:
+    /* background:
       linear-gradient(rgba(37, 7, 7, 0.7), rgba(37, 7, 7, 0.7)),
-      url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg");
+      url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg"); */
+      background:
+      /* linear-gradient(rgba(37, 7, 7, 0.7), rgba(37, 7, 7, 0.7)), */
+      url("./images/Testimonials-banner-New.jpg"); 
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 110px 0 90px;
+    padding: 150px 0 150px;
     text-align: center;
   }
 
@@ -1663,7 +1671,222 @@ font-size: 14px;
             .location-preview span {
                 max-width: 140px;
             }
+        
         }
+
+        @media (min-width:320px) and (max-width:991px){
+.ast_banner_text .container{
+  display: block !important;
+}
+.ast_bannertext_wrapper{
+  padding-top: 0 !important;
+}
+
+.ast_banner_text{
+  float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* padding: 250px 0px; */
+    /* padding: 190px 0px; */
+    position: unset !important;
+    /* top: 50%; */
+    /* left: 44%; */
+     transform: unset !important;
+     padding-top: 0 !important;
+     padding-bottom: 0 !important;
+}
+.ast_bannertext_wrapper.entry-visible img{
+/* max-width:100%; */
+max-width: 180px !important;
+}
+.ast_bannertext_wrapper.entry-visible h2{
+  font-family: TheNautigal;
+  font-size: 40px;
+  color: #e8a744;
+  margin: 0;
+}
+.ast_bannertext_wrapper h1{
+  font-size: 24px;
+  margin-top: 0;
+  font-family:'Times New Roman', Times, serif;
+  margin: 0 0 10px 0;
+}
+.ast_bannertext_wrapper p{
+  font-size: 9px ;
+  padding: 4px;
+  text-transform: normal !important;
+  border-radius: 50px;
+  border: 2px solid #e8a744;
+  font-family:math;
+}
+
+.ast_slider_wrapper11.testimonials-banner {
+        position: relative;
+        /* height: 90vh; */
+        height: 206px;
+        background: linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url(../images/Testimonials-banner-mobile.png) center / cover no-repeat;
+        /* background: url(../images/banners/Mobile-Temple.jpeg) center / cover no-repeat; */
+    }
+
+        }
+        @media (min-width:992px){
+          .ast_bannertext_wrapper{
+            display: none;
+          }
+        }
+
+
+        /* Add this CSS to your stylesheet or in a <style> tag at the end of <head> */
+
+/* ===== FIX FOR HORIZONTAL SCROLL ON MOBILE ===== */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure all containers respect viewport width */
+.container,
+.container-fluid,
+.ast_slider_wrapper11,
+.ast_vastu_wrapper,
+.ast_footer_wrapper,
+.ast_banner_text,
+.ast_bannertext_wrapper,
+.row,
+[class*="col-"] {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+/* Fix for specific elements causing overflow */
+/* .ast_banner_text .container {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+/* Force .row to not overflow on mobile */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Override any negative margins causing overflow */
+/* .row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+/* Fix for stats container on mobile */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .stat-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Fix for the stats wrapper */
+  .stats-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    border-radius: 18px;
+  }
+  
+  /* Fix for hero section images */
+  .ast_bannertext_wrapper img {
+    max-width: 100%;
+    /* height: auto; */
+  }
+  
+  /* Fix for the main banner section */
+  .ast_slider_wrapper11.testimonials-banner {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure any flex containers don't cause overflow */
+  /* .d-flex,
+  .align-items-center {
+    flex-wrap: wrap;
+  } */
+  
+  /* Fix for navbar brand */
+  /* .navbar-brand-wrap {
+    flex-wrap: wrap;
+  } */
+  
+  .Logo {
+    max-width: 180px;
+  }
+}
+
+/* Additional fixes for very small screens */
+@media (max-width: 480px) {
+  /* .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  } */
+  
+  .stat-box {
+    padding: 10px 8px;
+  }
+  
+  .stat-box img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .text h2 {
+    font-size: 11px;
+  }
+  
+  .text p {
+    font-size: 10px;
+  }
+}
+
+/* Fix for any element with margin-right negative */
+* {
+  margin-right: 0;
+}
+
+/* Ensure no forced horizontal scroll on any device */
+@media (max-width: 991px) {
+  /* .navbar-custom .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
+  
+  .hero-image-panel {
+    overflow-x: hidden;
+  }
+  
+  .home-photo-of-vishwakarma {
+    max-width: 80% !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+}
+
+/* Fix for the service icons grid on mobile */
+@media (max-width: 768px) {
+  .service-icons-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .service-icon-item {
+    min-width: 70px;
+  }
+}
 </style>
 </head>
 <body>
@@ -1769,12 +1992,63 @@ font-size: 14px;
 </div>
 <!-- Header End --> 
 
-  <section class="contact-hero">
-    <div class="container">
-      <h1 class="" style="color: #fff;">Testimonials</h1>
-      <!-- <p>Book your consultation and receive practical Vastu guidance for home, business and life.</p> -->
-    </div>
-  </section>
+<!--Slider Start-->
+<div class="ast_slider_wrapper11 testimonials-banner  style_2 ast_index_vastu">
+	<div class="ast_banner_text">
+		<!-- <div class="starfield">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+		<div class="ast_waves">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div>
+		<div class="ast_waves2">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div>
+		<div class="ast_waves3">
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+			<div class="ast_wave"></div>
+		</div> -->
+		<div class="container">
+			<div class="ast_bannertext_wrapper">
+
+        <div class="row align-items-center">
+           <div class="col-mb-6 col-6">
+              <img src="./images/testimonals-img.png" alt="">
+          </div>
+          <div class="col-mb-6 col-6">
+            <h2>Client</h1> 
+            <h1>Testimonials</h1> 
+            <p class="ast_bottompadder10 ast_toppadder10">Thousands of Happy Clients. Transforming Homes & Business with Vishwakarma Vastu</p>
+          </div>
+         
+        </div>
+				
+				<!-- <h1 class="animate-entry"> <span style="font-size: 26px;">Vastuyogi</span> <br> <span class="heading" style="font-size: 34px; " >DR. K.L VISHWAKARMA </span><br> <span class="" style="font-size: 26px;">Full Time consultant since 1985 (40+ years) </span></h1> -->
+				 <!-- <img src="./images/Name-Strip.png" alt="" class="name-strip"> -->
+				<!-- <h1>Dr. K.L Vishwakarma</h1>
+				<h1>Full Time consultant since 1985 (40+ years)</h1> -->
+				<!-- <p class="ast_bottompadder10 ast_toppadder10">SCIENCE HAS NO CASTE & CREED </p> -->
+
+
+				<!-- <div class = "container">
+  <h1 class="text-anime">Hi, my name is</h1>
+  <h1 class="text-anime">Jasmine.</h1>
+</div> -->
+
+			
+			</div>
+		</div>
+	</div>
+</div>
+<!--Slider End-->
 
 <!--Vastu Start-->
 <div class="ast_vastu_wrapper ast_toppadder70 ast_bottompadder70">
@@ -1789,7 +2063,7 @@ font-size: 14px;
 					<!-- <h3>Vastu tips and solutions for successful anything</h3>
 					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
 					<p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
-					<div class="row ">
+					<div class="row  align-items-center">
 						<div class="col-lg-6 col-md-12 col-sm-12 col-12 text-center fade-right">
 							<!-- <img src="./images/lord-vishwakarma.jpeg" alt="vishwakarma-vastu-image" class="lord-vishwakarma"> -->
                              <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=JiPREJxPgj8vIqy3&amp;list=PLIT8bEduIx0JARNo3hlgBcEAXTQARqzos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -1808,7 +2082,7 @@ font-size: 14px;
 						</ul> -->
 						<!-- <p>Who is Vishwakarma?</p> -->
                             <p>Over the years, clients from residential, commercial, and industrial sectors across India and overseas have shared their experiences after benefiting from our Vastu consultations and spiritual healing guidance. These testimonials reflect journeys of improved positivity, peace, harmony, confidence, better work environments, and overall well-being. From homes and apartments to offices, factories, commercial establishments, and large projects, many clients have experienced meaningful transformations through practical guidance rooted in traditional Vishwakarma Vastu Sciences. We sincerely thank all our clients in India and abroad for their trust, faith, and continued support toward KL Vishwakarma.</p>
-                            <a href="./https://www.youtube.com/playlist?list=PLIT8bEduIx0JARNo3hlgBcEAXTQARqzos" class="read-more-btn" style=" ">Read more</a>
+                            <a href="https://www.youtube.com/playlist?list=PLIT8bEduIx0JARNo3hlgBcEAXTQARqzos" class="read-more-btn" style=" ">Read more</a>
 
 						</div>
                         <!-- <div class="col-12">
@@ -1824,6 +2098,10 @@ font-size: 14px;
 		</div>
 	</div>
 </div>
+
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div id="reviews" class="elfsight-app-68748137-7881-466c-bcc9-326b5b481e13" data-elfsight-app-lazy></div>
 
 <!-- <-- Footer wrapper start-->
 <div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">

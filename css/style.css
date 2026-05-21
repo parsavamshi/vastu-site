@@ -136,7 +136,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99999;
+  z-index: 9999999;
 }
 
 .loader-gif {
@@ -229,6 +229,10 @@ a:focus {
 @font-face {
   font-family: Agenor-bold;
   src: url(../fonts/Agenor-Bold.ttf);
+}
+@font-face {
+  font-family: TheNautigal;
+  src: url(../fonts/TheNautigal-Regular.ttf);
 }
 .heading-bold{
     font-family: "Agenor-bold";
@@ -5610,6 +5614,15 @@ li.ast_search , li.ast_cart{
     /* height: 400px; */
   background: url('../images/banners/lord-Banner.jpeg') center/cover no-repeat;
 }
+
+.ast_slider_wrapper11.testimonials-banner{
+     position: relative;
+    height: 276px;
+    /* height: 90vh; */
+    /* height: 400px; */
+  background: url('../images/Testimonials-banner-New.jpg') center/cover no-repeat;
+}
+
 .read-more-btn{
 
     color:#25D366;
@@ -6417,6 +6430,7 @@ color: var(--red);
     /* color: var(--text); */
     /* color: #000; */
     font-weight: bold;
+    /* color: #e7a843; */
     /* line-height: 1.8; */
     margin: 0 ;
   }
@@ -6445,32 +6459,33 @@ color: var(--red);
 
   /* ── Color themes ── */
   /* Row 1 – Gold */
-  .option-item:nth-child(1) .label-block  { background: #747474; }
+  .option-item:nth-child(1) .label-block  { background: #00305c; }
+  /* .option-item:nth-child(1) .label-block  { background: #011733; } */
   /* .option-item:nth-child(1) .content-block { background: #3a5080; } */
-  .option-item:nth-child(1) .content-block { background: #747474; }
+  .option-item:nth-child(1) .content-block { background: #00305c; }
 
   /* Row 2 – Blue */
   /* .option-item:nth-child(2) .label-block  { background: #3a5080; }
   .option-item:nth-child(2) .content-block { background: #3a5080; } */
-.option-item:nth-child(2) .label-block  { background: #747474; }
-  .option-item:nth-child(2) .content-block { background: #747474; }
+.option-item:nth-child(2) .label-block  { background: #00305c; }
+  .option-item:nth-child(2) .content-block { background: #00305c; }
   /* Row 3 – Red */
   /* .option-item:nth-child(3) .label-block  { background: #c0392b; }
   .option-item:nth-child(3) .content-block { background: #3a5080; } */
-  .option-item:nth-child(3) .label-block  { background: #747474; }
-  .option-item:nth-child(3) .content-block { background: #747474; }
+  .option-item:nth-child(3) .label-block  { background: #00305c; }
+  .option-item:nth-child(3) .content-block { background: #00305c; }
 
   /* Row 4 – Purple */
   /* .option-item:nth-child(4) .label-block  { background: #6b4fa0; }
   .option-item:nth-child(4) .content-block { background: #3a5080; } */
-  .option-item:nth-child(4) .label-block  { background: #747474; }
-  .option-item:nth-child(4) .content-block { background: #747474; }
+  .option-item:nth-child(4) .label-block  { background: #00305c; }
+  .option-item:nth-child(4) .content-block { background: #00305c; }
 
   /* Row 5 – Purple */
   /* .option-item:nth-child(5) .label-block  { background: #22a85a; }
   .option-item:nth-child(5) .content-block { background: #3a5080; } */
-  .option-item:nth-child(5) .label-block  { background: #747474; }
-  .option-item:nth-child(5) .content-block { background: #747474; }
+  .option-item:nth-child(5) .label-block  { background: #00305c; }
+  .option-item:nth-child(5) .content-block { background: #00305c; }
 
   /* ── Responsive ── */
   @media (max-width: 540px) {
@@ -7089,6 +7104,15 @@ box-shadow: 5px 7px 20px 7px rgba(201, 149, 42, 0.12);
 
 }
 
+.ast_slider_wrapper11.testimonials-banner{
+     position: relative;
+    /* height: 90vh; */
+    height: 230px;
+  background:linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 0%)), url('../images/Testimonials-banner-mobile.png') center/cover no-repeat;
+  /* background: url('../images/banners/Mobile-Temple.jpeg') center/cover no-repeat; */
+
+}
+
 .pain-grid{
     margin-bottom: 0 !important;
 }
@@ -7124,6 +7148,8 @@ box-shadow: 5px 7px 20px 7px rgba(201, 149, 42, 0.12);
 }
 .bridge-question{
     font-size: 18px !important;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 .bridge-insight{
     padding: 10px 15px;
@@ -7140,7 +7166,7 @@ box-shadow: 5px 7px 20px 7px rgba(201, 149, 42, 0.12);
     font-weight: 500;
 }
 .good-news-heading, .good-news-heading2{
-    font-size: 22px;
+    font-size: 14px;
     text-wrap-mode: wrap;
 
 }
@@ -7149,7 +7175,7 @@ box-shadow: 5px 7px 20px 7px rgba(201, 149, 42, 0.12);
     margin-bottom: 20px !important;
 }
 .good-news-tag2 , .good-news-tag{
-font-size: 11px;
+font-size: 12px;
 font-weight: 500;
 letter-spacing: normal;
 padding: 6px 10px;
@@ -7357,3 +7383,254 @@ height: 6px;
     color: var(--gold);
     transform: scale(1.2);
 }
+
+
+
+/* rating views */
+/* main card container – exactly reproducing the clean "reviews" segment design */
+    .review-card {
+      /* max-width: 780px;
+      width: 100%; */
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+      overflow: hidden;
+    }
+
+    /* inner content padding, matching typical Tripadvisor / review widget spacing */
+    .review-content {
+      padding: 2rem 2rem 1.8rem 2rem;
+    }
+
+    /* header area: "Reviews" title + rating row */
+    .reviews-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .reviews-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #1e2a3e;
+      margin-bottom: 0.5rem;
+    }
+
+    /* star rating + aggregate info (4.5/5, Tripadvisor style) */
+    .rating-aggregate {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      column-gap: 1rem;
+      row-gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .star-rating-big {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .star-filled {
+      color: #34b7a1;   /* modern teal green similar to positive rating stars */
+      font-size: 1.35rem;
+      margin-right: 1px;
+    }
+
+    .star-half {
+      color: #34b7a1;
+      font-size: 1.35rem;
+      position: relative;
+    }
+
+    .rating-value {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #1e2a3e;
+      margin-left: 6px;
+      letter-spacing: -0.2px;
+    }
+
+    .rating-max {
+      font-weight: 500;
+      color: #5c6f87;
+      font-size: 1rem;
+    }
+
+    .tripadvisor-badge {
+      background: #f3f5f8;
+      padding: 0.2rem 0.7rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #2c3e50;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tripadvisor-badge i {
+      font-size: 0.9rem;
+      color: #00aa6c;
+    }
+
+    /* five star row (represented with empty/filled stars) & review count */
+    .star-breakdown {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 0.75rem 0 0.5rem 0;
+    }
+
+    .star-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f8f9fc;
+      padding: 0.25rem 0.8rem;
+      border-radius: 40px;
+    }
+
+    .star-group span {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .star-group i {
+      color: #ffb347;   /* warm gold for stars inside breakdown */
+      font-size: 0.9rem;
+    }
+
+    .review-count {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #4a627a;
+      background: #f1f5f9;
+      padding: 0.25rem 0.9rem;
+      border-radius: 40px;
+    }
+
+    /* Divider - subtle */
+    .divider-light {
+      margin: 1.5rem 0 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, #e2e8f0, #cbd5e1, #e2e8f0);
+    }
+
+    /* Individual review block (exactly mimicking the text, user, date) */
+    .review-text-block {
+      margin-bottom: 1.5rem;
+    }
+
+    .review-paragraph {
+      font-size: 1rem;
+      line-height: 1.55;
+      color: #1f2a3e;
+      font-weight: 450;
+      background: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    /* reviewer meta (username + date, global ID style) */
+    .reviewer-meta {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2c3e50;
+      margin-top: 0.25rem;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: #0f2b3d;
+      letter-spacing: -0.2px;
+      background: #ecfdf5;
+      padding: 0.2rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+
+    .review-date {
+      color: #657c9a;
+      font-weight: 450;
+      font-size: 0.8rem;
+    }
+
+    /* VIEW ALL REVIEWS button - clean minimal but with subtle hover */
+    .view-all-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      border: 1px solid #cbdde9;
+      padding: 0.7rem 1.6rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #1a4c6e;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      display:flex;
+      margin-left:auto;
+      justify-content:end;
+      width:max-content;
+    }
+
+    .view-all-btn:hover {
+      background: #f8fafd;
+      border-color: #9bb7cc;
+      color: #0b3550;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+    }
+
+    /* badge / extra accommodation for "Hotel car" small element? but keeping faithful */
+    .inline-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #eef2ff;
+      border-radius: 20px;
+      padding: 0.1rem 0.55rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #2c5282;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    /* responsive polish */
+    @media (max-width: 540px) {
+      .review-content {
+        padding: 1.5rem;
+      }
+      .reviews-title {
+        font-size: 1.5rem;
+      }
+      .rating-value {
+        font-size: 1.2rem;
+      }
+      .star-rating-big i {
+        font-size: 1.1rem;
+      }
+      .review-paragraph {
+        font-size: 0.9rem;
+      }
+      .star-group span {
+        font-size: 0.75rem;
+      }
+    }
+
+    /* tiny extra for full 5 stars representation in the aggregate line? we mirror exactly: 4.5/5 with half star, plus additional five star icons */
+    .half-star-wrapper {
+      position: relative;
+      display: inline-block;
+    }

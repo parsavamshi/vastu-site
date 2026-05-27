@@ -1401,7 +1401,7 @@ font-size: 14px;
       font-size: clamp(2.2rem, 5vw, 2.2rem);
       font-weight: 800;
       /* color: var(--gold); */
-      margin: 15px 0;
+      margin: 0 0 15px 0;
       line-height: 1;
       color:#a86d11;
       font-family:'Cinzel', serif !important;
@@ -1442,6 +1442,7 @@ font-size: 14px;
       display:flex;
       gap:20px;
       /* flex-wrap:wrap; */
+      justify-content: center;
     }
 
     .custom-btn{
@@ -1456,7 +1457,8 @@ font-size: 14px;
     }
 
     .btn-register{
-      background:#a86d11;
+      /* background:#a86d11; */
+      background-color: #081f4d;
       color:white;
     }
 
@@ -1472,7 +1474,8 @@ font-size: 14px;
     }
 
     .btn-join:hover{
-      background:#04122d;
+      /* background:#04122d; */
+      background-color: #a86d11;
       color:white;
       transform:translateY(-3px);
     }
@@ -1730,7 +1733,7 @@ font-size: 14px;
       letter-spacing: -0.3px;
       color: #3b2a1f;
       margin-bottom: 1rem;
-      border-left: 4px solid #c6a45c;
+      /* border-left: 4px solid #c6a45c; */
       padding-left: 0.9rem;
       line-height: 1.2;
     }
@@ -1739,12 +1742,12 @@ font-size: 14px;
       color: #3c372c;
       font-size: 1rem;
       line-height: 1.5;
-      margin-bottom: 1.8rem;
+      /* margin-bottom: 1.8rem; */
       flex: 1;
     }
 
     .level-sub button {
-      background: #f0e2ce;
+      /* background: #f0e2ce;
       border: none;
       padding: 0.75rem 1.8rem;
       font-weight: 600;
@@ -1755,7 +1758,22 @@ font-size: 14px;
       transition: 0.2s ease;
       font-family: inherit;
       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-      border: 1px solid #e9dccf;
+      border: 1px solid #e9dccf; */
+
+          background: #f0e2ce;
+    border: none;
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    color: #4a351a;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: inherit;
+    border: 1px solid #e9dccf;
+    /* position: absolute;
+    bottom: 2px;
+    left: 38%; */
     }
 
     .level-sub button:hover {
@@ -2029,7 +2047,7 @@ font-size: 14px;
     .final-message {
       background: #ede9df;
       border-radius: 40px;
-      padding: 0 0 40px;
+      padding: 0 0 0px;
       /* padding: 48px 40px; */
       text-align: center;
       /* margin: 40px 0; */
@@ -2148,7 +2166,7 @@ font-size: 14px;
       font-weight: 700;
       color: #3b2a1f;
       margin-bottom: 1rem;
-      border-left: 4px solid #c6a45c;
+      /* border-left: 4px solid #c6a45c; */
       padding-left: 0.9rem;
     }
 
@@ -2156,11 +2174,11 @@ font-size: 14px;
       color: #3c372c;
       font-size: 1rem;
       line-height: 1.5;
-      margin-bottom: 1.8rem;
+      /* margin-bottom: 1.8rem; */
     }
 
     .level-sub button {
-      background: #f0e2ce;
+      /* background: #f0e2ce;
       border: none;
       padding: 0.75rem 1.8rem;
       font-weight: 600;
@@ -2170,7 +2188,20 @@ font-size: 14px;
       cursor: pointer;
       transition: 0.2s;
       font-family: inherit;
-      border: 1px solid #e9dccf;
+      border: 1px solid #e9dccf; */
+          background: #f0e2ce;
+    border: none;
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    color: #4a351a;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: inherit;
+    border: 1px solid #e9dccf;
+    /* position: absolute;
+    bottom: 2px; */
     }
 
     .level-sub button:hover {
@@ -2412,32 +2443,37 @@ max-width: 94%;
       font-weight: 700;
       color: #3b2a1f;
       margin-bottom: 1rem;
-      border-left: 4px solid #c6a45c;
+      /* border-left: 4px solid #c6a45c; */
       padding-left: 0.9rem;
       line-height: 1.2;
+      text-align: center;
+      margin-left: -22px;
     }
 
     .level-sub p {
       color: #3c372c;
       font-size: 0.9rem;
       line-height: 1.5;
-      margin-bottom: 1.8rem;
+      /* margin-bottom: 1.8rem; */
     }
-
+ .level-sub{
+  text-align: center;
+ }
     .level-sub button {
-      background: #f0e2ce;
-      border: none;
-      padding: 0.75rem 1.8rem;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border-radius: 60px;
-      color: #4a351a;
-      cursor: pointer;
-      transition: 0.2s ease;
-      font-family: inherit;
-      border: 1px solid #e9dccf;
-      position: absolute;
-      bottom: 8px;
+          background: #f0e2ce;
+    border: none;
+    padding: 5px 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    color: #4a351a;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: inherit;
+    border: 1px solid #e9dccf;
+    /* position: absolute;
+    bottom: 2px;
+    left: 33%; */
 
     }
 
@@ -2863,6 +2899,7 @@ max-width: 94%;
           <li><a href="vvs-onlin-class.html">Vvs online classes</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="book.html">Book</a></li>
           <li><a href="blog.html">blog</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
@@ -2905,6 +2942,7 @@ max-width: 94%;
     <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true">Vvs online classes</a></li>
     <li><a href="gallery.html" class="mobile-nav-link" data-link="true">Gallery</a></li>
     <li><a href="testimonials.html" class="mobile-nav-link" data-link="true">Testimonials</a></li>
+    <li><a href="book.html" class="mobile-nav-link" data-link="true">Book</a></li>
     
     <li><a href="blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
     <li><a href="contact.html" class="mobile-nav-link" data-link="true">contact</a></li>
@@ -2926,15 +2964,16 @@ max-width: 94%;
       <div class="col-lg-6">
         <div class="content-box">
 
-          <h5 class="sub-title">
+          <h5 class="sub-title m-0">
             Vishwakarma Vastu
           </h5>
 
           <h1 class="main-title">
             <!-- Vishwakarma Vasthu  Course -->
 
-            <span>Life Transformation Foundation Course</span>
+            <span> Life Transformation Course</span>
             
+            <span style="font-size: 1.8rem; margin-top: 10px; color: #6e0000;">Foundation plus 5 levels Courses</span>
           </h1>
 
           <div class="quote">
@@ -3007,10 +3046,12 @@ max-width: 94%;
               Vishwakarma Vastu
             </h5> -->
   
-            <h1 class="main-title text-center" style="text-transform: uppercase;">
+            <h1 class="main-title text-center" style="text-transform: capitalize;">
               <!-- Vishwakarma Vasthu  Course -->
   
-              <span>Life Transformation Foundation COURSE</span>
+              <span>Vvs Life Transformation Courses</span>
+                          <span style="font-size: 1.1rem; margin-top: 10px; color: #6e0000;">Foundation plus 5 levels Courses</span>
+
               
             </h1>
   
@@ -3083,6 +3124,80 @@ max-width: 94%;
 <!-- Foundation + 5 Level Courses (Heading + All Levels) -->
 <section style="background: #ede9df;">
   <div class="container">
+<div class="banner-badge fade-up" style="text-align: center;
+    display: table;
+    justify-content: center;
+    margin: auto; background: #DFBA6B; color: #0A0E1A
+; font-weight: bold;">
+  <h2 style="font-size: clamp(1rem, 4vw, 1.8rem); font-weight: 700; color: #0A0E1A
+; "class="m-0"   >✦ Course Levels Foundation plus 5 levels
+ ✦ </h2>  
+  </div>
+     <!-- levels2  -->
+    <div class="roadmap-grid fade-up " style="margin-bottom:30px">
+    <!-- Foundation Card -->
+    <div class="level-card" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div> -->
+      <div class="level-title">Foundation Course</div>
+      <div class="level-sub">
+        <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+
+    <!-- Manu Course -->
+    <div class="level-card" data-course="manu" data-course-name="Manu Course" data-img-src="./images/online-class/Manu-Level-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Manu-Level-logo.png" alt="Manu logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Manu'"></div> -->
+      <div class="level-title">01. Manu Course</div>
+      <div class="level-sub">
+        <p>Deeper understanding of residential planning, land observation, roads, extensions and practical living spaces.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+
+    <!-- Maya Course -->
+    <div class="level-card" data-course="maya" data-course-name="Maya Course" data-img-src="./images/online-class/Maya-Level-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Maya-Level-logo.png" alt="Maya logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Maya'"></div> -->
+      <div class="level-title">02. Maya Course</div>
+      <div class="level-sub">
+        <p>Advanced space planning, structural understanding, commercial basics and modern construction observations.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+
+    <!-- Tvashta Course -->
+    <div class="level-card" data-course="tvashta" data-course-name="Tvashta Course" data-img-src="./images/online-class/Tvashta-Level-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Tvashta-Level-logo.png" alt="Tvashta logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Tvashta'"></div> -->
+      <div class="level-title">03. Tvashta Course</div>
+      <div class="level-sub">
+        <p>Healthy living concepts through balanced spaces, ventilation, light, environmental comfort and nature-oriented planning.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+
+    <!-- Shilpi Course -->
+    <div class="level-card" data-course="shilpi" data-course-name="Shilpi Course" data-img-src="./images/online-class/Shilpi-Level-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Shilpi-Level-logo.png" alt="Shilpi logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Shilpi'"></div> -->
+      <div class="level-title">04. Shilpi Course</div>
+      <div class="level-sub">
+        <p>Applied practical planning, case studies, site observations, corrections and advanced house analysis.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+
+    <!-- Vishwagna Course -->
+    <div class="level-card" data-course="vishwagna" data-course-name="Vishwagna Course" data-img-src="./images/online-class/Vishwajna-Level-logo.png">
+      <!-- <div class="level-number"><img src="./images/online-class/Vishwajna-Level-logo.png" alt="Vishwajna logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Vishwagna'"></div> -->
+      <div class="level-title">05. Vishwagna Course</div>
+      <div class="level-sub">
+        <p>Master-level practical understanding developed from decades of field experience, observations and advanced analysis.</p>
+        <!-- <button class="read-more-btn">Read more</button> -->
+      </div>
+    </div>
+  </div>
+
+
+
     <div class="text-center fade-up">
       <div class="banner-badge fade-up" style="text-align: center;
     display: table;
@@ -3169,58 +3284,58 @@ max-width: 94%;
       <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div>
       <div class="level-title">Foundation Course</div>
       <div class="level-sub">
-        <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
 
     <!-- Manu Course -->
     <div class="level-card" data-course="manu" data-course-name="Manu Course" data-img-src="./images/online-class/Manu-Level-logo.png">
       <div class="level-number"><img src="./images/online-class/Manu-Level-logo.png" alt="Manu logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Manu'"></div>
-      <div class="level-title">Manu Course</div>
+      <div class="level-title">01. Manu Level</div>
       <div class="level-sub">
-        <p>Deeper understanding of residential planning, land observation, roads, extensions and practical living spaces.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Deeper understanding of residential planning, land observation, roads, extensions and practical living spaces.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
 
     <!-- Maya Course -->
     <div class="level-card" data-course="maya" data-course-name="Maya Course" data-img-src="./images/online-class/Maya-Level-logo.png">
       <div class="level-number"><img src="./images/online-class/Maya-Level-logo.png" alt="Maya logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Maya'"></div>
-      <div class="level-title">Maya Course</div>
+      <div class="level-title">02. Maya Level</div>
       <div class="level-sub">
-        <p>Advanced space planning, structural understanding, commercial basics and modern construction observations.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Advanced space planning, structural understanding, commercial basics and modern construction observations.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
 
     <!-- Tvashta Course -->
     <div class="level-card" data-course="tvashta" data-course-name="Tvashta Course" data-img-src="./images/online-class/Tvashta-Level-logo.png">
       <div class="level-number"><img src="./images/online-class/Tvashta-Level-logo.png" alt="Tvashta logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Tvashta'"></div>
-      <div class="level-title">Tvashta Course</div>
+      <div class="level-title">03. Tvashta Level</div>
       <div class="level-sub">
-        <p>Healthy living concepts through balanced spaces, ventilation, light, environmental comfort and nature-oriented planning.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Healthy living concepts through balanced spaces, ventilation, light, environmental comfort and nature-oriented planning.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
 
     <!-- Shilpi Course -->
     <div class="level-card" data-course="shilpi" data-course-name="Shilpi Course" data-img-src="./images/online-class/Shilpi-Level-logo.png">
       <div class="level-number"><img src="./images/online-class/Shilpi-Level-logo.png" alt="Shilpi logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Shilpi'"></div>
-      <div class="level-title">Shilpi Course</div>
+      <div class="level-title">04. Shilpi Level</div>
       <div class="level-sub">
-        <p>Applied practical planning, case studies, site observations, corrections and advanced house analysis.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Applied practical planning, case studies, site observations, corrections and advanced house analysis.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
 
     <!-- Vishwagna Course -->
     <div class="level-card" data-course="vishwagna" data-course-name="Vishwagna Course" data-img-src="./images/online-class/Vishwajna-Level-logo.png">
       <div class="level-number"><img src="./images/online-class/Vishwajna-Level-logo.png" alt="Vishwajna logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Vishwagna'"></div>
-      <div class="level-title">Vishwagna Course</div>
+      <div class="level-title">05. Vishwagna Level</div>
       <div class="level-sub">
-        <p>Master-level practical understanding developed from decades of field experience, observations and advanced analysis.</p>
-        <button class="read-more-btn">Read more</button>
+        <!-- <p>Master-level practical understanding developed from decades of field experience, observations and advanced analysis.</p> -->
+        <button class="read-more-btn">View more</button>
       </div>
     </div>
   </div>
@@ -3382,32 +3497,32 @@ max-width: 94%;
       <div>
         <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
         margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px 0;">
-        <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Why This Learning System Was Created  ✦</h2>  
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Why This Learning System Was Created  ✦</h2>  
       </div> 
-        <h5 style="">Today there is: </h3>
+        <h5 style="font-family: 'Open Sans', sans-serif;">Today there is: </h3>
         <!-- <h3 style="font-size: 1rem; margin: 20px 0;">Too much random information & confusion?</h2> -->
           <ul class="info-list">
-            <li> <i class="fa-solid fa-circle-xmark gold-text"></i><strong>Too much random information </strong> </li>
-            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Confusion</strong></li>
-            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Half knowledge</strong></li>
-            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Random YouTube tips</strong></li>
+            <li> <i class="fa-solid fa-circle-xmark gold-text"></i>Too much random information  </li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i>Confusion</li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i>Half knowledge</li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i>Random YouTube tips</li>
           </ul>
-          <p>But very few people gain: </p>
+          <p>But very few people gain. </p>
       </div>
       <div>
         <!-- <h3>Systematic practical understanding </h3> -->
          <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
         margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px 0;">
-        <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; " class="m-0"  >✦ Systematic practical understanding ✦</h2>  
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; " class="m-0"  >✦ Systematic practical understanding ✦</h2>  
       </div> 
-        <h5 style="">This course system was created to provide: </h4>
+        <h5 style="font-family: 'Open Sans', sans-serif;">This course system was created to provide: </h4>
 
         <ul class="info-list">
-          <li><i class="fas fa-check-circle gold-text"></i><span><strong>Step-by-step learning</span></li>
-          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Strong foundation</strong></span></li>
-          <li><i class="fas fa-check-circle gold-text"></i><span><strong>Practical observations</strong></span></li>
-          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Structured understanding</strong></span></li>
-          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Real-life applications </strong></span></li>
+          <li><i class="fas fa-check-circle gold-text"></i><span>Step-by-step learning</span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span>Strong foundation</span></li>
+          <li><i class="fas fa-check-circle gold-text"></i><span>Practical observations</span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span>Structured understanding</span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span>Real-life applications</span></li>
         </ul>
       </div>
         </div>
@@ -3431,14 +3546,14 @@ max-width: 94%;
   
         <div style="flex: 1; text-align: center;">
           <!-- Photo placeholder -->
-          <img src="images/guru-kl.jpeg" alt="Dr. K.L Vishwakarma" style="border-radius: 24px; width: 200px; height: auto; border: 2px solid var(--gold); object-fit: cover;">
+          <img src="images/guru-kl.jpg" alt="Dr. K.L Vishwakarma" style="border-radius: 24px; width: 200px; height: auto; border: 2px solid var(--gold); object-fit: cover;">
           <!-- <div class="exp-stats" style="justify-content: center; margin-top: 20px;">
             <span class="stat-badge"><i class="fas fa-calendar-alt"></i> 40+ Years</span>
             <span class="stat-badge"><i class="fas fa-home"></i> 1000+ Houses</span>
           </div> -->
         </div>
         <div style="flex: 2;">
-          <h2 class="gold-text" style="font-size: 1.9rem;">40 Years of Practical Observations</h2>
+          <h2 class="gold-text" style="font-size: 1.9rem; font-weight: 800;">40 Years of Practical Observations</h2>
           <p style="margin: 15px 0 10px;">This learning system is based on:</p>
           <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
             <!-- <span class="stat-badge">🏠 Thousands of practical observations  </span>
@@ -3454,11 +3569,13 @@ max-width: 94%;
             <span class="stat-badge"><i class="fa-solid fa-people-roof gold-text"></i> Family environments</span>
             <span class="stat-badge"><i class="fa-solid fa-building gold-text"></i> Business place observations </span>
           </div>
-          <h5>This is not merely theoretical learning. </h5>
-          <p> It is practical understanding developed through decades 
+          <div class="text-center">
+             <h5 style="font-weight: 800; font-size: 22px;" class="gold-text" >This is not merely theoretical learning. </h5>
+          <p class="" style="text-wrap-style: balance;"> It is practical understanding developed through decades 
 of observation to transform your tomorrows into better 
 tomorrows to live a Healthy wealthy happy cheerful 
 prosperous life. </p>
+          </div>
         </div>
       </div>
     </div>
@@ -3469,10 +3586,10 @@ prosperous life. </p>
 <section style="background: #ede9df;">
   <div class="container">
     <div class="final-message fade-up">
-      <i class="fas fa-quote-left" style="font-size: 2.5rem; color: var(--gold); opacity: 0.5; margin-bottom: 16px; display: inline-block;"></i>
-      <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); margin-bottom: 16px;">FINAL MESSAGE</h2>
-      <p style="font-size: 1.4rem; font-weight: 500; line-height: 1.3;">"Vasthu is not merely about constructing houses."</p>
-      <p style="font-size: 1.4rem; margin-top: 12px;" class="gold-text">"It is an effort to create better lives Better Tomorrow's."</p>
+      <!-- <i class="fas fa-quote-left" style="font-size: 2.5rem; color: var(--gold); opacity: 0.5; margin-bottom: 16px; display: inline-block;"></i> -->
+      <h2 style="font-size: clamp(1rem, 4vw, 1.9rem); margin-bottom: 16px; font-weight: 800;" class="gold-text">FINAL MESSAGE</h2>
+      <p style="font-size: 1.4rem; font-weight: bold; margin: 0; ">"Vasthu is not merely about constructing houses."</p>
+      <p style="font-size: 1.4rem; font-weight: bold;  margin-top: 2px;" >"It is an effort to create better lives Better Tomorrow's."</p>
     </div>
 
     <!-- Bottom Structure (Learn Before You Build | Understanding Spaces etc) -->
@@ -3541,6 +3658,7 @@ Full Time consultant since 1985 (40+ years)</p> -->
 							<li><a href="vvs-onlin-class.html">Vvs online classes </a></li>
 							<li><a href="gallery.html">gallery</a></li>
 							<li><a href="testimonials.html">Testimonials</a></li>
+							<li><a href="book.html">Book</a></li>
 							<li><a href="blog.html">blog</a></li>
 							<li><a href="contact.html">contact</a></li>
 						</ul>

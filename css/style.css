@@ -6194,6 +6194,53 @@ text-decoration: underline;
    
 
 
+
+    /* book */
+    .book-header {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../images/banners/Slide-2.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .book-title {
+        font-size: 42px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .book-content {
+        background: white;
+        padding: 40px;
+        margin-top: -50px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        margin-bottom: 50px;
+    }
+
+    .book-content p {
+        line-height: 1.8;
+        font-size: 17px;
+        color: #333;
+    }
+
+    .highlight {
+        color: #ec1f25;
+        font-weight: bold;
+    }
+
+    .book-image {
+        width: 100%;
+        border-radius: 10px;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+   
+
     
   /* ── PAIN SECTION ── */
   .pain-section {

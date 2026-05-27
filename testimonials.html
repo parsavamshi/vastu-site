@@ -886,6 +886,344 @@
     }
   }
 </style>
+<style>
+
+  /* main container */
+    .reviews-container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* section heading */
+    .section-heading {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #1e2a3a, #0f172a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+      margin-bottom: 28px;
+    }
+
+    /* top bar (google rating + CTA) */
+    .rating-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      padding: 18px 24px;
+      border-radius: 32px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+      border: 1px solid #eef2f6;
+    }
+
+    .google-rating-block {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .google-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #202124;
+    }
+
+    .google-badge svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .stars-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .star-rating {
+      display: flex;
+      gap: 3px;
+    }
+
+    .star-icon {
+      font-size: 1.35rem;
+      color: #fbbc04;
+      letter-spacing: 2px;
+    }
+
+    .rating-meta {
+      font-size: 0.9rem;
+      color: #3c4043;
+      font-weight: 500;
+    }
+
+    .btn-google-review {
+      background: #1a73e8;
+      color: white;
+      padding: 10px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-google-review:hover {
+      background: #0f5fc2;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(26,115,232,0.25);
+      color: white;
+    }
+
+    /* slider outer */
+    .slider-enclosure {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      margin-bottom: 10px;
+    }
+
+    .slider-track {
+      display: flex;
+      gap: 24px;
+      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    /* card design — modern, elevated, minimal */
+    .review-card-modern {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 24px 22px;
+      flex-shrink: 0;
+      width: calc((100% - 48px) / 3);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.03);
+      transition: all 0.2s;
+      border: 1px solid #edf2f7;
+      backdrop-filter: blur(0px);
+    }
+
+    .review-card-modern:hover {
+      border-color: #dce5ef;
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    /* reviewer header */
+    .reviewer-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .avatar-custom {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #eef2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #1f2b48;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .reviewer-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .reviewer-name-line {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #0f172a;
+    }
+
+    .verified-badge {
+      color: #1a73e8;
+      font-size: 0.85rem;
+      background: #e9f0fe;
+      border-radius: 30px;
+      padding: 2px 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+    }
+
+    .meta-platform {
+      font-size: 0.75rem;
+      color: #5f6b7a;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .google-mini-svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .stars-inline {
+      margin: 12px 0 10px 0;
+      display: flex;
+      gap: 3px;
+    }
+
+    .stars-inline span {
+      font-size: 1.1rem;
+      color: #fbbc04;
+    }
+
+    .review-content {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: #2c3e4e;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+
+    .review-content.expanded {
+      -webkit-line-clamp: unset;
+      display: block;
+    }
+
+    .readmore-toggle {
+      background: none;
+      border: none;
+      color: #1a73e8;
+      font-weight: 500;
+      font-size: 0.8rem;
+      padding: 4px 0;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      transition: opacity 0.1s;
+    }
+
+    .readmore-toggle:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    /* dots navigation */
+    .dot-navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      background: #cfdde6;
+      border-radius: 50%;
+      border: none;
+      padding: 0;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .carousel-dot.active {
+      background: #1a73e8;
+      width: 26px;
+      border-radius: 12px;
+      transform: scale(1.05);
+    }
+
+    /* arrows optional but user friendly */
+    .slider-nav-arrows {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .arrow-btn {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 60px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .arrow-btn:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+      transform: scale(1.02);
+    }
+
+    /* responsiveness */
+    @media (max-width: 980px) {
+      .review-card-modern {
+        width: calc((100% - 24px) / 2);
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding: 32px 16px;
+      }
+      .review-card-modern {
+        width: 100%;
+      }
+      .rating-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .btn-google-review {
+        align-self: flex-start;
+      }
+      .section-heading {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* subtle animation */
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(6px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .review-card-modern {
+      animation: fadeSlide 0.35s ease-out forwards;
+    }
+</style>
 </head>
 <body>
   <div class="loader" id="siteLoader">
@@ -1031,10 +1369,358 @@
   </div>
 
   <!-- Elfsight Google Reviews - FIXED: Wrapped in a div with proper clearfix and z-index handling -->
-  <div style="position: relative; z-index: 2; clear: both; margin: 20px 0; width: 100%; overflow: visible;">
+  <!-- <div style="position: relative; z-index: 2; clear: both; margin: 20px 0; width: 100%; overflow: visible;">
     <div id="reviews" class="elfsight-app-68748137-7881-466c-bcc9-326b5b481e13" data-elfsight-app-lazy></div>
   </div>
-  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  
+  <script src="https://elfsightcdn.com/platform.js" async></script> -->
+
+
+  <!--  -->
+
+<div class="reviews-container">
+  <h2 class="section-heading">✨What Our Customers Say ✨</h2>
+  
+  <!-- Google bar section -->
+  <div class="rating-bar">
+    <div class="google-rating-block">
+      <div class="google-badge">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+        </svg>
+        <span>Rated Excellent on Google</span>
+      </div>
+      <div class="stars-row">
+        <div class="star-rating">
+          <span class="star-icon">★</span><span class="star-icon">★</span><span class="star-icon">★</span><span class="star-icon">★</span><span class="star-icon">★</span>
+        </div>
+        <span class="rating-meta">5 · based on 90+ verified reviews</span>
+      </div>
+    </div>
+    <a href="https://maps.app.goo.gl/6FmowscuMnXBmyKa6" class="btn-google-review" id="googleReviewLink">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 12C21 13.2 20.5 14.2 19.7 15.1C18.9 15.9 17.8 16.5 16.5 16.8C15.2 17.1 13.8 17.1 12.3 16.8C11 16.5 9.8 15.9 9 15.1C8.2 14.2 7.7 13.2 7.7 12C7.7 10.8 8.2 9.8 9 8.9C9.8 8.1 10.9 7.5 12.2 7.2C13.5 6.9 14.9 6.9 16.4 7.2C17.7 7.5 18.9 8.1 19.7 8.9L22 6.6C20.7 5.4 19 4.5 17 4C15 3.5 12.9 3.4 10.8 3.8C8.7 4.2 6.9 5 5.4 6.3C3.9 7.6 2.8 9.3 2.3 11.2C1.8 13.1 1.9 15 2.5 16.8C3.1 18.6 4.2 20.2 5.7 21.5C7.2 22.8 9 23.7 11 24.1C13 24.5 15.1 24.4 17 23.8C18.9 23.2 20.6 22.1 21.9 20.6C23.2 19.1 24 17.2 24 15H21V12Z" fill="white"/>
+      </svg>
+      Review us on Google
+    </a>
+  </div>
+
+  <!-- Slider section : shows exactly 3 items on desktop -->
+  <div class="slider-enclosure" id="sliderEnclosure">
+    <div class="slider-track" id="sliderTrackModern">
+      <!-- REVIEW CARD 1 -->
+      <div class="review-card-modern" data-full-text="He is amazing, we got excellent results for our home vastu corrections. Now we are very excited about the positive results of my business growth and peace at home. Truly life-changing guidance.">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #ffe5e5; color:#b83b3b;">TS</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">
+              Tabassum Sultana
+              <span class="verified-badge">✓ Verified</span>
+            </div>
+            <div class="meta-platform">
+              <svg class="google-mini-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+              </svg>
+              <span>1 year ago on Google</span>
+            </div>
+          </div>
+        </div>
+        <div class="stars-inline">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="review-content short">He is amazing, we got excellent results... Now we are very excited about the positive results of my...</div>
+        <button class="readmore-toggle" aria-label="Read more">Read more →</button>
+      </div>
+
+      <!-- REVIEW CARD 2 -->
+      <div class="review-card-modern" data-full-text="చాలా అద్భుతంగా వాస్తు దోష నివారణ చేయగలిగిన గురువు గారు. నిజ జీవితంలో మార్పు కనిపించింది. సంపూర్ణ మార్గదర్శకత్వం అందించారు. Highly grateful for the vastu corrections!">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #e1f5fe; color:#0277bd;">SB</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">
+              Sri Balaji Creations
+              <span class="verified-badge">✓ Verified</span>
+            </div>
+            <div class="meta-platform">
+              <svg class="google-mini-svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+              <span>2 years ago on Google</span>
+            </div>
+          </div>
+        </div>
+        <div class="stars-inline"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-content short">చాలా అద్భుతంగా వాస్తు దోష నివారణ చేయగలిన గురువు గారు</div>
+        <button class="readmore-toggle" aria-label="Read more">Read more →</button>
+      </div>
+
+      <!-- REVIEW CARD 3 -->
+      <div class="review-card-modern" data-full-text="Vishwakarmaji has tremendous knowledge about Vastu science and practices. I have consulted him for both office and home, and the results were phenomenal. The environment feels balanced and prosperous.">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #ede7f6; color:#5e35b1;">SD</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">
+              Shirish Dhopeshwar
+              <span class="verified-badge">✓ Verified</span>
+            </div>
+            <div class="meta-platform">
+              <svg class="google-mini-svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+              <span>3 years ago on Google</span>
+            </div>
+          </div>
+        </div>
+        <div class="stars-inline"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-content short">Vishwakarmaji has tremendous knowledge about Vastu science and practices. I have consulted...</div>
+        <button class="readmore-toggle" aria-label="Read more">Read more →</button>
+      </div>
+
+      <!-- REVIEW CARD 4 (extra for slider depth) -->
+      <div class="review-card-modern" data-full-text="Excellent consultation! The vastu advice provided was very practical and easy to implement. Highly recommended for anyone looking to bring harmony and positive energy into living spaces. 10/10 service!">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #e8f5e9; color:#2e7d32;">RK</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">Ravi Kumar <span class="verified-badge">✓ Verified</span></div>
+            <div class="meta-platform"><svg class="google-mini-svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> 6 months ago</div>
+          </div>
+        </div>
+        <div class="stars-inline"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-content short">Excellent consultation! The vastu advice provided was very practical and easy to implement...</div>
+        <button class="readmore-toggle">Read more →</button>
+      </div>
+
+      <!-- REVIEW CARD 5 (extra) -->
+      <div class="review-card-modern" data-full-text="Very knowledgeable and experienced consultant. The remedies suggested were simple yet very effective. Thank you so much for transforming the energy of our workspace. We feel much more productive! Highly recommended for vastu corrections.">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #fce4ec; color:#c2185b;">PS</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">Priya Sharma <span class="verified-badge">✓ Verified</span></div>
+            <div class="meta-platform"><svg class="google-mini-svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> 8 months ago</div>
+          </div>
+        </div>
+        <div class="stars-inline"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-content short">Very knowledgeable and experienced consultant. The remedies suggested were simple yet very effective...</div>
+        <button class="readmore-toggle">Read more →</button>
+      </div>
+      
+      <!-- REVIEW CARD 1 -->
+      <div class="review-card-modern" data-full-text="He is amazing, we got excellent results for our home vastu corrections. Now we are very excited about the positive results of my business growth and peace at home. Truly life-changing guidance.">
+        <div class="reviewer-header">
+          <div class="avatar-custom" style="background: #ffe5e5; color:#b83b3b;">TS</div>
+          <div class="reviewer-details">
+            <div class="reviewer-name-line">
+              Tabassum Sultana
+              <span class="verified-badge">✓ Verified</span>
+            </div>
+            <div class="meta-platform">
+              <svg class="google-mini-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+              </svg>
+              <span>1 year ago on Google</span>
+            </div>
+          </div>
+        </div>
+        <div class="stars-inline">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <div class="review-content short">He is amazing, we got excellent results... Now we are very excited about the positive results of my...</div>
+        <button class="readmore-toggle" aria-label="Read more">Read more →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- dots + simple arrows -->
+  <div class="dot-navigation" id="dotContainerModern"></div>
+  <div class="slider-nav-arrows">
+    <div class="arrow-btn" id="prevSlideBtn">←</div>
+    <div class="arrow-btn" id="nextSlideBtn">→</div>
+  </div>
+</div>
+
+<section>
+  
+  <div class="container">
+    <div class="text-center">
+      
+      <a href="https://maps.app.goo.gl/6FmowscuMnXBmyKa6" style="background-color: #0277bd; color: #fff; border-radius: 6px; padding: 10px 20px; margin: 30px auto;
+    display: block;
+    width: max-content;"> Load more...</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    // DOM elements
+    const track = document.getElementById('sliderTrackModern');
+    const dotsContainer = document.getElementById('dotContainerModern');
+    const enclosure = document.getElementById('sliderEnclosure');
+    let cards = Array.from(document.querySelectorAll('.review-card-modern'));
+    let cardsPerView = 3;
+    let currentPage = 0;
+    let autoInterval = null;
+    let totalPages = 0;
+
+    // read-more toggles for each card
+    function initReadMoreButtons() {
+      document.querySelectorAll('.review-card-modern').forEach(card => {
+        const btn = card.querySelector('.readmore-toggle');
+        const contentDiv = card.querySelector('.review-content');
+        const fullText = card.getAttribute('data-full-text') || '';
+        if (!btn || !contentDiv) return;
+        const shortText = contentDiv.innerText;
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isExpanded = contentDiv.classList.contains('expanded');
+          if (isExpanded) {
+            contentDiv.innerText = shortText;
+            contentDiv.classList.remove('expanded');
+            btn.innerText = 'Read more →';
+          } else {
+            contentDiv.innerText = fullText;
+            contentDiv.classList.add('expanded');
+            btn.innerText = '← Show less';
+          }
+        });
+      });
+    }
+
+    function computeCardsPerView() {
+      const width = window.innerWidth;
+      if (width <= 680) return 1;
+      if (width <= 980) return 2;
+      return 3;
+    }
+
+    function updateTotalPages() {
+      const totalCards = cards.length;
+      totalPages = Math.ceil(totalCards / cardsPerView);
+      if (totalPages === 0) totalPages = 1;
+      if (currentPage >= totalPages) currentPage = totalPages - 1;
+      if (currentPage < 0) currentPage = 0;
+    }
+
+    function renderSlider(animate = true) {
+      if (!cards.length || cardsPerView <= 0) return;
+      const cardEls = cards;
+      const cardWidth = cardEls[0].offsetWidth;
+      const gap = 24; // matches track gap
+      const shift = currentPage * cardsPerView * (cardWidth + gap);
+      track.style.transition = animate ? 'transform 0.45s cubic-bezier(0.2, 0.9, 0.4, 1.1)' : 'none';
+      track.style.transform = `translateX(-${shift}px)`;
+      updateDotsIndicator();
+    }
+
+    function updateDotsIndicator() {
+      const dots = dotsContainer.querySelectorAll('.carousel-dot');
+      dots.forEach((dot, idx) => {
+        if (idx === currentPage) dot.classList.add('active');
+        else dot.classList.remove('active');
+      });
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement('button');
+        dot.classList.add('carousel-dot');
+        if (i === currentPage) dot.classList.add('active');
+        dot.setAttribute('aria-label', `Go to slide ${i+1}`);
+        dot.addEventListener('click', () => {
+          stopAutoRotate();
+          currentPage = i;
+          renderSlider(true);
+          startAutoRotate();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function goNext() {
+      if (totalPages <= 1) return;
+      stopAutoRotate();
+      currentPage = (currentPage + 1) % totalPages;
+      renderSlider(true);
+      startAutoRotate();
+    }
+
+    function goPrev() {
+      if (totalPages <= 1) return;
+      stopAutoRotate();
+      currentPage = (currentPage - 1 + totalPages) % totalPages;
+      renderSlider(true);
+      startAutoRotate();
+    }
+
+    let resizeTimer;
+    function handleResize() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const newPerView = computeCardsPerView();
+        if (newPerView !== cardsPerView) {
+          cardsPerView = newPerView;
+          currentPage = 0;
+          updateTotalPages();
+          buildDots();
+          renderSlider(false);
+        } else {
+          updateTotalPages();
+          if (currentPage >= totalPages) currentPage = totalPages - 1;
+          if (currentPage < 0 && totalPages>0) currentPage = 0;
+          buildDots();
+          renderSlider(false);
+        }
+      }, 150);
+    }
+
+    function startAutoRotate() {
+      if (autoInterval) clearInterval(autoInterval);
+      if (totalPages > 1) {
+        autoInterval = setInterval(() => {
+          goNext();
+        }, 5000);
+      }
+    }
+
+    function stopAutoRotate() {
+      if (autoInterval) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+      }
+    }
+
+    function initSlider() {
+      cards = Array.from(document.querySelectorAll('.review-card-modern'));
+      cardsPerView = computeCardsPerView();
+      updateTotalPages();
+      buildDots();
+      renderSlider(false);
+      startAutoRotate();
+      initReadMoreButtons();
+    }
+
+    // event listeners for arrows and hover pause
+    document.getElementById('prevSlideBtn')?.addEventListener('click', () => goPrev());
+    document.getElementById('nextSlideBtn')?.addEventListener('click', () => goNext());
+    enclosure.addEventListener('mouseenter', () => stopAutoRotate());
+    enclosure.addEventListener('mouseleave', () => startAutoRotate());
+    window.addEventListener('resize', handleResize);
+    // initial load
+    initSlider();
+
+    // google review button mock link
+    const googleBtn = document.getElementById('googleReviewLink');
+    if(googleBtn) googleBtn.addEventListener('click', (e) => { e.preventDefault(); alert('🌟 Thank you! You would be redirected to Google review page.'); });
+  })();
+</script>
+  <!--  -->
 
   <!-- Footer wrapper start-->
   <div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">

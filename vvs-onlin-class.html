@@ -12,13 +12,13 @@ Purchase: http://themeforest.net/user/kamleshyadav
 <html lang="en"><!--<![endif]-->
 <!-- Begin Head -->
 <head>
-<title>Vvs online class</title>
-<meta charset="utf-8"> 
+<title>Online Classes </title>
+<meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta name="description" content="Astrology">
 <meta name="keywords" content="Astrology, signs, gemstones, tarot, horoscopes, cards, numerology, Zodiac">
 <meta name="author" content="hsoft" >
-<meta name="MobileOptimized" content="320">
+<meta name="MobileOptimized" content="320"> 
 <!--Srart Style -->
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -30,12 +30,111 @@ Purchase: http://themeforest.net/user/kamleshyadav
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- Favicon Link -->
 <link rel="shortcut icon" type="image/png" href="images/vvs-icon.png">
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
 <style>
+	 /* STATS BAR */
+    /* .stats-bar { background:var(--orange); padding:22px 0; } */
+    .stats-bar { background:#ec1f25;  }
+    .stat-item { text-align:center; color:#fff; }
+    .stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1; }
+    .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
+    .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
+
+
+
+	
+/* .container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+} */
+
+.container .text-anime:nth-child(1) {
+  color: #355c7d;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
+}
+
+.container .text-anime:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width:991px) {
+	.ast_menu_btn{
+		top: 20px !important; 
+		right: 15px !important;
+		left:unset !important;
+	}
+}
+
+</style>
+
+ <style>
     :root {
       --gold: #C9A84C;
       --gold-light: #E8C97A;
@@ -54,7 +153,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
       /* font-family: 'Lato', sans-serif; */
       font-family: 'Open Sans', sans-serif;
       /* background: var(--navy); */
-      color: var(--white);
+      /* color: var(--white); */
       overflow-x: hidden;
     }
 
@@ -833,15 +932,15 @@ font-size: 14px;
     }
 
     /* Hero Section */
-    .hero-section {
+    /* .hero-section { */
       /* background: url('./images/banners/Background.png'); */
-      background: url('./images/banners/Background.jpeg');
+      /* background: url('./images/banners/Background.jpeg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
-      overflow: hidden;
-    }
+      overflow: hidden; */
+    /* } */
     
     /* ===== HERO SECTION ===== */
     /* .hero-section {
@@ -1250,371 +1349,1479 @@ font-size: 14px;
         border-bottom:none;
       }
     }
-  </style>
-
-
-<style>
-	 /* STATS BAR */
-    /* .stats-bar { background:var(--orange); padding:22px 0; } */
-    .stats-bar { background:#ec1f25;  }
-    .stat-item { text-align:center; color:#fff; }
-    .stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1; }
-    .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
-    .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
-
-
-
-	
-/* .container{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 100px;
-} */
-
-.container .text-anime:nth-child(1) {
-  color: #355c7d;
-  font-family: 'Fira Code', monospace;
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0 0 0 35%;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 170px;
-  animation: type 2s steps(40,end) forwards;
-}
-
-.container .text-anime:nth-child(2) {
-  opacity: 0;
-  font-family: "Work Sans", sans-serif;
-  margin: 0 auto auto auto;
-  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
-  font-weight: 800;
-  font-size: 100px;  
-  width: 430px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  overflow: hidden;
-  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-}
-
-@keyframes shring-animation {
-  0% {
-    background-position: 0 0;
-    opacity: 0;
-    width: 0;
-  }
-  1% {
-    background-position: 0 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  50% {
-    background-position: 150px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-  100% {
-    background-position: 400px 0;
-    opacity: 1;
-    border-right: 1px solid orange;
-  }
-}
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  1%, 99%{
-    border-right: 1px solid orange;
-  }
-  100%{
-    border-right: none;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-ul li{
-    font-size: 15px;
-}
- .hero-bg {
-            /* background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); */
-               background:
-      linear-gradient(rgba(37, 7, 7, 0.7), rgba(37, 7, 7, 0.7)),
-      url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 110px 0 90px;
-    text-align: center;
-            padding-top: 4rem;
-        padding-bottom: 2rem;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-        }
-        .section-title:after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 4px;
-            background: #7c3aed;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        
-            .md\:py-16 {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+    a{
+      color: rgb(6, 128, 59);;
+    }
+    a:hover{
+      color: var(--gold);
     }
 
-    .rounded-4{
-        border-radius: 10px;
-        color: #000;
-        /* border: 1px solid gray; */
-    }
-    *, ::after, ::before {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e5e7eb;
-}
-h5{
-    font-size: 18px;
-}
-.special-benefits .mb-3{
-font-size: 30px;
-}
-.special-benefits .rounded-4{
-    padding: 10px;
-}
 
-::marker{
-    font-size: 25px;
+     .hero-section{
+      /* min-height:100vh; */
+      display:flex;
+      align-items:center;
+      /* padding:60px 0; */
+      /* overflow:hidden; */
+      /* background:
+      linear-gradient(to right,
+      rgba(248,241,228,0.98),
+      rgba(248,241,228,0.92)); */
+      min-height: 100vh;
+      height: 650px;
+      background-image: url('./images/banners/online-classes.png');
+       /* background: url('./images/banners/Background.jpeg'); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content-box{
+      padding-right:40px;
+      text-align: center;
+    }
+
+    .sub-title{
+      font-size:26px;
+      letter-spacing:2px;
+      color:#081f4d;
+      /* color:#9c6a13; */
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      font-family:'Cinzel', serif !important;
+    }
+
+    .main-title{
+      /* font-size:75px; */
+      /* line-height:1;
+      font-weight:900; */
+      font-size: clamp(2.2rem, 5vw, 2.2rem);
+      font-weight: 800;
+      /* color: var(--gold); */
+      margin: 15px 0;
+      line-height: 1;
+      color:#a86d11;
+      font-family:'Cinzel', serif !important;
+    }
+
+    .main-title span{
+      display:block;
+      color:#081f4d;
+    }
+
+    .quote{
+      margin-top:25px;
+      display:inline-block;
+      background:#081f4d;
+      color:white;
+      padding:14px 30px;
+      border-radius:8px;
+      font-size:24px;
+      font-weight:600;
+      font-family:'Cinzel', serif;
+    }
+
+    .desc{
+      margin-top:30px;
+      font-size:22px;
+      color:#222;
+      line-height:1.7;
+      font-weight:600;
+    }
+
+    .highlight{
+      color:#a86d11;
+      font-weight:700;
+    }
+
+    .btn-group-custom{
+      margin-top:40px;
+      display:flex;
+      gap:20px;
+      /* flex-wrap:wrap; */
+    }
+
+    .custom-btn{
+      padding:15px 20px;
+      border:none;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .btn-register{
+      background:#a86d11;
+      color:white;
+    }
+
+    .btn-register:hover{
+      background:#8a5806;
+      color:white;
+      transform:translateY(-3px);
+    }
+
+    .btn-join{
+      background:#081f4d;
+      color:white;
+    }
+
+    .btn-join:hover{
+      background:#04122d;
+      color:white;
+      transform:translateY(-3px);
+    }
+
+    .image-box{
+      position:relative;
+      text-align:center;
+    }
+
+    .image-box img{
+      width:100%;
+      max-width:850px;
+      border-radius:30px;
+      object-fit:cover;
+      box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:991px){
+
+      .hero-section{
+        padding:40px 0;
+        text-align:center;
+      }
+
+      .content-box{
+        padding-right:0;
+        margin-bottom:40px;
+      }
+
+      .main-title{
+        font-size:52px;
+      }
+
+      .quote{
+        font-size:18px;
+      }
+
+      .desc{
+        font-size:18px;
+      }
+
+      .btn-group-custom{
+        justify-content:center;
+      }
+
+    }
+
+    @media(max-width:576px){
+
+      .main-title{
+        font-size:40px;
+      }
+
+      .sub-title{
+        font-size:16px;
+      }
+
+      .quote{
+        width:100%;
+        font-size:16px;
+      }
+
+      .custom-btn{
+        width:100%;
+      }
+
+      .desc{
+        font-size:16px;
+      }
+
+      .image-box img{
+        border-radius:20px;
+      }
+
+    }
+
+
+    /* section 2 */
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #DFBA6B;
+      --gold-dark: #9A7A2E;
+      --navy: #0A0E1A;
+      /* --navy-soft: #111827; */
+      /* --navy-soft:    background: linear-gradient(145deg, #f8f6f0 0%, #ede9df 100%);; */
+      --navya-soft: #ede9df;
+      --navy-card: #0F1625;
+      --cream: #FDF8ED;
+      --white: #ffffff;
+      --gray-light: #E5E7EB;
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      /* font-family: 'Inter', sans-serif; */
+      /* background-color: var(--navy); */
+      /* color: var(--white); */
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Typography */
+    /* h1, h2, h3, .heading-font {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    } */
+
+    .serif {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .gold-text {
+      /* color: var(--gold); */
+      color: #8b1a1a;
+    }
+
+    .bg-gold {
+      background-color: var(--gold);
+    }
+
+    /* Layout */
+    /* .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    } */
+
+    section {
+      padding: 30px 0 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 50px 0;
+      }
+      /* .container {
+        padding: 0 20px;
+      } */
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      border: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      color: var(--navy);
+    }
+
+    .btn-outline-light {
+      border: 1.5px solid var(--gold);
+      background: transparent;
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(201,168,76,0.1);
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+
+    /* Banner & Hero */
+    .hero-banner {
+      /* background: linear-gradient(135deg, #0A0E1A 0%, #111827 100%); */
+      background-color: #ede9df;
+      position: relative;
+      /* border-bottom: 1px solid rgba(201,168,76,0.2); */
+      padding: 60px 0 10px;
+    }
+
+    .banner-badge {
+      background: rgba(201,168,76,0.12);
+      backdrop-filter: blur(4px);
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: inline-block;
+      margin-bottom: 24px;
+      border: 1px solid rgba(201,168,76,0.3);
+    }
+
+    
+    /* Grid layout matching original classes + modern enhancements */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+      padding: 0 115px;
+    }
+
+    /* level-card styling */
+    .level-card {
+      background: #ffffffdd;
+      backdrop-filter: blur(2px);
+      background: linear-gradient(135deg, #ffffff 0%, #fefcf7 100%);
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0,0,0,0.02);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 1.8rem 1.8rem 2rem;
+      border: 1px solid #f0e9db;
+    }
+
+    .level-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 36px -14px rgba(60, 40, 20, 0.15);
+      border-color: #e2d5bf;
+    }
+
+    /* logo image container */
+    .level-number {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .level-number img {
+      /* max-width: 70px; */
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));
+    }
+
+    .level-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #3b2a1f;
+      margin-bottom: 1rem;
+      border-left: 4px solid #c6a45c;
+      padding-left: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .level-sub p {
+      color: #3c372c;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.8rem;
+      flex: 1;
+    }
+
+    .level-sub button {
+      background: #f0e2ce;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 60px;
+      color: #4a351a;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-family: inherit;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      border: 1px solid #e9dccf;
+    }
+
+    .level-sub button:hover {
+      background: #dfceb2;
+      color: #2f2418;
+      transform: scale(0.97);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-color: #cdb792;
+    }
+
+    /* ========= MODAL (POPUP) STYLES ========= */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(25, 20, 12, 0.75);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-popup {
+      background: #fffef7;
+      max-width: 550px;
+      width: 90%;
+      border-radius: 2rem;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+      transform: scale(0.96);
+      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      overflow: hidden;
+    }
+
+    .modal-overlay.active .modal-popup {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.3rem 2rem;
+      background: #fef3e4;
+      border-bottom: 1px solid #eedfcb;
+    }
+
+    .modal-header h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #4b341c;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .modal-header h3 img {
+      width: 42px;
+      height: auto;
+    }
+
+    .close-modal {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #7c6850;
+      transition: 0.2s;
+      line-height: 1;
+      padding: 0 6px;
+    }
+
+    .close-modal:hover {
+      color: #a1301a;
+      transform: scale(1.1);
+    }
+
+    .modal-body {
+      padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .modal-body p {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: #2f2b24;
+      margin-bottom: 1rem;
+    }
+
+    .modal-detail-list {
+      margin: 1.2rem 0 0.5rem;
+      padding-left: 1.2rem;
+    }
+    .modal-detail-list li {
+      margin-bottom: 0.5rem;
+      color: #4e4132;
+    }
+
+    .modal-footer {
+      padding: 1rem 2rem 2rem 2rem;
+      background: #fffbf5;
+    }
+
+    .modal-footer button {
+      background: #caae7a;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: inherit;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .modal-footer button:hover {
+      background: #b28b4a;
+    }
+
+
+    .Certification{
+      /* border: 2px solid #c9a84c; */
+      /* border-radius: 10px; */
+      text-align: center;
+      padding: 50px 0;
+      /* margin:30px 0; */
+
+    }
+    
+    .Certification p{
+      color: #0A0E1A;
+      /* font-weight: bold; */
+      margin: 12px 0;
+      font-size: 20px;
+      text-wrap-style: balance;
+
+    }
+    .Certification h4{
+      color: #0A0E1A;
+
+    }
+    
+    /* subtle fade-up animation for grid (optional) */
+    .fade-up {
+      animation: fadeUp 0.6s ease backwards;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* responsive */
+    @media (max-width: 720px) {
+      .courses-container {
+        padding: 2rem 1rem;
+      }
+      .level-title {
+        font-size: 1.5rem;
+      }
+      .modal-header h3 {
+        font-size: 1.4rem;
+      }
+    }
+
+    .register-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0 20px;
+    }
+
+    /* Announcement */
+    .announcement-card {
+      /* background: linear-gradient(125deg, rgba(201,168,76,0.08) 0%, rgba(10,14,26,0.9) 100%); */
+      /* background-color: #fae9bb; */
+      background-color:#fff7e2;
+      border-left: 6px solid var(--gold);
+      border-radius: 28px;
+      padding: 35px 30px;
+      margin: 30px 0;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+
+    /* Why System */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 0;
+      gap: 60px;
+      padding: 0 60px;
+      align-items: start;
+    }
+
+    .grid-2col h5{
+      margin: 10px 0 ;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-list li {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .info-list i {
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-top: 2px;
+    }
+
+    /* Experience Section */
+
+    .exp-card-bgm{
+       background-color: #e4decd;
+      border-radius: 28px;
+      padding: 36px;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .exp-card {
+      /* background: var(--navy-card); */
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+     
+    }
+    .exp-card img{
+      max-width: 100%;
+      width: 70% !important;
+    }
+
+    .exp-stats {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .stat-badge {
+      background: rgba(201,168,76,0.12);
+      border-radius: 60px;
+      padding: 6px 18px;
+      font-weight: 600;
+    }
+
+    /* Final Message & Bottom Structure */
+    .final-message {
+      background: #ede9df;
+      border-radius: 40px;
+      padding: 0 0 40px;
+      /* padding: 48px 40px; */
+      text-align: center;
+      /* margin: 40px 0; */
+    }
+
+    .quote-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      /* margin-top: 50px; */
+      /* padding-top: 30px; */
+      /* border-top: 3px solid rgba(201,168,76,0.2); */
+    }
+
+    .footer-quote-item {
+      /* font-family: 'Cormorant Garamond', serif; */
+      font-size: 1rem;
+      font-weight: 600;
+      /* color: var(--gold-light); */
+    }
+
+    @media (max-width: 768px) {
+      .grid-2col {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .level-card {
+        flex: 1 1 130px;
+      }
+      .exp-card {
+        padding: 28px;
+      }
+      .final-message {
+        padding: 32px 24px;
+      }
+    }
+
+    /* animations */
+    /* .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    } */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      width: 56px;
+      height: 56px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      z-index: 99;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: 0.2s;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+      background: #20b859;
+      color: white;
+    }
+    hr {
+      border-color: rgba(201,168,76,0.2);
+      margin: 20px 0;
+    }
+
+
+    /* new level  */
+    /* Grid layout */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    /* level-card styling */
+    .level-card {
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 1.8rem 1.8rem 2rem;
+      border: 1px solid #f0e9db;
+      cursor: pointer;
+    }
+
+    .level-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 36px -14px rgba(60, 40, 20, 0.15);
+      border-color: #e2d5bf;
+    }
+
+    .level-number {
+      margin-bottom: 1.5rem;
+    }
+    .level-number img {
+      /* max-width: 70px;
+      height: auto; */
+    }
+
+    .level-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #3b2a1f;
+      margin-bottom: 1rem;
+      border-left: 4px solid #c6a45c;
+      padding-left: 0.9rem;
+    }
+
+    .level-sub p {
+      color: #3c372c;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.8rem;
+    }
+
+    .level-sub button {
+      background: #f0e2ce;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 60px;
+      color: #4a351a;
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: inherit;
+      border: 1px solid #e9dccf;
+    }
+
+    .level-sub button:hover {
+      background: #dfceb2;
+      transform: scale(0.97);
+    }
+
+    /* ========= FIXED MODAL STYLES ========= */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(25, 20, 12, 0.85);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-popup {
+      background: #fffef7;
+      /* max-width: 480px; */
+      max-width: 800px;
+      width: 90%;
+      border-radius: 2rem;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95);
+      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    /* max-width: 600px; */
+    /* #higherLevelsModal{
+    background: #fffef7;
+    max-width: 480px;
+    width: 90%;
+      border-radius: 2rem;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95);
+      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      overflow: hidden;
+      text-align: center;
+    } */
+    #higherLevelsModal .modal-popup{
+          max-width: fit-content;
+    width: 90%;
+    }
+ #higherLevelsModal .course-modal-img img{
+height: 74vh;
+max-width: 94%;
 }
-/* .who-can-join{
-    margin: 30px 0;
-} */
-.who-can-join li{
-display: inline;
-background-color: gray;
-padding: 20px;
-border-radius: 10px;
-margin: 10px;
-}
-.bg-black{
-    /* background: #f5f5f5; */
-    background-color: #a98640;
+    .modal-overlay.active .modal-popup {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 1.8rem;
+      background: #fef3e4;
+      border-bottom: 1px solid #eedfcb;
+    }
+
+    .modal-header h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #4b341c;
+      margin: 0;
+    }
+
+    .close-modal {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #7c6850;
+      transition: 0.2s;
+      line-height: 1;
+      padding: 0 8px;
+    }
+
+    .close-modal:hover {
+      color: #a1301a;
+      transform: scale(1.1);
+    }
+
+    /* Modal body - only image and buttons */
+    .modal-body-simple {
+      padding: 1rem;
+      /* padding: 2rem 1.8rem 1.8rem; */
+    }
+
+    .course-modal-img {
+      width: 100%;
+      /* max-width: 200px; */
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .course-modal-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .modal-buttons {
+      display: flex;
+      /* flex-direction: column; */
+      gap: 14px;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .modal-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .modal-btn-register {
+      background: #a86d11;
+      color: white;
+    }
+
+    .modal-btn-register:hover {
+      background: #8a5806;
+      transform: translateY(-2px);
+    }
+
+    .modal-btn-join {
+      background: #081f4d;
+      color: white;
+    }
+
+    .modal-btn-join:hover {
+      background: #04122d;
+      transform: translateY(-2px);
+    }
+
+    /* No description / highlights - removed as requested */
+    .modal-footer {
+      padding: 0.5rem 1.8rem 1.8rem;
+      background: #fffbf5;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #f0e2ce;
+    }
+
+    @media (max-width: 550px) {
+      .modal-header h3 {
+        font-size: 1.3rem;
+      }
+      .modal-buttons {
+        gap: 12px;
+      }
+      .modal-btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* fade-up animation */
+    .fade-up {
+      animation: fadeUp 0.6s ease backwards;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    /* Grid + cards (exactly like original but robust) */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .level-card {
+      background: #ffffff;
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 30px;
+      border: 1px solid #f0e9db;
+      cursor: default;
+    }
+
+    .level-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 36px -14px rgba(60, 40, 20, 0.15);
+      border-color: #e2d5bf;
+    }
+
+    .level-number {
+      margin-bottom: 1.5rem;
+    }
+    .level-number img {
+      /* max-width: 70px; */
+      height: auto;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+    }
+
+    .level-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #3b2a1f;
+      margin-bottom: 1rem;
+      border-left: 4px solid #c6a45c;
+      padding-left: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .level-sub p {
+      color: #3c372c;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 1.8rem;
+    }
+
+    .level-sub button {
+      background: #f0e2ce;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 60px;
+      color: #4a351a;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-family: inherit;
+      border: 1px solid #e9dccf;
+      position: absolute;
+      bottom: 8px;
+
+    }
+
+    .level-sub button:hover {
+      background: #dfceb2;
+      transform: scale(0.97);
+    }
+
+    /* ========= MODAL (CLEAN, WORKING) ========= */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(25, 20, 12, 0.85);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-popup {
+      background: #fffef7;
+      max-width: 680px;
+      width: 90%;
+      border-radius: 2rem;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95);
+      transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .modal-overlay.active .modal-popup {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 1.8rem;
+      background: #fef3e4;
+      border-bottom: 1px solid #eedfcb;
+    }
+
+    .modal-header h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #4b341c;
+      margin: 0;
+    }
+
+    .close-modal {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #7c6850;
+      transition: 0.2s;
+      line-height: 1;
+      padding: 0 8px;
+    }
+
+    .close-modal:hover {
+      color: #a1301a;
+      transform: scale(1.1);
+    }
+
+    .modal-body-simple {
+      padding: 1rem;
+      /* padding: 2rem 1.8rem 1.8rem; */
+    }
+
+    .course-modal-img {
+      width: 100%;
+      /* max-width: 180px; */
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .course-modal-img img {
+      max-width: 100% !important;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      /* box-shadow: 0 10px 20px rgba(0,0,0,0.1); */
+      /* background: #f7f3ea; */
+      /* padding: 8px; */
+    }
+
+    .modal-buttons {
+      display: flex;
+      /* flex-direction: column; */
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .modal-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .modal-btn-register {
+      background: #a86d11;
+      color: white;
+    }
+
+    .modal-btn-register:hover {
+      background: #8a5806;
+      transform: translateY(-2px);
+    }
+
+    .modal-btn-join {
+      background: #081f4d;
+      color: white;
+    }
+
+    .modal-btn-join:hover {
+      background: #04122d;
+      transform: translateY(-2px);
+    }
+
+    .modal-footer {
+      padding: 0.5rem 1rem 1.5rem;
+      background: #fffbf5;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #aa9a7a;
+      border-top: 1px solid #f0e2ce;
+      justify-content: center;
+    }
+
+    @media (max-width: 550px) {
+      .modal-header h3 {
+        font-size: 1.3rem;
+      }
+      .modal-btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+      }
+      .level-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    .fade-up {
+      animation: fadeUp 0.6s ease backwards;
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* note strip */
+    .info-note {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #f5ede0;
+      border-radius: 60px;
+      color: #5a4a2e;
+      font-size: 0.85rem;
+      border: 1px solid #e2cfb0;
+    }
+    
+
+    
+  .ornament {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;}
+
+    .orn-line {
+    width: 350px;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, #c8922a);
 }
-.phone-number{
-    font-weight: 700;
-    color: #000;
-    font-size: 35px;
-    margin-bottom: 1rem;
-    text-wrap-mode: nowrap;
+.orn-diamond {
+    width: 16px;
+    height: 16px;
+    background: #c8922a;
+    transform: rotate(45deg);
+}
+.orn-line.right {
+    background: linear-gradient(90deg, #c8922a, transparent);
 }
 
-.phone-btn{
-    background-color: green !important;
-    color: #fff !important;
-    text-wrap-mode: nowrap;
-}
-.phone-btn:hover{
-    background-color: #ec1f25;
-    color: #fff;
-}
-
-@media (max-width:991px) {
-	.ast_menu_btn{
-		top: 20px !important; 
-		right: 15px !important;
-		left:unset !important;
-	}
-
-    .phone-call-inner{
-    padding: 30px;
-
-}
-.phone-call-inner .phone-number{
-    font-size: 30px;
-}
-.phone-btn{
-    font-size: 18px;
-    margin: unset !important;
-    width: auto !important;
-    padding: 10px !important;
-}
-
-.phone-call-inner h3{
-    text-wrap-mode: nowrap;
-}
-}
-
-
-/* ================================================
-   FIX: Mobile Responsive Horizontal Scroll & Right Space
-   ================================================ */
-
-/* Prevent horizontal overflow on all containers */
-html,
-body {
-    /* overflow-x: hidden !important; */
-    width: 100%;
-    position: relative;
-}
-
-/* Force all sections to stay within viewport */
-/* .container, */
-/* .container-fluid, */
-.ast_footer_wrapper,
-.ast_slider_wrapper,
-section,
-footer,
-header,
-.hero-bg,
-.pain-section,
-.bridge,
-.good-news,
-.schedule-bg,
-.course-highlights,
-.who-can-join,
-.special-benefits,
-#register,
-.ads {
-    /* overflow-x: hidden !important; */
-    /* max-width: 100% !important; */
-}
-
-/* Remove any negative margins that might cause overflow */
-/* .row,
-[class*="row"] {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+/* h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Philosopher', sans-serif !important;
 } */
-
-/* Ensure images don't exceed container width */
-img {
-    /* max-width: 100% !important; */
-    height: auto !important;
+.hero-section-responisve {
+  display: none;
 }
 
-/* Fix for stats wrapper on mobile */
-.stats-wrapper {
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* Fix for stats container on mobile */
-@media (max-width: 768px) {
-    .stats-container {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-    
-    .stat-box {
-        width: 100% !important;
-        justify-content: center !important;
-    }
-}
-
-/* Fix for grid layouts that might cause overflow */
-@media (max-width: 991px) {
-  html, body{
-    overflow-x: hidden !important;
-
+@media (max-width:991px){
+  .main-title{
+    font-size: 29px;
   }
-    .row {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+  .roadmap-grid{
+    padding: 0;
+  }
+  .modal-btn{
+    font-size: 9px;
+    padding: 10px 12px;
+    gap: 5px;
+  }
+  /* .modal-btn-join{
+  } */
+   .banner-badge h2{
+    font-size: 1rem;
+   }
+   p{
+    font-size: 14px !important;
+   }
+   .roadmap-grid{
+    grid-template-columns:repeat(auto-fill, minmax(296px, 1fr));
+   }
+   .level-number{
+    margin-bottom: 1rem;
+   }
+   .level-title{
+    font-size: 1.1rem;
+   }
+   .btn-primary{
+    font-size: 14px;
+   }
+   .grid-2col{
+    padding: 0 0px;
+    gap: 0;
+   }
+   .banner-badge{
+    padding: 6px 17px;
+    margin: 10px 0 !important;
+   }
+   .info-list li{
+    margin-bottom: 10px;
+    font-size: 13px;
+   }
+   .grid-2col h5{
+    font-size: 18px;
+   }
+   .exp-card-bgm{
+    padding: 10px;
+   }
+   .exp-card-bgm .banner-badge{
+
+     
+     display: block !important;
+     text-align: center !important;
+     width: max-content !important;
+     margin: auto !important;
     }
-    
-    .col-12,
-    .col-md-6,
-    .col-lg-4,
-    [class*="col-"] {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+
+   .exp-card{
+    flex-direction: column;
+    padding: 10px !important;
+    text-align: center;
+   }
+   .exp-card h2{
+    font-size: 1rem !important;
+   }
+   .stat-badge{
+    font-size: 13px;
+    display: block;
+   }
+   .hero-section-responisve{
+    display: block;
+    padding: 0;
+
+   }
+   .hero-section-responisve .image-box img{
+   border-radius: 0 !important;
+  }
+   .hero-section{
+    display: none;
+   }
+       .quote {
+        width: 84%;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    .desc{
+      font-size: 14px;
+      text-align: center;
+      margin: 20px 0 !important;
+    }
+
+    .btn-register{
+      width: 30%;
+    }
+    .btn-group-custom{
+      margin-top: 15px;
+    }
+    .custom-btn{
+      font-size: 12px !important;
+      padding: 15px 10px;
+      text-align: center;
+
+    }
+    .btn-group-custom{
+      flex-wrap: unset !important;
+    }
+    .btn-join{
+      width: 54% !important;
+    }
+    section{
+      padding: 20px 0;
+    }
+    .announcement-card{
+      padding: 18px  15px;
+    }
+    .announcement-card p{
+      font-size: 13px !important;
+    }
+
+    .final-message{
+      padding: 14px 0px;
+    }
+    .footer-quote-item{
+      font-size: 12px;
+    }
+    .final-message p{
+      font-size: 12px !important;
+    }
+    .quote-footer{
+      gap: 10px;
+    }
+    .btn-primary{
+      font-size: 14px;
+    }
+    .final-quote{
+      font-size: 12px !important;
     }
 }
 
-/* Fix for any fixed positioned elements causing overflow */
-.social-fixed,
-.whatsapp-float {
-    z-index: 999;
-}
-
-/* Ensure all padding doesn't cause overflow */
-* {
-    box-sizing: border-box;
-}
-
-/* Fix for mobile sidebar */
-/* .mobile-menu-sidebar {
-    max-width: 85vw !important;
-    overflow-y: auto !important;
-} */
-
-/* Fix for hero banner text on mobile */
-@media (max-width: 767px) {
-    .ast_banner_text {
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        width: 90% !important;
-    }
-    
-    .ast_bannertext_wrapper h1 {
-        font-size: 28px !important;
-    }
-}
-
-/* Remove any hidden overflow from elements */
-.ast_header_bottom,
-.ast_menu,
-.ast_menu ul {
-    overflow-x: visible !important;
-}
-
-/* Fix for footer and other wrappers */
-.ast_footer_wrapper {
-    width: 100% !important;
-    overflow-x: hidden !important;
-}
-
-/* Ensure the main content doesn't cause scroll */
-.main-content,
-#main-content {
-    overflow-x: hidden !important;
-}
-
-
-</style>
+  </style>
 </head>
 <body>
-   <div class="loader" id="siteLoader">
+
+	
+
+<!-- <div class="loader" id="siteLoader">
+  <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
+</div> -->
+<div class="loader" id="siteLoader">
   <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
 </div>
 <div class="loader2" id="siteLoader2">
   <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
 </div>
-  <!-- <div class="loader" id="siteLoader"><div class="spinner-border" role="status"></div></div> -->
+<!-- Header Start -->
 
-<!-- Header Start -->
- 
-<!-- Header Start -->
 <!-- ===== NAVBAR ===== -->
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar-custom">
@@ -1709,605 +2916,581 @@ img {
   </div>
 </div>
 <!-- Header End -->    
+<!--Slider Start-->
 
-    <!-- Hero Section -->
-    <header class="hero-bg text-white  text-center">
-        <div class="container">
-            <h1 class="display-5 fw-bold mb-3 heading-bold page-title" style="color: #fff; text-transform:uppercase ;">Vishwakarma Vastu <br> Sciences Academy</h1>
-            <p class="fs-3 mb-4">Online Live Course</p>
+<!-- Header -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="content-box">
+
+          <h5 class="sub-title">
+            Vishwakarma Vastu
+          </h5>
+
+          <h1 class="main-title">
+            <!-- Vishwakarma Vasthu  Course -->
+
+            <span>Life Transformation Foundation Course</span>
             
-            <div class="d-inline-block bg-white bg-opacity-20 backdrop-blur p-4 px-md-5 rounded-4" style="border-radius: 30px; border:6px solid #c9a84c">
-                <p class="fs-4 fw-semibold mb-0 page-subtitle1" style="color: black; font-weight: bold;">
-                    Course Duration: <span class="">5 Weeks Summer Special Crash Course</span>
-                </p>
-                <p class="fs-3 fw-semibold mb-0 page-subtitle2" style="color: black; font-weight: bold;">Spiritual Self Development Programme</p>
+          </h1>
+
+          <div class="quote">
+            “Learn Before You Build.”
+          </div>
+
+          <p class="desc">
+            A practical 5-week Vishwakarma Vastu Foundation Program based on 40 Years Of Experience.
+            <!-- <span class="highlight"></span>. -->
+          </p>
+
+          <div class="btn-group-custom">
+
+            <a href="#" class="custom-btn btn-register">
+              Register Now
+            </a>
+
+            <a href="#" class="custom-btn btn-join">
+              Join Vvs Foundation Course
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+
+      <div class="col-lg-6">
+
+        <div class="image-box">
+
+          <!-- Replace image path -->
+          <!-- <img src="banner-image.png" alt="VVS Foundation Course"> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="hero-section-responisve">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- LEFT CONTENT -->
+
+      <div class="col-lg-6 p-0">
+
+        <div class="image-box">
+
+          <!-- Replace image path -->
+          <img src="./images/banners/online-classes-responsive.png" alt="VVS Foundation Course">
+
+        </div>
+
+      </div>
+       <!-- RIGHT IMAGE -->
+
+      <div class="col-lg-6">
+        <!-- <div class="container"> -->
+
+          <div class="content-box">
+  
+            <!-- <h5 class="sub-title">
+              Vishwakarma Vastu
+            </h5> -->
+  
+            <h1 class="main-title text-center" style="text-transform: uppercase;">
+              <!-- Vishwakarma Vasthu  Course -->
+  
+              <span>Life Transformation Foundation COURSE</span>
+              
+            </h1>
+  
+            <div class="quote">
+              “Learn Before You Build.”
             </div>
-        </div>
-    </header>
-<!-- benefits of learning crash course -->
-
-<!-- ══════════════════════════════════════════
-     PAIN POINTS — NEW CONTENT SECTION
-     ══════════════════════════════════════════ -->
-<section class="pain-section">
-  <div class="container">
-
-    <div class="pain-inner">
-      <div class="pain-eyebrow reveal">Are You Experiencing These Hard Ships?</div>
-     
-      <h2 class="pain-heading reveal">Is Your Hard Work <span class="em">Not Bringing Results?</span></h2>
-      <p class="pain-subheading reveal">You might not be the problem. Your Place / Home could be.</p>
-  <!-- <div class="sub-underline"></div> -->
-    <div class="ornament">
-          <div class="orn-line"></div>
-          <div class="orn-diamond"></div>
-          <div class="orn-line right"></div>
-        </div>
-      <div class="pain-grid">
-        <!-- 1 -->
-        <div class="pain-card reveal">
-          <span class="pain-icon">😓</span>
-          <span class="pain-text">Working very hard but not succeeding.</span>
-        </div>
-        <!-- 2 -->
   
-        <div class="pain-card reveal reveal-d1">
-          <span class="pain-icon">💼</span>
-          <span class="pain-text">No Job, No Income.</span>
-        </div>
-        <!-- 3 -->
+            <p class="desc">
+              A practical 5-week Vishwakarma Vastu Foundation Program based on
+              <span class="highlight">40 Years Of Experience</span>.
+            </p>
   
-        <div class="pain-card reveal reveal-d2">
-          <span class="pain-icon">💸</span>
-          <span class="pain-text">Income is there but no savings.</span>
-        </div>
+            <div class="btn-group-custom">
   
-        <!-- 4 -->
+              <a href="#" class="custom-btn btn-register">
+                Register Now
+              </a>
   
-        <div class="pain-card reveal">
-          <span class="pain-icon">🔄</span>
-          <span class="pain-text">Always hand to mouth — never getting ahead.</span>
-        </div>
+              <a href="#" class="custom-btn btn-join">
+                Join Vvs Foundation Course
+              </a>
   
-        <!-- 5 -->
-          <div class="pain-card reveal reveal-d1">
-          <span class="pain-icon">💍</span>
-          <span class="pain-text">Not getting married despite all efforts.</span>
-        </div>
+            </div>
   
-   
-        
-        <!-- 6 -->
-  
-  <div class="pain-card reveal reveal-d2">
-          <span class="pain-icon">🏠</span>
-          <span class="pain-text">Constant stress and tension at home.</span>
-        </div>
-        
-        <!-- 7 -->
-  
-  <div class="pain-card reveal reveal-d1">
-          <span class="pain-icon">📈</span>
-          <span class="pain-text">Increase of debts with no way out.</span>
-        </div>
-       
-        <!-- 8 -->
-         <div class="pain-card reveal reveal-d2">
-          <span class="pain-icon">👶</span>
-          <span class="pain-text">Got married but no children.</span>
-        </div>
-  
-  
-       
-        <!-- 9 -->
-         <div class="pain-card reveal">
-          <span class="pain-icon">🏥</span>
-          <span class="pain-text">Recurring health issues not improving.</span>
-        </div>
-  
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BRIDGE -->
-<section class="bridge">
-  <div class="container">
-
-    <div class="bridge-inner">
-      <p class="bridge-question reveal">
-        Have you ever thought <br> The problem may not be in you..<br>It could be in your Place / Home</em>?
-      </p>
-      <!-- <div class="bridge-divider reveal"></div> -->
-       <!-- <div class="sub-underline"></div> -->
-        <div class="ornament">
-          <div class="orn-line"></div>
-          <div class="orn-diamond"></div>
-          <div class="orn-line right"></div>
-        </div>
-      <p class="bridge-body reveal">
-        Many people purchase new houses, flats or construct new homes but unknowingly make a<strong> big mistake.</strong>
-        While purchasing or constructing, they ignore <strong> Vasthu.</strong> You know what happens then?  Despite sincerely working hard to progress. They keep failing and at last <strong>satisfy themselves </strong>in the name of  <strong>Karma.</strong>
-      </p>
-      <div class="bridge-insight reveal">
-        <!-- "But those who prosper speak great of their efforts. If you once go and see their houses, you will come to know the truth of karma and their efforts".<br>I'm not trying to make non-believers believe it, nor am I advocating a bag full of tricks. <br> <strong>I'm just talking of living again a proper way of life, making it worth living until we depart.</strong> -->
-         <p> <strong> “Those who succeed often speak proudly of their Success, <br>But if you see their living places, you will come to know the truth of karma and efforts.</strong></p>
-         <p> <strong>I’m not trying to convince non-believers nor promoting clever tricks. <br>Iam simply speaking about living a good happy prosperous healthy cheerful life until death."</strong></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GOOD NEWS -->
-<section class="good-news">
-  <div class="container">
-
-    <div class="good-news-inner">
-      <div class="good-news-top reveal">
-        <div class="good-news-tag">✦ But Here's the Good News</div>
-        <h2 class="good-news-heading">This Can Be Corrected. That's Why <br> I Brought You Vishwakarma Vasthu Sciences</h2>
-        <!-- <div class="good-news-desc-section"> -->
-          <h2 class="good-news-heading2"> 5 Weeks Summer Crash Course. </h2>
-            <!-- <p class="good-news-desc"> In this course, you will learn to analyze & correct your own home.</p> -->
+          </div>
         <!-- </div> -->
-         <!-- <div class="ornament">◆ ◇ ◆</div> -->
-           <div class="ornament">
+
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Hero / Banner Section -->
+<section class="hero-banner">
+  <div class="container">
+    <div class="banner-badge fade-up" style="text-align: center;
+    display: table;
+    justify-content: center;
+    margin: auto; background: #22a85a; color: #fff; font-weight: bold;"><h2 style="color: #fff; font-size:clamp(1rem, 4vw, 1.8rem) ; " class="m-0" >✦ Vishwakarma Vasthu Sciences (Vvs) Online Courses ✦ </h2></div>
+    <!-- <h1 class="fade-up" style="font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.2; max-width: 900px;"><span class="gold-text">Vishwakarma Vasthu Sciences (VVS  ) Online Courses
+</span></h1> -->
+    <div class="text-center">
+
+      <p class="fade-up" style="font-size: 1rem; color: #000; margin: 20px 0 0px; ">Designed from 40+ years of practical observations and experience by KL Vishwakarma.</p>
+      <p class="fade-up" style="font-size: 1rem; color: #000; margin: 0; text-wrap-style: balance;">Our structured online learning program helps students understand practical Vishwakarma Vasthu Sciences step-by-step through observation, planning, nature understanding, and applied concepts for better living.</p>
+      <p class="fade-up" style="font-size: 1rem; color: #000; margin: 20px 0 20px;"> <strong>“Vvs Has No Caste, Creed, Status or Country.”</strong></p>
+
+      <div class="ornament">
           <div class="orn-line"></div>
           <div class="orn-diamond"></div>
           <div class="orn-line right"></div>
         </div>
-      </div>
-  
-      <div>
-        <div class="good-news-top2 ">
-  
-          <div class="good-news-tag2">✦ In this course, <br> you will learn to Analyse & correct <br> your own  place / home. <br>Which will enable you to prosper again. ✦</div>
+    </div>
+
+
+    
+    <!-- Register Now Buttons -->
+    <!-- <div class="register-buttons fade-up">
+      <a href="https://wa.me/919848045677?text=I%20want%20to%20join%20VVS%20Foundation%20Course" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Register Now Foundation Course</a>
+      <a href="https://wa.me/919848045677?text=I%20want%20to%20know%20about%205%20Level%20Courses" target="_blank" class="btn-outline-light"><i class="fas fa-layer-group"></i> Explore 5 Level Courses</a>
+    </div> -->
+  </div>
+</section>
+
+<!-- Foundation + 5 Level Courses (Heading + All Levels) -->
+<section style="background: #ede9df;">
+  <div class="container">
+    <div class="text-center fade-up">
+      <div class="banner-badge fade-up" style="text-align: center;
+    display: table;
+    justify-content: center;
+    margin: auto; background: #22a85a; color: #fff; font-weight: bold;">
+  <h2 style="font-size: clamp(1rem, 4vw, 1.8rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Foundation plus 5 levels Courses ✦ </h2>  
+  </div>
+      
+      <div style="width: 80px; height: 3px; background: var(--gold); margin: 20px auto 30px;"></div>
+      <!-- <div>
+        <h4> Foundation Course</h4>
+        <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements, and house observations.</p>
+      </div> -->
+    </div>
+
+     
+
+    <!-- 5 Levels exactly as per PDF: FOUNDATION, MANU, MAYA, TVASHTA, SHILPI, VISHWAJNA -->
+    <!-- <div class="roadmap-grid fade-up">
+      <div class="level-card">
+       
+        <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt=""></div>
+        <div class="level-title"> Foundation Course</div>
+        <div class="level-sub">
+          <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements, and house observations.</p>
+          <button>Read more</button>
         </div>
+      </div>
 
-        <div class="wrapper container">
+      <div class="level-card">
+       
+        <div class="level-number"><img src="./images/online-class/Manu-Level-logo.png" alt=""></div>
+ 
+        <div class="level-title">Manu Course</div>
+        <div class="level-sub">
+          <p>Deeper understanding of residential planning, land observation, roads, extensions, and practical living spaces.</p>
+          <button>Read more</button>
 
-  <!-- OPTION 01 -->
-  <div class="option-item">
-    <div class="label-block">
-      <!-- <span class="opt-text">OPTION</span> -->
-      <span class="opt-number">01</span>
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-number"><img src="./images/online-class/Maya-Level-logo.png" alt=""></div>
+        <div class="level-title">Maya Course</div>
+        <div class="level-sub">
+          <p>Advanced space planning, structural understanding, commercial basics, and modern construction observations.</p>
+          <button>Read more</button>
+
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-number"><img src="./images/online-class/Tvashta-Level-logo.png" alt=""></div>
+        <div class="level-title">Tvashta  Course</div>
+        <div class="level-sub">
+          <p>Healthy living concepts through balanced spaces, ventilation, light, environmental comfort, and nature-oriented planning.
+</p>
+          <button>Read more</button>
+
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-number"><img src="./images/online-class/Shilpi-Level-logo.png" alt=""></div>
+        <div class="level-title">Shilpi Course</div>
+        <div class="level-sub">
+          <p>Applied practical planning, case studies, site observations, corrections, and advanced house analysis.</p>
+          <button>Read more</button>
+
+        </div>
+      </div>
+      <div class="level-card">
+        <div class="level-number"><img src="./images/online-class/Vishwajna-Level-logo.png" alt=""></div>
+        <div class="level-title">Vishwagna Course</div>
+        <div class="level-sub">
+          <p>Master-level practical understanding developed from decades of field experience, observations, and advanced analysis.</p>
+          <button>Read more</button>
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- levels2  -->
+    <div class="roadmap-grid fade-up">
+    <!-- Foundation Card -->
+    <div class="level-card" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
+      <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div>
+      <div class="level-title">Foundation Course</div>
+      <div class="level-sub">
+        <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
     </div>
-    <div class="content-block">
-      <p>How to identify your house direction accurately.</p>
-      <!-- <div class="icon-circle">
-        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 14H11v-5h2v5zm0-7H11V7h2v2z"/></svg>
-      </div> -->
+
+    <!-- Manu Course -->
+    <div class="level-card" data-course="manu" data-course-name="Manu Course" data-img-src="./images/online-class/Manu-Level-logo.png">
+      <div class="level-number"><img src="./images/online-class/Manu-Level-logo.png" alt="Manu logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Manu'"></div>
+      <div class="level-title">Manu Course</div>
+      <div class="level-sub">
+        <p>Deeper understanding of residential planning, land observation, roads, extensions and practical living spaces.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
+    </div>
+
+    <!-- Maya Course -->
+    <div class="level-card" data-course="maya" data-course-name="Maya Course" data-img-src="./images/online-class/Maya-Level-logo.png">
+      <div class="level-number"><img src="./images/online-class/Maya-Level-logo.png" alt="Maya logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Maya'"></div>
+      <div class="level-title">Maya Course</div>
+      <div class="level-sub">
+        <p>Advanced space planning, structural understanding, commercial basics and modern construction observations.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
+    </div>
+
+    <!-- Tvashta Course -->
+    <div class="level-card" data-course="tvashta" data-course-name="Tvashta Course" data-img-src="./images/online-class/Tvashta-Level-logo.png">
+      <div class="level-number"><img src="./images/online-class/Tvashta-Level-logo.png" alt="Tvashta logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Tvashta'"></div>
+      <div class="level-title">Tvashta Course</div>
+      <div class="level-sub">
+        <p>Healthy living concepts through balanced spaces, ventilation, light, environmental comfort and nature-oriented planning.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
+    </div>
+
+    <!-- Shilpi Course -->
+    <div class="level-card" data-course="shilpi" data-course-name="Shilpi Course" data-img-src="./images/online-class/Shilpi-Level-logo.png">
+      <div class="level-number"><img src="./images/online-class/Shilpi-Level-logo.png" alt="Shilpi logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Shilpi'"></div>
+      <div class="level-title">Shilpi Course</div>
+      <div class="level-sub">
+        <p>Applied practical planning, case studies, site observations, corrections and advanced house analysis.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
+    </div>
+
+    <!-- Vishwagna Course -->
+    <div class="level-card" data-course="vishwagna" data-course-name="Vishwagna Course" data-img-src="./images/online-class/Vishwajna-Level-logo.png">
+      <div class="level-number"><img src="./images/online-class/Vishwajna-Level-logo.png" alt="Vishwajna logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=Vishwagna'"></div>
+      <div class="level-title">Vishwagna Course</div>
+      <div class="level-sub">
+        <p>Master-level practical understanding developed from decades of field experience, observations and advanced analysis.</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
     </div>
   </div>
 
   
-
-  <!-- OPTION 02 -->
-  <div class="option-item">
-    <div class="label-block">
-      <!-- <span class="opt-text">OPTION</span> -->
-      <span class="opt-number">02</span>
-    </div>
-    <div class="content-block">
-      <p>How to choose the right plot for your family.</p>
-      <!-- <div class="icon-circle">
-        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-      </div> -->
-    </div>
   </div>
 
-  <!-- OPTION 03 -->
-  <div class="option-item">
-    <div class="label-block">
-      <!-- <span class="opt-text">OPTION</span> -->
-      <span class="opt-number">03</span>
-    </div>
-    <div class="content-block">
-      <p>How & Where Open Places / Gates / Main Doors / Doors / Windows / Borewell / Sump / Septic Tank / Drainage Manholes / Drawing Room / Hall / Kitchen / Pooja Room / Bed Rooms / Toilets and Stairs
-</p>
-      <!-- <div class="icon-circle">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-      </div> -->
-    </div>
-  </div>
+  
+  
 
-  <!-- OPTION 04 -->
-  <div class="option-item">
-    <div class="label-block">
-      <!-- <span class="opt-text">OPTION</span> -->
-      <span class="opt-number">04</span>
-    </div>
-    <div class="content-block">
-      <p>How to identify Vasthu defects in any space.</p>
-      <!-- <div class="icon-circle">
-        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      </div> -->
-    </div>
+    <!-- All Images with WhatsApp links (each level icon leads to WA) -->
+    <!-- <div class="fade-up" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin: 40px 0 20px;">
+      <a href="https://wa.me/919848045677?text=I'm%20interested%20in%20Foundation%20Course" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Foundation" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+      <a href="https://wa.me/919848045677?text=Tell%20me%20about%20Manu%20Level" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Manu" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+      <a href="https://wa.me/919848045677?text=Tell%20me%20about%20Maya%20Level" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Maya" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+      <a href="https://wa.me/919848045677?text=Tell%20me%20about%20Tvashta%20Level" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Tvashta" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+      <a href="https://wa.me/919848045677?text=Tell%20me%20about%20Shilpi%20Level" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Shilpi" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+      <a href="https://wa.me/919848045677?text=I%20want%20Vishwajna%20Mastery" target="_blank"><img src="https://placehold.co/120x120/1A2235/C9A84C?text=Vishwajna" style="border-radius: 20px; width: 100px; height: 100px; object-fit: cover; border: 1px solid var(--gold);"></a>
+    </div> -->
+    <!-- <p class="text-center" style="color: #aaa; margin-top: 10px;"><i class="fas fa-hand-point-right gold-text"></i> Click on any level image to enquire on WhatsApp</p> -->
+  </div>
+</section>
+
+<div class="" style="background-color: var(--gray-light);">
+
+     <div class="Certification">
+      <div class="container">
+
+        <div class="banner-badge fade-up" style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold;">
     
-  </div>
-  <!-- OPTION 04 -->
-  <div class="option-item">
-    <div class="label-block">
-      <!-- <span class="opt-text">OPTION</span> -->
-      <span class="opt-number">05</span>
-    </div>
-    <div class="content-block">
-      <p>And how to implement Vishwakarma Vastu simple remedies to prosper again.</p>
-      <!-- <div class="icon-circle">
-        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      </div> -->
-    </div>
+    <h2 style="font-size: clamp(1rem, 4vw, 1.6rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Certification ✦ </h2>  
+        </div>
+        
+          <!-- <h4>Certification</h4> -->
+          <p>A “Certificate of Completion” will be issued at the successful completion of every course level.
+    </p>
     
+    <div class="banner-badge fade-up" style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold;">
+    
+    <h2 style="font-size: clamp(1rem, 4vw, 1.6rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Vision ✦ </h2>  </div> 
+    
+    <p>To spread awareness about practical, nature-based Vishwakarma Vasthu Sciences  <br>for healthier, peaceful and better living for all. <br> To create Better Tomorrows.</p>
+        </div>
+      </div>
   </div>
 
+<!-- IMPORTANT ANNOUNCEMENT (Title) + Registrations Open -->
+<!-- <section>
+  <div class="container">
+    <div class="announcement-card fade-up">
+      <h2 style="font-size: 2rem; margin-bottom: 16px; font-weight: 600;"><span class="gold-text">📢 IMPORTANT ANNOUNCEMENT</span></h2>
+      <div style="font-size: 1.4rem; font-weight: 700; margin: 10px 0;">Registrations Open</div>
+      <p style="font-size: 1.1rem;">Currently registrations are open only for: <strong class="gold-text">"Foundation Course"</strong></p>
+      <p style="margin-top: 18px;">Students will gradually progress from: <strong>Foundation → Higher practical mastery levels </strong></p>
+      <div style="margin-top: 28px;">
+        <a href="https://wa.me/919848045677?text=I%20want%20to%20enroll%20Foundation%20Course" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Secure Foundation Seat</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+<!-- IMPORTANT ANNOUNCEMENT Section - Updated with clickable links -->
+<section>
+  <div class="container">
+    <div class="announcement-card fade-up">
+      <h2 style="font-size: clamp(1rem, 4vw, 1.6rem);; margin-bottom: 16px; font-weight: 600;"><span class="gold-text">📢 IMPORTANT ANNOUNCEMENT</span></h2>
+      <div style="font-size: clamp(1rem, 4vw, 1.4rem);; font-weight: 700; margin: 10px 0;">Registrations Open</div>
+      <p style="font-size: 1.1rem;">
+        Currently registrations are open only for: 
+        <strong class="gold-text clickable-link" id="foundationCourseLink" style="cursor: pointer; text-decoration: underline;">"Foundation Course"</strong>
+      </p>
+      <p style="margin-top: 18px;">Students will gradually progress from:
+        <strong>Foundation → 
+          <span id="higherLevelsLink" class="clickable-link" style="cursor: pointer; text-decoration: underline; color: #8b1a1a;">Higher practical mastery levels</span>
+        </strong>
+      </p>
+      <div style="margin-top: 28px;">
+        <a href="https://wa.me/919848045677?text=I%20want%20to%20enroll%20Foundation%20Course" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> Secure Foundation Seat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal 1: Foundation Course Popup -->
+<div id="foundationModal" class="modal-overlay">
+  <div class="modal-popup">
+    <div class="modal-header">
+      <h3 id="foundationModalTitle">Foundation Course</h3>
+      <button class="close-modal foundation-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body-simple">
+      <div class="course-modal-img">
+        <img id="foundationModalImg" src="./images/online-class/Foundation.jpg" alt="Foundation Course" onerror="this.onerror=null; this.src='https://placehold.co/400x300/C9A84C/fff?text=Foundation+Course';">
+      </div>
+      <div class="modal-buttons">
+        <a href="#" id="foundationRegisterBtn" class="modal-btn modal-btn-register" target="_blank">
+          <i class="fas fa-calendar-check"></i> Register Now
+        </a>
+        <a href="#" id="foundationJoinBtn" class="modal-btn modal-btn-join" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Join Vvs Foundation Course
+        </a>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <small>✨ Vishwakarma Vastu Sciences — Practical wisdom since 1985</small>
+    </div>
+  </div>
 </div>
 
-        <div class="learn-grid1 d-flex d-none">
-          <div class="col-6">
-            <div class="learn-item reveal">
-              <div class="learn-check">✔</div>
-              <span class="learn-text">How to identify your house direction accurately.</span>
-            </div>
-            <div class="learn-item reveal">
-              <div class="learn-check">✔</div>
-              <!-- <span class="learn-text">How &amp; where kitchen and bedroom should be placed,</span> -->
-                <span class="learn-text">How & Where Open Places / Gates / Main Doors / Doors / Windows / Borewell / Sump / Septic Tank / Drainage Manholes / Drawing Room / Hall / Kitchen / Pooja Room / Bed Rooms / Toilets and Stairs</span>
-            </div>
-          </div>
-          <div class="col-6">
-          
-          
-            
-            <div class="learn-item reveal reveal-d1">
-              <div class="learn-check">✔</div>
-              <span class="learn-text">How to choose the right plot for your family.</span>
-            </div>
-            
-            <div class="learn-item reveal reveal-d1">
-              <div class="learn-check">✔</div>
-              <span class="learn-text">How to identify Vasthu defects in any space,</span>
-            </div>
-            <!-- <div class="learn-item reveal" style="grid-column: 1 / -1; max-width: 560px; margin: 0 auto; width: 100%;"> -->
-            <div class="learn-item reveal" style="grid-column: 1 / -1;">
-              <div class="learn-check">✔</div>
-              <span class="learn-text"> And how to implement Vishwakarma Vastu simple remedies to prosper again.</span>
-            </div>
-          </div>
-        </div>
+<!-- Modal 2: Higher Practical Mastery Levels Popup -->
+<div id="higherLevelsModal" class="modal-overlay">
+  <div class="modal-popup">
+    <div class="modal-header">
+      <h3 id="higherModalTitle">Higher Practical Mastery Levels</h3>
+      <button class="close-modal higher-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body-simple">
+      <div class="course-modal-img">
+        <img id="higherModalImg" src="./images/All-Courses.jpg" alt="Mastery Levels" onerror="this.onerror=null; this.src='https://placehold.co/400x300/C9A84C/fff?text=Mastery+Levels';">
       </div>
-  
-      <!-- <div class="promise-box reveal">
-        <p>
-          <strong>Most importantly</strong> — you will be able to <strong>analyze your own house</strong> and <strong>correct your own house</strong>.<br><br>
-          Analyzing and correcting your house enables you to prosper again — to live a <strong>healthy, wealthy, cheerful, peaceful and happy prosperous life.</strong>
-        </p>
-      </div> -->
+      <div class="modal-buttons" style="display: none;">
+        <a href="#" id="higherRegisterBtn" class="modal-btn modal-btn-register" target="_blank">
+          <i class="fas fa-calendar-check"></i> Register Now
+        </a>
+        <a href="#" id="higherJoinBtn" class="modal-btn modal-btn-join" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Join Vvs Foundation Course
+        </a>
+      </div>
+    </div>
+    <div class="modal-footer d-none">
+      <small>✨ Progress through Manu, Maya, Tvashta, Shilpi, Vishwagna — step by step mastery</small>
+    </div>
+  </div>
+</div>
+
+
+<!-- Why This Learning System Was Created -->
+<section style="background: #ede9df;">
+  <div class="container">
+    <div class="fade-up">
+        <!-- <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px auto;">
+        <h2 style="font-size: clamp(1.8rem, 4vw, 1.6rem); font-weight: 700; color: #fff; "class=""   >✦ Why This Learning System Was Created  ✦</h2>  
+      </div>  -->
+
+
+<!-- <span class="banner-badge" style="background: rgba(201,168,76,0.1);">✦ Why This Learning System Was Created  ✦</span> -->
+    <div class="grid-2col">
+      
+      <div>
+        <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px 0;">
+        <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Why This Learning System Was Created  ✦</h2>  
+      </div> 
+        <h5 style="">Today there is: </h3>
+        <!-- <h3 style="font-size: 1rem; margin: 20px 0;">Too much random information & confusion?</h2> -->
+          <ul class="info-list">
+            <li> <i class="fa-solid fa-circle-xmark gold-text"></i><strong>Too much random information </strong> </li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Confusion</strong></li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Half knowledge</strong></li>
+            <li><i class="fa-solid fa-circle-xmark gold-text"></i><strong>Random YouTube tips</strong></li>
+          </ul>
+          <p>But very few people gain: </p>
+      </div>
+      <div>
+        <!-- <h3>Systematic practical understanding </h3> -->
+         <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px 0;">
+        <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; " class="m-0"  >✦ Systematic practical understanding ✦</h2>  
+      </div> 
+        <h5 style="">This course system was created to provide: </h4>
+
+        <ul class="info-list">
+          <li><i class="fas fa-check-circle gold-text"></i><span><strong>Step-by-step learning</span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Strong foundation</strong></span></li>
+          <li><i class="fas fa-check-circle gold-text"></i><span><strong>Practical observations</strong></span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Structured understanding</strong></span></li>
+          <li><i class="fas fa-check-circle gold-text"></i> <span><strong>Real-life applications </strong></span></li>
+        </ul>
+      </div>
+        </div>
+
+      
+      
     </div>
   </div>
 </section>
 
-  <!-- Course Highlights -->
-    <!-- <section class="py-4 bg-light">
-        <div class="container">
-            <h3 class="text-center">📚 Benefits Of Learning Crash Course</h3>
-            
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 card-hover" style="border-radius: 16px; text-transform: capitalize;">
-                        <ul class=" fs-5">
-                            
-                            
-                            <li class="">Working very hard but not succeeding </li>
-                            <li class="">No job no income</li>
-                            <li class="">Income is there but nil savings</li>
-                            <li class=""> always hand to mouth</li>
-                            <li class=""> increase of debts</li>
-                            <li class=""> Stress at home</li>
-                            <li class=""> Health issues</li>
-                            <li class=""> health not improving</li>
-                            <li class=""> not getting married</li>
-                            <li class=""> got married but no children</li>
-                            <li class=""> are few issues</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 card-hover" style="border-radius: 16px;">
-                        <!-- <ul class=" fs-5">
-                            <li class=""> Apartments & Modern Homes Vasthu</li>
-                            <li class=""> Business & Office Vasthu Basics</li>
-                            <li class=""> Case Studies <br> (Real-Life Examples)</li>
-                            <li class=""> Q&A + Practical Guidance</li>
-                            <li class=" ">Certificate of Completion</li>
-                        </ul> --
-                        <p>Have you ever thought the problem may not be in you it could be in your house 
-Many people purchase new houses flats or construct new houses but unknowingly  are making big mistake while purchasing or while constructing they ignore vasthu</p>
-<p>You know what happens then 
-Inspite of sincerely working hard to progress they keep failing and atlast satisfy themselves in the name of karma. But those who prosper speak great of their efforts If you once go and  see their houses you will come to know the truth of karma and their efforts. 
-im not trying to make non believers believe it nor im advocating a bag full of tricks im just talking of living again a proper way of life making it worth living until we depart. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+<!-- MY EXPERIENCE: 40 Years of Practical Observations + Photo + observations list -->
+<section>
+  <div class="container">
+    <div class="exp-card-bgm">
 
-    <!-- Schedule -->
-    <section class="py-4 schedule-bg">
-        <div class="container">
-          <div>
-            <div class="pain-eyebrow reveal">MANY HAVE PROSPERED</div>
-              
-                <h2 class="pain-heading reveal mb-0">MANY MORE ARE PROSPERING
-                   <!-- <span class="em">Not Bringing Results?</span> -->
-                  </h2>
-                <p class="pain-subheading reveal">YOU TOO WILL PROSPER</p>
-            <!-- <div class="sub-underline"></div> -->
-             <div class="ornament ">
-                  <div class="orn-line"></div>
-                  <div class="orn-diamond"></div>
-                  <div class="orn-line right"></div>
-                </div>
+      <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
+         margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px auto;">
+         <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; " class="m-0"  >✦ MY EXPERIENCE ✦</h2>  
+         </div>
+      <div class="exp-card fade-up">
+  
+        <div style="flex: 1; text-align: center;">
+          <!-- Photo placeholder -->
+          <img src="images/guru-kl.jpeg" alt="Dr. K.L Vishwakarma" style="border-radius: 24px; width: 200px; height: auto; border: 2px solid var(--gold); object-fit: cover;">
+          <!-- <div class="exp-stats" style="justify-content: center; margin-top: 20px;">
+            <span class="stat-badge"><i class="fas fa-calendar-alt"></i> 40+ Years</span>
+            <span class="stat-badge"><i class="fas fa-home"></i> 1000+ Houses</span>
+          </div> -->
+        </div>
+        <div style="flex: 2;">
+          <h2 class="gold-text" style="font-size: 1.9rem;">40 Years of Practical Observations</h2>
+          <p style="margin: 15px 0 10px;">This learning system is based on:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
+            <!-- <span class="stat-badge">🏠 Thousands of practical observations  </span>
+            <span class="stat-badge">🏠 Real-life experiences  </span>
+            <span class="stat-badge">📐 House studies</span>
+            <span class="stat-badge">👨‍👩‍👧‍👦 Plot analysis</span>
+            <span class="stat-badge">🏢 Family environments</span>
+            <span class="stat-badge">🏢 Business place observations </span> -->
+             <span class="stat-badge"><i class="fa-solid fa-chart-line gold-text"></i> Thousands of practical observations  </span>
+            <span class="stat-badge"><i class="fa-solid fa-user-group gold-text"></i> Real-life experiences  </span>
+            <span class="stat-badge"><i class="fa-solid fa-house gold-text"></i> House studies</span>
+            <span class="stat-badge"><i class="fa-solid fa-map-location-dot gold-text"></i> Plot analysis</span>
+            <span class="stat-badge"><i class="fa-solid fa-people-roof gold-text"></i> Family environments</span>
+            <span class="stat-badge"><i class="fa-solid fa-building gold-text"></i> Business place observations </span>
           </div>
-          <!-- <h2 class="text-center">MANY HAVE PROSPERED <br> ANY MORE ARE PREPARING <br>YOU TOO WILL PROSPER</h2> -->
-            <!-- <h3 class="text-center schedule-title">Schedule</h3> -->
-             <img src="./images/Schedule-Head.png" alt="" class="text-center img-heading">
-            
-            <div class="row justify-content-center">
-              <!-- <div class="col-lg-6 col-12">
-                    <img src="./images/schedule-left.jpg" alt="" class="mt-4" style="max-width: 100%; border-radius: 6px;">
-
-              </div> -->
-                <div class="col-lg-6 col-12 text-">
-                    <!-- <div class="card schedule-card shadow-sm p-4 rounded-4" style="border-radius: 20px;background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));">
-                        <ul class=" fs-5 mb-0 pl-4 ml-4">
-                            <li class=""> Weekly 2 Classes, Saturday & Sunday /li>
-                            <li class="">5 Weeks </li>
-                            <li class="">Total 10 Classes</li>
-                            <li class="">Each class: 1 Hour including Q&A</li>
-                        </ul>
-                    </div> -->
-                    <!-- <img src="./images/Schedule.png" alt="" class="mt-4"> -->
-                    <img src="./images/schedule-right.jpg" alt="" class="mt-4" style="max-width: 100%; border-radius: 6px;">
-                </div>
-            </div>
+          <h5>This is not merely theoretical learning. </h5>
+          <p> It is practical understanding developed through decades 
+of observation to transform your tomorrows into better 
+tomorrows to live a Healthy wealthy happy cheerful 
+prosperous life. </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Course Highlights -->
-    <section class="py-4 course-highlights">
-        <div class="container">
-            <!-- <h3 class="text-center course-highlights-title">📚 Course Highlights</h3> -->
-             <img src="./images/Course.png" alt="" class="text-center img-heading">
+<!-- FINAL MESSAGE (Title) + Vasthu quote -->
+<section style="background: #ede9df;">
+  <div class="container">
+    <div class="final-message fade-up">
+      <i class="fas fa-quote-left" style="font-size: 2.5rem; color: var(--gold); opacity: 0.5; margin-bottom: 16px; display: inline-block;"></i>
+      <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); margin-bottom: 16px;">FINAL MESSAGE</h2>
+      <p style="font-size: 1.4rem; font-weight: 500; line-height: 1.3;">"Vasthu is not merely about constructing houses."</p>
+      <p style="font-size: 1.4rem; margin-top: 12px;" class="gold-text">"It is an effort to create better lives Better Tomorrow's."</p>
+    </div>
 
-            
-            <div class="row g-4 justify-content-center mt-4">
-                <div class="col-md-4">
-                    <!-- <div class="card h-100 border-0 shadow-sm p-4 rounded-4 card-hover" style="border-radius: 16px;">
-                        <ul class=" fs-5">
-                            <li class="">Introduction to Vasthu Principles</li>
-                            <li class="">Directions & Their Importance</li>
-                            <li class="">Plot Selection & Land Energy</li>
-                            <li class=""> House Planning <br>   (Rooms Placement)</li>
-                            <li class=""> Kitchen, Bedroom, Pooja Room Vasthu</li>
-                            <li class=""> Common Doshas & Simple Remedies</li>
-                        </ul>
-                    </div> -->
-                    <img src="./images/Course-Highlights-1.png" alt="">
-                </div>
-                <div class="col-md-4">
-                    <!-- <div class="card h-100 border-0 shadow-sm p-4 rounded-4 card-hover" style="border-radius: 16px;">
-                        <ul class=" fs-5">
-                            <li class=""> Apartments & Modern Homes Vasthu</li>
-                            <li class=""> Business & Office Vasthu Basics</li>
-                            <li class=""> Case Studies <br> (Real-Life Examples)</li>
-                            <li class=""> Q&A + Practical Guidance</li>
-                            <li class=" ">Certificate of Completion</li>
-                        </ul>
-                    </div> -->
-                    <img src="./images/Course-Highlights-2.png" alt="">
-                    <!-- <img src="./im" alt=""> -->
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Bottom Structure (Learn Before You Build | Understanding Spaces etc) -->
+    <div class="quote-footer fade-up">
+      <div class="footer-quote-item">📐 "Learn Before You Build."</div>
+      <div class="footer-quote-item">✨ "Understanding Spaces... Understanding Life."</div>
+      <div class="footer-quote-item">⚡ "From Foundation... To Practical Mastery."</div>
+      <div class="footer-quote-item">🏅 "40 Years of Practical Wisdom."</div>
+    </div>
+    <hr>
+    <div class="text-center" style="margin: 30px 0 20px;">
+      <a href="https://wa.me/919848045677?text=I%20am%20ready%20to%20join%20Foundation%20Course" target="_blank" class="btn-primary" style="font-size: clamp(0.6rem, 3.5vw, 1rem);"><i class="fab fa-whatsapp"></i> Register Now Foundation Course</a>
+      <p class="final-quote" style="margin-top: 30px; color: #060606;">📍 Vishwakarma Vastu Sciences — Practical wisdom since 1985</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Who Can Join -->
-    <section class="py-5 who-can-join">
-        <div class="container">
-            <!-- <h3 class="text-center who-can-join-title">🎯 Who Can Join?</h3> -->
-            
-            <!-- <div class="card h-100 border-0 shadow-sm p-4 rounded-4 card-hover" style="border-radius: 16px;">
-            </div> -->
-            <!-- <div  class="row">
-                <div class="col-12">
 
-                    <ul class="who-can-join">
-                        <li class="bg-light"> House owners & builders</li>
-                        <li class=""> वास्तु enthusiasts</li>
-                        <li class=""> Interior designers</li>
-                        <li class=""> Real estate professionals</li>
-                        <li class=""> Anyone interested in improving life through Vasthu</li>
-                    </ul>
-                </div>
-            </div> -->
-            <div class="text-center ">
-                <img src="./images/who-join.png" alt="" class="who-can-join-img">
-            </div>
-
-            <!-- <div class="col-sm-6 col-lg-3">
-                <div class="bg-black p-3 py-2 rounded-4 ">  <span> Beginers</span></div>
-            </div> -->
-            <!-- <div class="who-can-join-grid g-4 justify-content-center" style="font-weight: 600;">
-                <div class="">
-                    <div class="bg-black  rounded-4 text-center">   <span>Housewives</span></div>
-                </div>
-                <div class="">
-                    <div class="bg-black  rounded-4 ">  <span> Beginers</span></div>
-                </div>
-                <div class="">
-                    <div class="bg-black  rounded-4 ">  <span> Enthusiasts </span></div>
-                </div>
-                <div class="">
-                    <div class="bg-black  rounded-4  "><span>Senior Citizens</span></div>
-                </div>
-                <div class="">
-                    <div class="bg-black  rounded-4  "> <span>Interior Designers</span></div>
-                </div>
-                <div class=" center-item">
-                    <div class="bg-black rounded-4"> <span>Anyone interested in improving life through Vasthu</span></div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- Special Benefits -->
-    <section class="py-4  special-benefits text-white" style="">
-        <div class="container">
-            <!-- <h3 class="text-center special-benefits-title">🎓 Special Benefits</h3> -->
-             <img src="./images/Special.png" alt="" class="text-center img-heading">
-
-            
-            <!-- <div class="grid text-center">
-              <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-              <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-              <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-              <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-              <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-            </div> -->
-              <img src="./images/Benefits-01.png" alt="" class="benefits-img1">
-              <img src="./images/Benefits-02.png" alt="" class="benefits-img2">
-            <div class="special-benefits-grid d-none">
-              <div class="benefit-card">
-                  <div class="icon">💬</div>
-                  <h4>Live interactive sessions</h4>
-              </div>
-
-              <div class="benefit-card">
-                  <div class="icon">❓</div>
-                  <h4>Personal doubt clarification</h4>
-              </div>
-
-              <div class="benefit-card">
-                  <div class="icon">📖</div>
-                  <h4>Practical knowledge <br>(not just theory)</h4>
-              </div>
-
-              <div class="benefit-card">
-                  <div class="icon">🏅</div>
-                  <h4>Certificate of Completion</h4>
-              </div>
-
-              <div class="benefit-card">
-                  <div class="icon">🌟</div>
-                  <h4>Lifetime blessings & guidance</h4>
-              </div>
-          </div>
-
-            <div class="g-4 special-benefits-grid d-none">
-                <div class="col-md-6 col-lg-3 text-center">
-                    <div class="bg-white bg-opacity-10 rounded-4">
-                        <div class=" mb-3">💬</div>
-                        <h5>Live interactive sessions</h5>
-                    </div>
-                </div>
-                <div class=" text-center">
-                    <div class="bg-white bg-opacity-10 rounded-4">
-                        <div class=" mb-3">💬</div>
-                        <h5>Live interactive sessions</h5>
-                    </div>
-                </div>
-                <div class=" text-center">
-                    <div class="bg-white bg-opacity-10  rounded-4">
-                        <div class=" mb-3">❓</div>
-                        <h5>Personal doubt clarification</h5>
-                    </div>
-                </div>
-                <div class=" text-center">
-                    <div class="bg-white bg-opacity-10 rounded-4">
-                        <div class=" mb-3">📖</div>
-                        <h5>Practical knowledge <br>(not just theory)</h5>
-                    </div>
-                </div>
-                <div class=" text-center">
-                    <div class="bg-white bg-opacity-10 rounded-4">
-                        <div class=" mb-3">🏅</div>
-                        <h5>Certificate of Completion</h5>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <div class="bg-white bg-opacity-10 p-4 rounded-4 d-inline-block">
-                        <div class=" mb-3">🌟</div>
-                        <h5>Lifetime blessings & guidance</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Limited Seats -->
-    <!-- <section class="py-5  bg-opacity-10">
-        <div class="container text-center">
-            <h3 class="mb-3">📢 Limited Seats Only!</h3>
-            <p class="fs-4 text-dark">
-                Secure your seat for this powerful transformation journey.
-            </p>
-        </div>
-    </section> -->
-
-    <!-- Contact / Registration -->
-    <section id="register" class="pt-5 pb-1 py-md-6  text-white" style="background-color: #fff;">
-        <div class="py-2">
-            <div class="container text-center">
-            <!-- <h3 class="mb-3">📢 Limited Seats Only!</h3> -->
-             <img src="./images/Limited-Seats.png" alt="">
-            <p class="fs-4 text-dark">
-                Secure your seat for this powerful life transformation journey.
-            </p>
-        </div>
-        </div>
-        <div class="container text-center">
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card  border border-light border-opacity-25 rounded-4 pb-1 pt-0 phone-call-inner" >
-                        <h3 class="mb-1">Contact / Registration</h3>
-                        <p class="fs-3 mb-1">Join the Summer Special Batch Today!</p>
-                        <a href="tel:+919848045677" class="phone-number mb-1" style="font-weight: 600;">+91 98480 45677</a>
-                        <a href="tel:+919848045677" 
-                           class="btn btn-light btn-lg px-5 py-3 phone-btn" style=" border-radius: 12px; width: fit-content; margin: auto;">
-                            <!-- <i class="fas fa-phone-alt"></i> -->
-                             <i class="fa-solid fa-phone"></i>
-                            Call / WhatsApp Now
-                        </a>
-                        
-                        <!-- <p class="mt-4 text-light opacity-75">
-                            (Your Phone Number / WhatsApp / Website Link)
-                        </p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="ads py-4">
-        <div class="container">
-            <!-- <div class="d-flex justify-content-center text-centern flex-column flex-lg-row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12"><img src="./images/crash-course2.jpeg" alt="" style="border-radius: 10px;"></div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12"><img src="./images/Crash-course1.jpeg" alt="" style="border-radius: 10px;"></div>
-            </div> -->
-            <!-- <div class="container"> -->
-                <div class="row text-center justify-content-center">
-                    <div class="col-12 col-md-5 mb-3">
-                        <img src="./images/crash-course2.jpeg" alt="" class=" rounded">
-                    </div>
-                    <div class="col-12 col-md-5 mb-3">
-                        <img src="./images/Crash-course1.jpeg" alt="" class=" rounded">
-                    </div>
-                </div>
-            <!-- </div> -->
-        </div>
-    </section>
 <!-- <-- Footer wrapper start-->
 <div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
 	<div class="container">
@@ -2405,6 +3588,7 @@ Full Time consultant since 1985 (40+ years)</p> -->
 		</div>	
 	</div>
 </div>
+
 <!-- Footer wrapper End-->
  <div>
   <ul class="social-fixed">
@@ -2414,8 +3598,368 @@ Full Time consultant since 1985 (40+ years)</p> -->
   <li><a href="https://www.linkedin.com/in/vishwakarma-vastu-88370b375/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
   <li><a href="https://x.com/Vishwakarm83356" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
 </ul>
-    <a href="https://wa.me/919848045677" target="_blank" class="whatsapp-float">
-  <i class="fa fa-whatsapp"></i>
+    <!-- <a href="https://wa.me/919848045677" target="_blank" class="whatsapp-float">
+  <i class="fa fa-whatsapp"></i> -->
+
+
+ <!-- MODAL POPUP - SIMPLIFIED: Only Title, Image, 2 Buttons (Register Now / Join VVS Foundation Course) -->
+<!--  -->
+ <div id="courseModal" class="modal-overlay">
+  <div class="modal-popup">
+    <div class="modal-header">
+      <h3 id="modalTitle">Foundation Course</h3>
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body-simple">
+      <div class="course-modal-img">
+        <img id="modalCourseImg" src="./images/online-class/Foundation.jpg" alt="Course Image" onerror="this.onerror=null; this.src='https://placehold.co/400x300/C9A84C/fff?text=Course+Image';">
+      </div>
+      <div class="modal-buttons">
+        <a href="#" id="registerNowBtn" class="modal-btn modal-btn-register" target="_blank">
+          <i class="fas fa-calendar-check"></i> Register Now
+        </a>
+        <a href="#" id="joinFoundationBtn" class="modal-btn modal-btn-join" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Join Vvs Foundation Course
+        </a>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <small>✨ Vishwakarma Vastu Sciences — Practical wisdom since 1985</small>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  (function() {
+    // ---------- MODAL CONTROLLER - USING EXACT JPG URLs ----------
+    const modalOverlay = document.getElementById('courseModal');
+    const modalTitleElem = document.getElementById('modalTitle');
+    const modalCourseImg = document.getElementById('modalCourseImg');
+    const registerBtn = document.getElementById('registerNowBtn');
+    const joinBtn = document.getElementById('joinFoundationBtn');
+    const closeModalBtns = document.querySelectorAll('.close-modal');
+
+    const WHATSAPP_NUMBER = '919848045677';
+
+    // Exact JPG image URLs mapping (as provided by user)
+    const courseImageMap = {
+      'Foundation Course': './images/online-class/Foundation.jpg',
+      'Manu Course': './images/online-class/Manu-Level.jpg',
+      'Maya Course': './images/online-class/3.Maya-Level.jpg',
+      'Tvashta Course': './images/online-class/4.Tvashta-Level.jpg',
+      'Shilpi Course': './images/online-class/5.Shilpi-Level.jpg',
+      'Vishwagna Course': './images/online-class/6.Vishwajna-Level.jpg'
+    };
+
+    // Helper: Force reload image with cache-busting (optional, ensures fresh load)
+    function setImageWithTimestamp(imgElement, imageUrl) {
+      if (!imgElement) return;
+      // Add a small timestamp to avoid cache issues if needed, but preserve original URL mostly
+      // We'll keep original URL but ensure onerror handles broken paths gracefully.
+      imgElement.src = imageUrl;
+    }
+
+    function openModalForCourse(courseTitle, providedImgSrc) {
+      if (!modalOverlay) return;
+      
+      // Set title
+      modalTitleElem.textContent = courseTitle || 'Vvs Course';
+      
+      // Determine image source: priority to providedImgSrc (from data attribute), then from mapping, then fallback
+      let finalImageSrc = providedImgSrc;
+      
+      if (!finalImageSrc || finalImageSrc === '' || finalImageSrc.includes('undefined')) {
+        // Try to get from map using course title
+        finalImageSrc = courseImageMap[courseTitle];
+      }
+      
+      // If still not found, use a default JPG
+      if (!finalImageSrc) {
+        finalImageSrc = './images/online-class/Foundation.jpg';
+      }
+      
+      // Set image source with proper error handling
+      modalCourseImg.onerror = function() {
+        // If image fails to load, try to load a fallback placeholder
+        if (!this.src.includes('placehold.co')) {
+          console.warn(`Image failed to load: ${finalImageSrc}, using placeholder`);
+          this.src = 'https://placehold.co/400x300/C9A84C/fff?text=Course+Image';
+        }
+      };
+      
+      // Assign the image source
+      modalCourseImg.src = finalImageSrc;
+      
+      // WhatsApp messages
+      const registerMessage = `Hello, I want to register for "${courseTitle}" - Vishwakarma Vastu Sciences. Please share details.`;
+      const joinMessage = `I want to join Vvs Foundation Course (${courseTitle}). Please guide me on enrollment.`;
+      
+      registerBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(registerMessage)}`;
+      joinBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(joinMessage)}`;
+      
+      // Show modal
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      if (modalOverlay) {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Handle all "Read more" buttons
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    
+    readMoreButtons.forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        
+        const card = this.closest('.level-card');
+        if (!card) return;
+        
+        // Get course name
+        let courseTitle = card.getAttribute('data-course-name');
+        if (!courseTitle) {
+          const titleEl = card.querySelector('.level-title');
+          courseTitle = titleEl ? titleEl.innerText.trim() : 'Vastu Course';
+        }
+        
+        // Get image source from data-img-src (JPG path)
+        let imgSrc = card.getAttribute('data-img-src');
+        
+        // Validate and ensure JPG extension
+        if (imgSrc && (imgSrc.includes('.jpg') || imgSrc.includes('.jpeg'))) {
+          // Good, keep as is
+        } else if (imgSrc) {
+          // If for some reason it's not jpg, try to map it correctly
+          imgSrc = courseImageMap[courseTitle] || './images/online-class/Foundation.jpg';
+        }
+        
+        // Final fallback
+        if (!imgSrc || imgSrc === '') {
+          imgSrc = courseImageMap[courseTitle] || './images/online-class/Foundation.jpg';
+        }
+        
+        console.log(`Opening modal for: ${courseTitle}, image: ${imgSrc}`);
+        openModalForCourse(courseTitle, imgSrc);
+      });
+    });
+    
+    // Close modal events
+    closeModalBtns.forEach(btn => {
+      btn.addEventListener('click', closeModal);
+    });
+    
+    // Click on overlay to close
+    if (modalOverlay) {
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+          closeModal();
+        }
+      });
+    }
+    
+    // ESC key closes modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
+        closeModal();
+      }
+    });
+    
+    // Ensure all cards have proper data attributes (using JPG images)
+    const allCards = document.querySelectorAll('.level-card');
+    const defaultTitles = ['Foundation Course', 'Manu Course', 'Maya Course', 'Tvashta Course', 'Shilpi Course', 'Vishwagna Course'];
+    const defaultJpgImages = [
+      './images/online-class/Foundation.jpg',
+      './images/online-class/Manu-Level.jpg',
+      './images/online-class/3.Maya-Level.jpg',
+      './images/online-class/4.Tvashta-Level.jpg',
+      './images/online-class/5.Shilpi-Level.jpg',
+      './images/online-class/6.Vishwajna-Level.jpg'
+    ];
+    
+    allCards.forEach((card, idx) => {
+      if (!card.getAttribute('data-course-name') && defaultTitles[idx]) {
+        card.setAttribute('data-course-name', defaultTitles[idx]);
+      }
+      // Force update data-img-src to JPG if missing or incorrect
+      const currentImgSrc = card.getAttribute('data-img-src');
+      if (!currentImgSrc || currentImgSrc === '' || !currentImgSrc.includes('.jpg')) {
+        if (defaultJpgImages[idx]) {
+          card.setAttribute('data-img-src', defaultJpgImages[idx]);
+        }
+      } else if (currentImgSrc && !currentImgSrc.includes('.jpg') && !currentImgSrc.includes('.jpeg')) {
+        // If it's not JPG, replace with correct JPG
+        if (defaultJpgImages[idx]) {
+          card.setAttribute('data-img-src', defaultJpgImages[idx]);
+        }
+      }
+    });
+    
+    // Fix card thumbnail images on error (logos remain as fallback)
+    const cardThumbnails = document.querySelectorAll('.level-number img');
+    cardThumbnails.forEach(img => {
+      img.onerror = function() {
+        if (!this.src.includes('placehold.co')) {
+          this.src = 'https://placehold.co/70x70/C9A84C/fff?text=VVS';
+        }
+      };
+    });
+    
+    // Preload images to verify they exist (optional, just for debugging)
+    function preloadModalImages() {
+      Object.values(courseImageMap).forEach(imgUrl => {
+        const tempImg = new Image();
+        tempImg.src = imgUrl;
+        tempImg.onerror = () => console.warn(`Preload failed: ${imgUrl} - ensure file exists in ./images/online-class/ folder`);
+        tempImg.onload = () => console.log(`✓ Image ready: ${imgUrl}`);
+      });
+    }
+    preloadModalImages();
+    
+    console.log('✅ Modal using JPG images: Foundation.jpg, Manu-Level.jpg, 3.Maya-Level.jpg, 4.Tvashta-Level.jpg, 5.Shilpi-Level.jpg, 6.Vishwajna-Level.jpg');
+    console.log('✅ If images not loading, please verify that these files exist in the "./images/online-class/" directory.');
+  })();
+</script>
+
+<script>
+  (function() {
+    const WHATSAPP_NUMBER = '919848045677';
+    
+    // ========= FOUNDATION COURSE MODAL =========
+    const foundationModal = document.getElementById('foundationModal');
+    const foundationModalTitle = document.getElementById('foundationModalTitle');
+    const foundationModalImg = document.getElementById('foundationModalImg');
+    const foundationRegisterBtn = document.getElementById('foundationRegisterBtn');
+    const foundationJoinBtn = document.getElementById('foundationJoinBtn');
+    const foundationCloseBtns = document.querySelectorAll('.foundation-close');
+    
+    // ========= HIGHER LEVELS MODAL =========
+    const higherModal = document.getElementById('higherLevelsModal');
+    const higherModalTitle = document.getElementById('higherModalTitle');
+    const higherModalImg = document.getElementById('higherModalImg');
+    const higherRegisterBtn = document.getElementById('higherRegisterBtn');
+    const higherJoinBtn = document.getElementById('higherJoinBtn');
+    const higherCloseBtns = document.querySelectorAll('.higher-close');
+    
+    // Function to open Foundation Modal
+    function openFoundationModal() {
+      if (!foundationModal) return;
+      
+      foundationModalTitle.textContent = 'Foundation Course';
+      foundationModalImg.src = './images/online-class/Foundation.jpg';
+      foundationModalImg.onerror = function() {
+        if (!this.src.includes('placehold.co')) {
+          this.src = 'https://placehold.co/400x300/C9A84C/fff?text=Foundation+Course';
+        }
+      };
+      
+      const registerMessage = `Hello, I want to register for "Foundation Course" - Vishwakarma Vastu Sciences. Please share details.`;
+      const joinMessage = `I want to join Vvs Foundation Course (Foundation Course). Please guide me on enrollment.`;
+      
+      foundationRegisterBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(registerMessage)}`;
+      foundationJoinBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(joinMessage)}`;
+      
+      foundationModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // Function to open Higher Levels Modal
+    function openHigherLevelsModal() {
+      if (!higherModal) return;
+      
+      higherModalTitle.textContent = 'Higher Practical Mastery Levels';
+      // Use a representative image for all levels (Manu, Maya, Tvashta, Shilpi, Vishwagna)
+      higherModalImg.src = './images/.jpg';
+      higherModalImg.onerror = function() {
+        if (!this.src.includes('placehold.co')) {
+          // Fallback to Manu level image if All-Levels doesn't exist
+          this.src = './images/All-Courses.jpg';
+          this.onerror = function() {
+            if (!this.src.includes('placehold.co')) {
+              this.src = 'https://placehold.co/400x300/C9A84C/fff?text=Higher+Mastery+Levels';
+            }
+          };
+        }
+      };
+      
+      const registerMessage = `Hello, I want to register for "Higher Practical Mastery Levels" (Manu, Maya, Tvashta, Shilpi, Vishwagna) - Vishwakarma Vastu Sciences. Please share details.`;
+      const joinMessage = `I want to join Vvs Foundation Course and progress through Higher Mastery Levels. Please guide me on enrollment.`;
+      
+      higherRegisterBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(registerMessage)}`;
+      higherJoinBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(joinMessage)}`;
+      
+      higherModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal(modal) {
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+    
+    // Close Foundation Modal
+    foundationCloseBtns.forEach(btn => {
+      btn.addEventListener('click', () => closeModal(foundationModal));
+    });
+    if (foundationModal) {
+      foundationModal.addEventListener('click', (e) => {
+        if (e.target === foundationModal) closeModal(foundationModal);
+      });
+    }
+    
+    // Close Higher Levels Modal
+    higherCloseBtns.forEach(btn => {
+      btn.addEventListener('click', () => closeModal(higherModal));
+    });
+    if (higherModal) {
+      higherModal.addEventListener('click', (e) => {
+        if (e.target === higherModal) closeModal(higherModal);
+      });
+    }
+    
+    // ESC key closes any open modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (foundationModal && foundationModal.classList.contains('active')) {
+          closeModal(foundationModal);
+        }
+        if (higherModal && higherModal.classList.contains('active')) {
+          closeModal(higherModal);
+        }
+      }
+    });
+    
+    // Attach click event to Foundation Course link
+    const foundationLink = document.getElementById('foundationCourseLink');
+    if (foundationLink) {
+      foundationLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openFoundationModal();
+      });
+    }
+    
+    // Attach click event to Higher practical mastery levels link
+    const higherLevelsLink = document.getElementById('higherLevelsLink');
+    if (higherLevelsLink) {
+      higherLevelsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openHigherLevelsModal();
+      });
+    }
+    
+    console.log('✅ Announcement popups initialized: Foundation Course and Higher practical mastery levels');
+  })();
+</script>
+
 <!--Main js file Style--> 
 <script type="text/javascript" src="js/jquery.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -2427,151 +3971,17 @@ Full Time consultant since 1985 (40+ years)</p> -->
 <!--Main js file End-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 <script>
+//   window.addEventListener("load", function () {
+//     const loader = document.getElementById("siteLoader");
+//     loader.style.opacity = "0";
+//     loader.style.transition = "opacity 0.5s ease";
 
-	// Scroll-reveal animation
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.service-card, .vastu-pillar, .book-card, .whatif-card').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(28px)';
-    el.style.transition = `opacity .55s ease ${i * 0.08}s, transform .55s ease ${i * 0.08}s`;
-    revealObserver.observe(el);
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const href = a.getAttribute('href');
-      if (href.length > 1) {
-        const target = document.querySelector(href);
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-      }
-    });
-  });
-
-	// Counter Animation
-function animateCount(el, target, suffix = '+') {
-    let start = 0;
-    const duration = 2800;
-    const startTime = performance.now();
-
-    function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        let progress = Math.min(elapsed / duration, 1);
-        
-        // Ease-out cubic for natural feel
-        progress = 1 - Math.pow(1 - progress, 3);
-
-        const value = Math.floor(target * progress);
-        el.textContent = value + suffix;
-
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        } else {
-            el.textContent = target + suffix;
-        }
-    }
-
-    requestAnimationFrame(update);
-}
-
-// Stats Observer
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const statNums = document.querySelectorAll('.stat-num');
-            
-            animateCount(statNums[0], 40, '+');
-            animateCount(statNums[1], 500, '+');
-            animateCount(statNums[2], 10, '+');
-
-            statsObserver.disconnect(); // Run only once
-        }
-    });
-}, { threshold: 0.5 });
-
-const statsBar = document.querySelector('.stats-bar');
-if (statsBar) statsObserver.observe(statsBar);
-
-
-const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => obs.observe(el));
+//     setTimeout(() => {
+//       loader.style.display = "none";
+//     }, 500);
+//   });
 </script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-    const images = [...document.querySelectorAll('.lightbox-enabled')];
-const container = document.querySelector('.lightbox-container');
-const lightboxImg = document.querySelector('.lightbox-image');
-const btns = document.querySelectorAll('.lightbox-btn');
-const closeBtn = document.querySelector('#close');
-
-let activeIndex = 0;
-
-// Show / Hide
-const show = () => container.classList.add('active');
-const hide = () => container.classList.remove('active');
-
-// Set active image
-const setImage = (index) => {
-  activeIndex = (index + images.length) % images.length;
-  lightboxImg.src = images[activeIndex].src;
-};
-
-// Slide animation
-const animateSlide = (direction) => {
-  const className = direction === 'left' ? 'slideright' : 'slideleft';
-  lightboxImg.classList.add(className);
-
-  setTimeout(() => {
-    setImage(activeIndex + (direction === 'left' ? -1 : 1));
-  }, 250);
-
-  setTimeout(() => {
-    lightboxImg.classList.remove(className);
-  }, 500);
-};
-
-// Click thumbnails
-images.forEach((img, i) => {
-  img.addEventListener('click', () => {
-    show();
-    setImage(i);
-  });
-});
-
-// Close behavior
-container.addEventListener('click', hide);
-closeBtn.addEventListener('click', hide);
-
-// Buttons
-btns.forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    animateSlide(btn.id === 'left' ? 'left' : 'right');
-    btn.focus();
-  });
-});
-
-// Prevent closing when clicking image
-lightboxImg.addEventListener('click', (e) => e.stopPropagation());
-</script>
-
-<!--  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 <script>
   window.addEventListener('load', () => {
@@ -2699,7 +4109,50 @@ if (statsBar) statsObserver.observe(statsBar);
   }, 3300); // 👈 show loader for at least 1 second
 });
 </script>
+<!-- <script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerToggle');
+    const sidebar = document.getElementById('mobileSidebar');
+    const overlay = document.getElementById('mobileOverlay');
+    const closeBtn = document.getElementById('closeSidebarBtn');
 
+    function openMenu() {
+      sidebar.classList.add('open');
+      overlay.classList.add('active');
+      hamburger.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+      hamburger.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (sidebar.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on any link click inside sidebar
+    const mobileLinks = document.querySelectorAll('.mobile-nav-list .nav-link-mobile, .mobile-book-btn, .mobile-contact-info a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        // If it's a dummy link, just close, no page reload
+        if (link.getAttribute('href') === '#') e.preventDefault();
+        closeMenu();
+      });
+    });
+  })();
+</script> -->
 <script>
   // Mobile Menu JavaScript - Fixed and Working
   (function() {
@@ -2824,22 +4277,7 @@ if (statsBar) statsObserver.observe(statsBar);
     });
   })();
 </script>
-<script>
-  const items = document.querySelectorAll('.option-item');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        // Remove to re-animate on scroll back
-        entry.target.classList.remove('visible');
-      }
-    });
-  }, { threshold: 0.2 });
-
-  items.forEach(item => observer.observe(item));
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -60,7 +60,29 @@ Purchase: http://themeforest.net/user/kamleshyadav
     .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
     .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
+ /* STATS BAR */
+    /* .stats-bar { background:var(--orange); padding:22px 0; } */
+    .stats-bar {
+      background:
+        linear-gradient(rgba(236, 31, 37, 0.78), rgba(236, 31, 37, 0.78)),
+        url("images/banners/seamless-orange-background-with-gold-floral-pattern-word-energize-your-designs-with-v-scaled.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .stat-item { text-align:center; color:#fff; }
+    .stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1; }
+    .stat-label { font-size:12px; opacity:.9; margin-top:4px; letter-spacing:.5px; }
+    .stat-divider { border-left:1px solid rgba(255,255,255,.3); }
 
+    .stats-bar1{
+      position: relative;
+      /* position: absolute; */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+    }
 
 	
 /* .container{
@@ -835,7 +857,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
     }
 
     .service-icon-item span {
-      /* /* font-family: 'Cinzel', serif; */ */
+      /* /* font-family: 'Cinzel', serif; */ 
       font-size: 0.58rem;
       color: var(--white);
       letter-spacing: 1px;
@@ -846,7 +868,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
     .hero-cta-row {
       display: flex;
       gap: 16px;
-      flex-direction: column;
+      /* flex-direction: column; */
       /* flex-wrap: wrap; */
       align-items: center;
       margin-bottom: 20px;
@@ -857,7 +879,7 @@ Purchase: http://themeforest.net/user/kamleshyadav
     .btn-gold {
       background: var(--gold);
       color: var(--navy);
-      /* /* font-family: 'Cinzel', serif; */ */
+      /* /* font-family: 'Cinzel', serif; */
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 1px;

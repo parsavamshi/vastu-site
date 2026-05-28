@@ -7696,3 +7696,35 @@ height: 6px;
       position: relative;
       display: inline-block;
     }
+
+
+
+    
+  /* Add to your existing styles */
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.hero-section {
+  overflow-x: hidden;
+}
+
+.stats-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Hide mandala on mobile devices */
+@media (max-width: 991px) {
+  .hero-mandala-bg {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

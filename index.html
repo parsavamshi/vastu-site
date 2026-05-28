@@ -202,7 +202,20 @@
     display: none;
 
   }
-
+    .loader2 {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -18px !important;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+    }
   
 }
 
@@ -890,7 +903,7 @@
       cursor: pointer;
       transition: all 0.3s;
       text-decoration: none;
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
 
     .btn-outline-gold:hover {
@@ -2201,7 +2214,7 @@ font-size: 14px;
     width: fit-content;
     padding: 6px 10px;
     border-radius: 8px;
-    color: #fff;
+    color: #000;
     margin: auto;
 }
 .topheading{
@@ -2515,9 +2528,9 @@ content: "";
   <div class="loader" id="siteLoader">
   <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
 </div>
-<!-- <div class="loader2" id="siteLoader2">
-  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
-</div> -->
+<div class="loader2" id="siteLoader2">
+  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif2">
+</div>
 <!-- ===== NAVBAR ===== -->
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar-custom">
@@ -2656,7 +2669,7 @@ content: "";
         </div>
         <div class="hero-cta-row">
           <a href="./contact.html" class="btn-gold"><i class="far fa-calendar-alt"></i> BOOK APPOINTMENT</a>
-          <a href="./vvs-onlin-class.html" class="btn-outline-gold"><i class="fas fa-graduation-cap"></i> JOIN Vvs Online COURSE</a>
+          <a href="./vvs-onlin-class.html" class="btn-outline-gold"><i class="fas fa-graduation-cap"></i> JOIN Vvs ONLINE COURSE</a>
         </div>
         <p class="serving-text justify-content-center">
           <!-- <i class="fas fa-globe+"></i> -->

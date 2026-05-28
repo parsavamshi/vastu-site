@@ -130,6 +130,9 @@ Purchase: http://themeforest.net/user/kamleshyadav
 		right: 15px !important;
 		left:unset !important;
 	}
+  .stat-badge-group{
+    justify-content: left !important;
+  }
 }
 
 </style>
@@ -1330,6 +1333,7 @@ font-size: 14px;
     }
 
     @media(max-width:768px){
+     
       .stats-container{
         /* grid-template-columns:1fr; */
         flex-wrap: wrap;
@@ -1410,6 +1414,7 @@ font-size: 14px;
     .main-title span{
       display:block;
       color:#081f4d;
+      padding-top: 20px;
     }
 
     .quote{
@@ -1500,6 +1505,9 @@ font-size: 14px;
       .hero-section{
         padding:40px 0;
         text-align:center;
+      }
+       .hero-banner{
+        padding-top: 20px !important;
       }
 
       .content-box{
@@ -1692,6 +1700,18 @@ font-size: 14px;
       gap: 2rem;
       margin-top: 1rem;
       padding: 0 115px;
+    }
+    .roadmap-grid2 .level-card {
+      background: #ffffffdd;
+      backdrop-filter: blur(2px);
+      background: linear-gradient(135deg, #ffffff 0%, #fefcf7 100%);
+      border-radius: 10px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0,0,0,0.02);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 1.8rem 1.8rem 2rem;
+      border: 1px solid #f0e9db;
     }
 
     /* level-card styling */
@@ -2019,14 +2039,14 @@ font-size: 14px;
       /* background: var(--navy-card); */
       display: flex;
       /* flex-wrap: wrap; */
-      flex-direction: column;
+      /* flex-direction: column; */
       gap: 30px;
       align-items: center;
      
     }
     .exp-card img{
       max-width: 100%;
-      width: 70% !important;
+      width: 100% !important;
     }
 
     .exp-stats {
@@ -2674,7 +2694,8 @@ max-width: fit-content !important;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 22px;}
+    margin-bottom: 0px;
+  }
 
     .orn-line {
     width: 350px;
@@ -2743,7 +2764,7 @@ max-width: fit-content !important;
     font-size: 13px;
    }
    .grid-2col h5{
-    font-size: 18px;
+    font-size: 16px;
    }
    .exp-card-bgm{
     padding: 10px;
@@ -2758,12 +2779,13 @@ max-width: fit-content !important;
     }
 
    .exp-card{
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 10px !important;
     text-align: center;
+    gap: 10px;
    }
    .exp-card h2{
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
    }
    .stat-badge{
     font-size: 13px;
@@ -2851,11 +2873,11 @@ max-width: fit-content !important;
 <!-- <div class="loader" id="siteLoader">
   <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
 </div> -->
-<div class="loader" id="siteLoader">
+ <div class="loader" id="siteLoader">
   <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
 </div>
 <div class="loader2" id="siteLoader2">
-  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif">
+  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif2">
 </div>
 <!-- Header Start -->
 
@@ -3129,13 +3151,13 @@ max-width: fit-content !important;
     display: table;
     justify-content: center;
     margin: auto; background: #DFBA6B; color: #0A0E1A
-; font-weight: bold;">
-  <h2 style="font-size: clamp(1rem, 4vw, 1.8rem); font-weight: 700; color: #0A0E1A
+; font-weight: bold; margin-bottom: 40px;">
+  <h2 style="font-size: clamp(1.2rem, 4vw, 1.8rem); font-weight: 700; color: #0A0E1A
 ; "class="m-0"   >✦ Course Levels Foundation plus 5 levels
  ✦ </h2>  
   </div>
      <!-- levels2  -->
-    <div class="roadmap-grid fade-up " style="margin-bottom:30px">
+    <div class="roadmap-grid roadmap-grid2 fade-up " style="margin-bottom:30px">
     <!-- Foundation Card -->
     <div class="level-card" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
       <!-- <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div> -->
@@ -3380,7 +3402,7 @@ max-width: fit-content !important;
     <div class="banner-badge fade-up" style="text-align: center;
         display: table;
         justify-content: center;
-        margin: auto; background: #22a85a; color: #fff; font-weight: bold;">
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin-top: 40px;">
     
     <h2 style="font-size: clamp(1rem, 4vw, 1.6rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Vision ✦ </h2>  </div> 
     
@@ -3545,18 +3567,11 @@ max-width: fit-content !important;
          </div>
       <div class="exp-card fade-up">
   
-        <div style="flex: 1; text-align: center;">
-          <!-- Photo placeholder -->
-          <img src="images/guru-kl.jpg" alt="Dr. K.L Vishwakarma" style="border-radius: 24px; width: 200px; height: auto; border: 2px solid var(--gold); object-fit: cover;">
-          <!-- <div class="exp-stats" style="justify-content: center; margin-top: 20px;">
-            <span class="stat-badge"><i class="fas fa-calendar-alt"></i> 40+ Years</span>
-            <span class="stat-badge"><i class="fas fa-home"></i> 1000+ Houses</span>
-          </div> -->
-        </div>
         <div style="flex: 2;">
-          <h2 class="gold-text" style="font-size: 1.9rem; font-weight: 800;">40 Years of Practical Observations</h2>
+          <h2 class="gold-text" style="font-size: 1.8rem; font-weight: 800;">40 Years of Practical Observations</h2>
+          
           <p style="margin: 15px 0 10px;">This learning system is based on:</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
+          <div class="stat-badge-group" style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; justify-content: center;">
             <!-- <span class="stat-badge">🏠 Thousands of practical observations  </span>
             <span class="stat-badge">🏠 Real-life experiences  </span>
             <span class="stat-badge">📐 House studies</span>
@@ -3578,6 +3593,16 @@ tomorrows to live a Healthy wealthy happy cheerful
 prosperous life. </p>
           </div>
         </div>
+
+        <div style="flex: 2; text-align: center;">
+            <!-- Photo placeholder -->
+            <img src="images/guru-kl.jpg" alt="Dr. K.L Vishwakarma" style="border-radius: 14px; width: 200px; height: auto; border: 2px solid var(--gold); object-fit: cover;">
+            <!-- <div class="exp-stats" style="justify-content: center; margin-top: 20px;">
+              <span class="stat-badge"><i class="fas fa-calendar-alt"></i> 40+ Years</span>
+              <span class="stat-badge"><i class="fas fa-home"></i> 1000+ Houses</span>
+            </div> -->
+          </div>
+
       </div>
     </div>
   </div>

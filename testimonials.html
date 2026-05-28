@@ -1196,9 +1196,9 @@
     }
 
     @media (max-width: 680px) {
-      body {
+      /* body {
         padding: 32px 16px;
-      }
+      } */
       .review-card-modern {
         width: 100%;
       }
@@ -1234,93 +1234,99 @@
   </div>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar-custom">
-    <div class="container px-3 px-lg-4">
-      <div class="d-flex align-items-end justify-content-between w-100">
-        <div class="navbar-brand-wrap">
-          <a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo"></a>
-        </div>
-
-        <div class="d-none d-lg-flex flex-column align-items-end gap-2">
-          <div class="nav-contact">
-            <a href="tel:919848045677"><i class="fas fa-phone me-1" style="color: #c9a84c;"></i> +91 98480 45677</a>
-            <span class="separator">|</span>
-            <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp me-1" style="color:#c9a84c; font-size: 18px;"></i> WhatsApp</a>
-            <a href="./contact.html" class="btn-book-nav"><i class="far fa-calendar-alt"></i> BOOK APPOINTMENT</a>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="index.html">home</a></li>
-            <li class="as_submenu_li">
-              <a href="javascript:void(0)">about <i class="fas fa-chevron-down"></i></a>
-              <ul class="submenu">
-                <li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
-                <li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
-              </ul>
-            </li>
-            <li class="as_submenu_li">
-              <a href="javascript:void(0)">services <i class="fas fa-chevron-down"></i></a>
-              <ul class="submenu">
-                <li><a href="residential-vastu.html">Residential Vastu</a></li>
-                <li><a href="industrial-vastu.html">industrial vastu</a></li>
-                <li><a href="commercial-vastu.html">commercial vastu</a></li>
-                <li><a href="temple-vastu.html">temple vastu</a></li>
-                <li><a href="hospital-vastu.html">hospital vastu</a></li>
-                <li><a href="corporate-vastu.html">corporate vastu</a></li>
-              </ul>
-            </li>
-            <li><a href="vvs-onlin-class.html">Vvs online classes</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </div>
-
-        <button class="hamburger-btn d-lg-none" id="hamburgerToggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
+ <nav class="navbar-custom">
+  <div class="container px-3 px-lg-4">
+    <div class="d-flex align-items-end justify-content-between w-100">
+      <!-- Brand -->
+      <div class="navbar-brand-wrap">
+        <a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo"></a>
       </div>
-    </div>
-  </nav>
 
-  <!-- Mobile Sidebar -->
-  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-  <div class="mobile-menu-sidebar" id="mobileSidebar">
-    <div class="mobile-menu-header">
-      <button class="close-menu-btn" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
-    </div>
-    <ul class="mobile-nav-list">
-      <li><a href="index.html" class="mobile-nav-link" data-link="true">home</a></li>
-      <li class="mobile-has-submenu">
-        <button class="mobile-nav-link" data-submenu="submenu-about">about <i class="fas fa-chevron-down"></i></button>
-        <ul class="mobile-submenu" id="submenu-about">
-          <li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
-          <li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
+      <!-- Desktop Navigation -->
+      <div class="d-none d-lg-flex flex-column align-items-end gap-2">
+        <div class="nav-contact">
+          <a href="tel:919848045677"><i class="fas fa-phone me-1" style="color: #c9a84c;"></i> +91 98480 45677</a>
+          <span class="separator">|</span>
+          <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp me-1" style="color:#c9a84c; font-size: 18px;"></i> WhatsApp</a>
+          <a href="./contact.html" class="btn-book-nav"><i class="far fa-calendar-alt"></i> BOOK APPOINTMENT</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">home</a></li>
+          <li class="as_submenu_li">
+            <a href="javascript:void(0)">about <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
+              <li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
+            </ul>
+          </li>
+          <li class="as_submenu_li">
+            <a href="javascript:void(0)">services <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="residential-vastu.html">Residential Vastu</a></li>
+              <li><a href="industrial-vastu.html">industrial vastu</a></li>
+              <li><a href="commercial-vastu.html">commercial vastu</a></li>
+              <li><a href="temple-vastu.html">temple vastu</a></li>
+              <li><a href="hospital-vastu.html">hospital vastu</a></li>
+              <li><a href="corporate-vastu.html">corporate vastu</a></li>
+            </ul>
+          </li>
+          <li><a href="vvs-onlin-class.html">Vvs online classes</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="book.html">Book</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-      </li>
-      <li class="mobile-has-submenu">
-        <button class="mobile-nav-link" data-submenu="submenu-services">services <i class="fas fa-chevron-down"></i></button>
-        <ul class="mobile-submenu" id="submenu-services">
-          <li><a href="residential-vastu.html">Residential Vastu</a></li>
-          <li><a href="industrial-vastu.html">industrial vastu</a></li>
-          <li><a href="commercial-vastu.html">commercial vastu</a></li>
-          <li><a href="temple-vastu.html">temple vastu</a></li>
-          <li><a href="hospital-vastu.html">hospital vastu</a></li>
-          <li><a href="corporate-vastu.html">corporate vastu</a></li>
-        </ul>
-      </li>
-      <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true">Vvs online classes</a></li>
-      <li><a href="gallery.html" class="mobile-nav-link" data-link="true">Gallery</a></li>
-      <li><a href="testimonials.html" class="mobile-nav-link" data-link="true">Testimonials</a></li>
-      <li><a href="blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
-      <li><a href="contact.html" class="mobile-nav-link" data-link="true">contact</a></li>
-    </ul>
-    <div class="mobile-contact-info">
-      <a href="tel:919848045677"><i class="fas fa-phone"></i> +91 98480 45677</a>
-      <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="./contact.html" class="mobile-book-btn"><i class="far fa-calendar-alt"></i> BOOK CONSULTATION</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger-btn d-lg-none" id="hamburgerToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+</nav>
+
+<!-- Mobile Sidebar -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu-sidebar" id="mobileSidebar">
+  <div class="mobile-menu-header">
+    <button class="close-menu-btn" id="closeSidebarBtn"><i class="fas fa-times"></i></button>
+  </div>
+  <ul class="mobile-nav-list">
+    <li><a href="index.html" class="mobile-nav-link" data-link="true">home</a></li>
+    <li class="mobile-has-submenu">
+      <button class="mobile-nav-link" data-submenu="submenu-about">about <i class="fas fa-chevron-down"></i></button>
+      <ul class="mobile-submenu" id="submenu-about">
+        <li><a href="lord-vishwakarma.html">Lord Vishwakarma</a></li>
+        <li><a href="k-l-Vishwakarma.html">K.L. Vishwakarma</a></li>
+      </ul>
+    </li>
+    <li class="mobile-has-submenu">
+      <button class="mobile-nav-link" data-submenu="submenu-services">services <i class="fas fa-chevron-down"></i></button>
+      <ul class="mobile-submenu" id="submenu-services">
+        <li><a href="residential-vastu.html">Residential Vastu</a></li>
+        <li><a href="industrial-vastu.html">industrial vastu</a></li>
+        <li><a href="commercial-vastu.html">commercial vastu</a></li>
+        <li><a href="temple-vastu.html">temple vastu</a></li>
+        <li><a href="hospital-vastu.html">hospital vastu</a></li>
+        <li><a href="corporate-vastu.html">corporate vastu</a></li>
+      </ul>
+    </li>
+    <li><a href="vvs-onlin-class.html" class="mobile-nav-link" data-link="true">Vvs online classes</a></li>
+    <li><a href="gallery.html" class="mobile-nav-link" data-link="true">Gallery</a></li>
+    <li><a href="testimonials.html" class="mobile-nav-link" data-link="true">Testimonials</a></li>
+    <li><a href="book.html" class="mobile-nav-link" data-link="true">Book</a></li>
+    
+    <li><a href="blog.html" class="mobile-nav-link" data-link="true">Blog</a></li>
+    <li><a href="contact.html" class="mobile-nav-link" data-link="true">contact</a></li>
+  </ul>
+  <div class="mobile-contact-info">
+    <a href="tel:919848045677"><i class="fas fa-phone"></i> +91 98480 45677</a>
+    <a href="https://wa.me/919848045677"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="./contact.html" class="mobile-book-btn"><i class="far fa-calendar-alt"></i> BOOK CONSULTATION</a>
+  </div>
+</div>
 
   <!--Slider Start-->
   <div class="ast_slider_wrapper11 testimonials-banner style_2 ast_index_vastu">

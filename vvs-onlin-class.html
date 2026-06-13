@@ -1736,7 +1736,7 @@ font-size: 14px;
 
     /* logo image container */
     .level-number {
-      margin-bottom: 1.5rem;
+      /* margin-bottom: 1.5rem; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1766,7 +1766,7 @@ font-size: 14px;
       flex: 1;
     }
 
-    .level-sub button {
+    .level-sub .view-button {
       /* background: #f0e2ce;
       border: none;
       padding: 0.75rem 1.8rem;
@@ -1780,7 +1780,7 @@ font-size: 14px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
       border: 1px solid #e9dccf; */
 
-          background: #f0e2ce;
+          background: #dbab54;
     border: none;
     padding: 5px 12px;
     font-weight: 600;
@@ -1796,6 +1796,38 @@ font-size: 14px;
     left: 38%; */
     }
 
+    .view-button {
+      /* background: #f0e2ce;
+      border: none;
+      padding: 0.75rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 60px;
+      color: #4a351a;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-family: inherit;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      border: 1px solid #e9dccf; */
+
+          background: #f0e2ce;
+   /* background: var(--gold); */
+    color: var(--navy);
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    border: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    /* position: absolute;
+    bottom: 2px;
+    left: 38%; */
+    }
     .level-sub button:hover {
       background: #dfceb2;
       color: #2f2418;
@@ -1928,7 +1960,7 @@ font-size: 14px;
       /* border: 2px solid #c9a84c; */
       /* border-radius: 10px; */
       text-align: center;
-      padding: 50px 0;
+      padding: 40px 0;
       /* margin:30px 0; */
 
     }
@@ -2174,7 +2206,7 @@ font-size: 14px;
     }
 
     .level-number {
-      margin-bottom: 1.5rem;
+      /* margin-bottom: 1.5rem; */
     }
     .level-number img {
       /* max-width: 70px;
@@ -2450,10 +2482,11 @@ max-width: fit-content !important;
     }
 
     .level-number {
-      margin-bottom: 1.5rem;
+      /* margin-bottom: 1.5rem; */
     }
     .level-number img {
       /* max-width: 70px; */
+      width: 32%;
       height: auto;
       filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
     }
@@ -2678,13 +2711,13 @@ max-width: fit-content !important;
     /* note strip */
     .info-note {
       text-align: center;
-      margin-top: 3rem;
+      margin-top: 0rem;
       padding: 1rem;
       background: #f5ede0;
-      border-radius: 60px;
+      border-radius: 40px;
       color: #5a4a2e;
       font-size: 0.85rem;
-      border: 1px solid #e2cfb0;
+      /* border: 1px solid #e2cfb0; */
     }
     
 
@@ -2743,7 +2776,7 @@ max-width: fit-content !important;
     grid-template-columns:repeat(auto-fill, minmax(296px, 1fr));
    }
    .level-number{
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
    }
    .level-title{
     font-size: 1.1rem;
@@ -2864,6 +2897,185 @@ max-width: fit-content !important;
     }
 }
 
+
+.to-make-your-tomorrow-better p{
+    max-width: 950px;
+    margin: 10px auto;
+    font-size: 1rem;;
+    color: #2f2b24;
+    text-align: left;
+}
+
+  .section-header{text-align:center;}
+  /* .section-tag{display:inline-block;font-family:'Cinzel',serif;font-size:18px;letter-spacing:2px; color:black; font-size: clamp(1rem, 4vw, 1rem);
+    font-weight: 700;
+  text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;margin-bottom:0.75rem} */
+
+  .section-tag{display:inline-block;font-size:14px; font-weight: 700; color:black;
+  text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;margin-bottom:0.75rem}
+  
+  .section-title{font-family:'Cinzel',serif;font-size:22px;font-weight:600;color:var(--navy);line-height:1.3}
+  .section-desc{font-size:15px;color:var(--text-mid);line-height:1.8;max-width:600px;margin:0.75rem auto 0;font-style:italic}
+  .stats-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--gold);border:1px solid var(--gold);margin:0 2rem;border-radius:8px;overflow:hidden}
+  .stat-cell{background:var(--navy);padding:1.25rem;text-align:center}
+  .stat-num{font-family:'Cinzel',serif;font-size:26px;font-weight:700;color:var(--gold-light)}
+  .stat-label{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:0.5px;margin-top:2px}
+
+  .learn-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;padding:0 2rem 2rem; max-width:max-content;margin:0 auto}
+
+  .learn-card{background:#fff;border:1px solid rgba(201,168,76,0.25);border-radius:8px;padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;}
+  .learn-icon{width:36px;height:36px;background:rgba(201,168,76,0.1);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .learn-icon i{font-size:18px;color:var(--gold-dark)}
+  .learn-card h4{font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px}
+  .learn-card p{font-size:1.1rem;color:black;line-height:1.5; margin:0}
+
+
+  /* .learn-grid .learn-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 50%;
+} */
+
+.benefits-section{
+  /* background:var(--navy); */
+  /* padding:2.5rem 2rem; */
+  margin:0
+}
+
+  .benefits-section .section-title{color:#fff}
+  .benefits-section .section-tag{color:var(--gold-light);border-color:var(--gold)}
+  .benefits-section .section-desc{color:rgba(255,255,255,0.65)}
+  .benefits-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px;max-width:max-content;margin:0 auto ;
+      padding: 0 2rem 2rem;
+    /* max-width: 900px; */
+    margin: 0 auto;
+  }
+  .benefit-item{display:flex;gap:12px;align-items:center}
+  .benefit-dot{width:28px;height:28px;background:rgba(201,168,76,0.2);border:1px solid #6a6354;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .benefit-dot i{font-size:15px;color:#6a6354}
+  .benefit-text h4{font-family:'Cinzel',serif;font-size:13px;color:var(--gold-light);margin-bottom:3px}
+  .benefit-text p{font-size:1rem;
+    /* color:rgba(255,255,255,0.65); */
+    line-height:1.5 ;margin:0;
+  
+  color: black;
+  }
+
+
+  /* .benefits-grid .benefit-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 70%;} */
+
+
+     /* .course-details{padding:2.5rem 2rem;} */
+  .details-card{background:#fff;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:1.75rem;max-width:max-content;margin:1.5rem auto 0;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  .detail-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(201,168,76,0.12)}
+  .detail-row:last-child{border-bottom:none}
+  .detail-icon i{font-size:18px;color:var(--gold-dark)}
+  .detail-label{color:var(--text-mid);font-family:'Cinzel',serif;letter-spacing:0.5px;text-transform:uppercase;font-weight:600; text-align:left;}
+  .detail-value{font-size:14px;color:var(--navy);font-weight:500; text-align:left}
+
+ .enroll-section{
+  /* background:linear-gradient(135deg,var(--navy) 0%,#2d3f6e 100%); */
+  /* padding:3rem 2rem; */
+  text-align:center}
+  .enroll-section h2{font-family:'Cinzel',serif;font-size:22px;color:#fff;margin-bottom:0.5rem}
+  .enroll-section p{margin-bottom:.5rem; font-size:1rem }
+  .enroll-section .p1{
+max-width:950px;
+text-align:left;
+margin:0 auto 1.5rem;
+  }
+  .enroll-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#fff;font-family:'Cinzel',serif;font-size:14px;font-weight:600;letter-spacing:1.5px;padding:14px 36px;border:none;border-radius:4px;cursor:pointer;text-transform:uppercase}
+  .enroll-btn:hover{background:var(--gold-light);color:var(--navy)}
+  .open-badge{background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:#16a34a;font-size:11px;font-family:'Cinzel',serif;letter-spacing:1px;padding:4px 12px;border-radius:20px;display:inline-block;margin-bottom:1rem;text-transform:uppercase}
+  .why-section{padding:2.5rem 2rem;background:#fff}
+  .why-card{max-width:860px;margin:1.5rem auto 0;background:linear-gradient(135deg,rgba(201,168,76,0.05) 0%,rgba(26,39,68,0.03) 100%);border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:2rem;text-align:center}
+  .quote-mark{font-family:'Cinzel',serif;font-size:60px;color:var(--gold-light);line-height:0.5;opacity:0.4;margin-bottom:1rem}
+  .why-text{font-size:16px;color:var(--text-mid);line-height:1.9;font-style:italic;max-width:600px;margin:0 auto 1rem}
+  .why-author{font-family:'Cinzel',serif;font-size:12px;color:var(--gold-dark);letter-spacing:1px;text-transform:uppercase}
+  .footer-strip{background:var(--navy);padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center}
+  .footer-logo{font-family:'Cinzel',serif;font-size:13px;color:var(--gold-light);letter-spacing:1px}
+  .footer-tagline{font-size:12px;color:rgba(255,255,255,0.45);font-style:italic}
+
+
+  @media (max-width:991px){
+    .orn-diamond {
+    height: 8px;
+    }
+    .info-note{
+      font-size: 0.75rem;
+      padding: 0.75rem;
+      margin-top:.5rem;
+    }
+
+    .level-number img{
+      width: 64%;
+    }
+    .title-2{
+      font-size: 20px;
+    }
+    .p-3{
+      padding: 0 !important;
+    }
+     
+     .learn-grid{
+      padding: 0;
+     }
+     .learn-card p{
+      text-align: left;
+     }
+
+     .benefits-section{
+      margin: 10px 0;
+       /* padding: 2rem 1rem; */
+     }
+
+     .section-tag{
+      font-size: 10px;
+     }
+     .benefit-text p{
+      text-align: left;
+     }
+     .benefits-grid{
+      padding: 0 .5rem;
+     }
+     .banner-badge{
+      margin: 20px auto !important;
+     }
+     .details-card{
+      grid-template-columns: 1fr;
+      gap: 0;
+     }
+     .enroll-section .p1{
+      text-align: left;
+     }
+     .Certification{
+      padding: 20px 0;
+     }
+     .Certification p {
+      font-size: 16px !important;
+    }
+      /* .benefits-grid{
+        padding: 0 1rem 1rem;
+    }
+    .details-card{
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .detail-row{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .detail-label, .detail-value{
+      text-align: left;
+    } */
+
+    .text-center p{
+      text-align: left !important;
+    }
+  }
   </style>
 </head>
 <body>
@@ -2871,13 +3083,13 @@ max-width: fit-content !important;
 	
 
 <!-- <div class="loader" id="siteLoader">
-  <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
+  <img src="images/logo/Science-Academy.gif" alt="Loading..." class="loader-gif">
 </div> -->
  <div class="loader" id="siteLoader">
-  <img src="images/logo/VVS.gif" alt="Loading..." class="loader-gif">
+  <img src="images/logo/Science-Academy.gif" alt="Loading..." class="loader-gif">
 </div>
 <div class="loader2" id="siteLoader2">
-  <img src="images/logo/VVS-Mobile.gif" alt="Loading..." class="loader-gif2">
+  <img src="images/logo/Science-Academy-mobile.gif" alt="Loading..." class="loader-gif2">
 </div>
 <!-- Header Start -->
 
@@ -2888,7 +3100,7 @@ max-width: fit-content !important;
     <div class="d-flex align-items-end justify-content-between w-100">
       <!-- Brand -->
       <div class="navbar-brand-wrap">
-        <a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" class="Logo"></a>
+        <a href="index.html"><img src="./images/logo/Vishwakarma-Sciences-Academy.png" alt="Logo" class="Logo"></a>
       </div>
 
       <!-- Desktop Navigation -->
@@ -3147,17 +3359,306 @@ max-width: fit-content !important;
 <!-- Foundation + 5 Level Courses (Heading + All Levels) -->
 <section style="background: #ede9df;">
   <div class="container">
-<div class="banner-badge fade-up" style="text-align: center;
+
+
+  <div class="info-note fade-up">
+    <div class="banner-badge fade-up" style="text-align: center;
     display: table;
     justify-content: center;
     margin: auto; background: #DFBA6B; color: #0A0E1A
-; font-weight: bold; margin-bottom: 40px;">
+; font-weight: bold; margin-bottom: 10px;">
   <h2 style="font-size: clamp(1.2rem, 4vw, 1.8rem); font-weight: 700; color: #0A0E1A
 ; "class="m-0"   >✦ Course Levels Foundation plus 5 levels
  ✦ </h2>  
   </div>
+    <div class="row align-items-center">
+      <div class="">
+          <div class="level-card1" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
+            <div class="level-number"><img src="./images/online-class/Foundation-logo.png"  alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div>
+            <!-- <div class="level-title">Foundation Course</div> -->
+            <div class="level-sub mb-3">
+              <!-- <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p> -->
+                <button class="read-more-btn view-button">Registrations Now Open</button>
+            </div>
+          </div>
+        </div>     
+        <div class="">
+          <h3 class="title-2">Vishwakarma Vasthu Sciences Foundation Course</h3>
+          <!-- <button class="btn btn-primary">Registrations Now Open</button> -->
+          <!-- <button class="read-more-btn ">View more</button> -->
+
+
+          <div class=" p-3 pt-0 to-make-your-tomorrow-better">
+         <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 20px auto 20px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ To Make Your Tomorrows Better Tomorrows ✦ </h2>
+        </div> 
+    
+        <p class="" >Built upon <strong>40+ years of practical experience, </strong>research, consultation and teaching, the Vishwakarma Vasthu Sciences Foundation Course is the first step in a structured learning path that progresses from Foundation to Advanced Mastery Levels.</p>
+          <p>This <strong>6-weeks Live Online Zoom Course</strong> is designed to provide a clear and systematic understanding of Vishwakarma Vasthu Sciences through weekly <strong>One-hour sessions, including interactive Q&A discussions</strong> .</p>
+        </div>
+     
+        
+      </div>
+      
+      <div class="to-make-your-tomorrow-better">
+           <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 10px auto 20px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ A Course for Everyone ✦ </h2>
+</div>
+
+          <!-- <h3 class="">A Course for Everyone</h3> -->
+
+            <p><strong>Vishwakarma Vasthu Sciences </strong> is universal in nature. It has no barriers of caste, creed, religion, status, nationality, age or gender. Anyone with a genuine desire to learn and understand the principles of harmonious living is welcome to join this course.</p>
+        </div>
+        <div class="section-header">
+          <div class="to-make-your-tomorrow-better">
+           <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 10px auto 20px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ What you will learn ✦ </h2>
+</div>
+  <!-- <div class="section-tag">What you will learn</div> -->
+
+  <!-- <div class="section-title">A Structured Path to Vasthu Mastery</div> -->
+  <!-- <p class="section-desc">A universal course with no barriers of caste, creed, religion, status, nationality, age, or gender</p> -->
+</div>
+
+<div class="learn-grid">
+  <div class="learn-card">
+    <div class="learn-icon"><i class="fa fa-compass" aria-hidden="true"></i>
+</div>
+
+    <div><p>Fundamental principles of Vishwakarma Vasthu Sciences</p></div>
+  </div>
+  <div class="learn-card">
+    <div class="learn-icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+    <div><p>Understanding directions and their influence on living spaces</p></div>
+  </div>
+  <div class="learn-card">
+    <div class="learn-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+    <div><p>Step-by-step methods of analyzing residential properties</p></div>
+  </div>
+  <div class="learn-card">
+    <div class="learn-icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+    <div><p>Practical applications of Vasthu principles in everyday life</p></div>
+  </div>
+  <div class="learn-card">
+    <div class="learn-icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+    <div><p>Identification of common Vasthu imbalances and their possible effects</p></div>
+  </div>
+</div>
+      </div>
+
+
+
+      <div class="benefits-section">
+  <div style="text-align:center">
+    <!-- <div class="section-tag" style="color:var(--gold-light);border-color:var(--gold)">After Completion</div>
+    <div class="section-title" style="color:#fff">Benefits of This Foundation Course</div>
+    <p class="section-desc" style="color:rgba(255,255,255,0.55)">Build the confidence to analyze, evaluate, and transform any living space</p> -->
+    <!-- <div class="section-tag" style="color:var(--gold-light);border-color:var(--gold)">Benefits of Joining and Completing This Course</div> -->
+
+    <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 10px auto 20px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Benefits of Joining and Completing This Course ✦ </h2>
+</div>
+
+    <!-- <div class="section-title" style="color:#000">Upon successful completion of the Foundation Course, you will be able to: -->
+      <div class="section-tag" style="color:#000">Upon successful completion of the Foundation Course <br>You will be able to:</div>
+</div>
+    <!-- <p class="section-desc" style="color:rgba(255,255,255,0.55)">Build the confidence to analyze, evaluate, and transform any living space</p> -->
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <div class="benefit-dot"><i class="fa fa-check" aria-hidden="true"></i></div>
+      <div class="benefit-text"><p>Analyze the Vasthu of your own house with confidence </p></div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-dot"><i class="fa fa-check" aria-hidden="true"></i></div>
+      <div class="benefit-text"><p>Identify major strengths and weaknesses in the layout of any property</p></div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-dot"><i class="fa fa-check" aria-hidden="true"></i></div>
+      <div class="benefit-text"><p>Understand the practical application of core Vasthu principles</p></div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-dot"><i class="fa fa-check" aria-hidden="true"></i></div>
+      <div class="benefit-text"><p>Make informed decisions regarding the arrangement and utilization of spaces</p></div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-dot"><i class="fa fa-check" aria-hidden="true"></i></div>
+      <div class="benefit-text"><p>Build a strong foundation for progressing to higher levels of Vishwakarma Vasthu Sciences
+</p></div>
+    </div>
+    <!--  -->
+  </div>
+
+  
+</div>
+<div class="course-details">
+<div style="text-align:center">
+  <!-- <div class="section-tag">Course Details</div> -->
+  <!-- <div class="section-title">Course Details</div> -->
+   <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 10px auto 20px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Course Details ✦ </h2>
+</div>
+</div>
+<div class="details-card">
+  <div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-video-camera" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Mode</div><div class="detail-value">Live Online Zoom Classes</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Duration</div><div class="detail-value">6 Weeks</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-clock" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Per Session</div><div class="detail-value">1 Hour</div></div>
+    </div>
+  </div>
+  <div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Interactive</div><div class="detail-value">Q&amp;A Sessions Included</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-certificate" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Certificate</div><div class="detail-value">Issued on Completion</div></div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+      <div><div class="detail-label">Status</div><div class="detail-value" style="color:#16a34a;font-weight:600"><a href="contact.html">Registrations Open</a></div></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="p-3 to-make-your-tomorrow-better">
+         <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 20px auto 10px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Why Learn from This Course? ✦ </h2>
+        </div> 
+    
+        <p class="" >This course has been carefully designed from more than four decades of practical experience, research, consultation, observation and teaching in the field of Vishwakarma Vasthu Sciences.</p>
+          <p>The objective is not merely to share information, but to provide a structured learning experience that helps participants understand, analyze and apply Vasthu principles with clarity and confidence.</p>
+        </div>
+
+
+        <div class="enroll-section">
+  <!-- <div class="open-badge"><i class="ti ti-circle-check" aria-hidden="true" style="margin-right:4px"></i> Enrollments Open Now</div> -->
+
+   <div class="banner-badge fade-up " style="text-align: center;
+        display: table;
+        justify-content: center;
+        margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 20px auto 10px;">
+    
+        <h2 style="font-size: clamp(1rem, 4vw, 1.2rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Begin Your Journey Today ✦ </h2>
+        </div> 
+
+  <!-- <h2>Begin Your Journey Today</h2> -->
+  <p class="p1">Join the <strong>Vishwakarma Vasthu Sciences Foundation Course</strong> and take the first step toward understanding the science of harmonious living. Learn to analyze your own home, build a strong foundation of knowledge and prepare yourself for advanced 5 levels of learning.</p>
+  <!-- <button class="enroll-btn"><i class="ti ti-arrow-right" aria-hidden="true"></i> Register for Foundation Course</button> -->
+   <p style="font-size: 1rem; color: #000; text-transform: uppercase; font-weight: bold;">Vishwakarma Vasthu Sciences</p>
+  <p style="margin-top: 5px; font-size: 1rem; color: #000;">To Make Your Tomorrows Better Tomorrows.</p>
+</div>
+
+</div>
+
+
+
+  </div>
+    <div class="row">
+        <!-- <div class="col-12">
+            <div class="level-card1" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
+            <div class="level-number1"><img src="./images/online-class/Foundation-logo.png" style="max-width:100%" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div>
+            <!-- <div class="level-title">Foundation Course</div> --
+            <div class="level-sub">
+              <!-- <p>Introduction to basic Vasthu concepts, directions, compass, plots, energy, open spaces, water, room placements and house observations.</p> --
+              <button class="read-more-btn">View more</button>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-12 ">
+            <h3 class="">Vishwakarma Vasthu Sciences Foundation Course</h3>
+            <h3>Registrations Now Open</h3>
+            <h3>To Make Your Tomorrows Better Tomorrows"*</h3>
+            <p>Built upon *40+ years of practical experience, research, consultation, and teaching*, the Vishwakarma Vasthu Sciences Foundation Course is the first step in a structured learning path that progresses from Foundation to Advanced Mastery Levels.</p>
+            <p>This *6-week Live Online Zoom Course* is designed to provide a clear and systematic understanding of Vishwakarma Vasthu Sciences through weekly *one-hour sessions, including interactive **Q&A discussions*.</p>
+
+            <div>
+               <h3>A Course for Everyone</h3>
+
+            <p>*Vishwakarma Vasthu Sciences is universal in nature. It has no barriers of caste, creed, religion, status, nationality, age, or gender. Anyone with a genuine desire to learn and understand the principles of harmonious living is welcome to join this course.*</p>
+            </div>
+            <div>
+              <h3> What You Will Learn</h3>
+
+              <ul>
+                <li>Fundamental principles of Vishwakarma Vasthu Sciences</li>
+                <li>Understanding directions and their influence on living spaces</li>
+                <li>Step-by-step methods of analyzing residential properties</li>
+                <li>Practical applications of Vasthu principles in everyday life</li>
+                <li>Identification of common Vasthu imbalances and their possible effects</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Benefits of Joining and Completing This Course</h3>
+              <p>Upon successful completion of the Foundation Course, you will be able to:</p>
+              <ul>
+                <li>Analyze the Vasthu of your own house with confidence</li>
+                <li>Identify major strengths and weaknesses in the layout of a property</li>
+                <li>Understand the practical application of core Vasthu principles  </li>
+                <li>Make informed decisions regarding the arrangement and utilization of spaces</li>
+                <li>Build a strong foundation for progressing to higher levels of Vishwakarma Vasthu Sciences</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Course Details</h3>
+              <ul>
+                <li>Mode:* Live Online Zoom Classes</li>
+                <li>Duration:* 6 Weeks</li>
+                <li>Class Length:* 1 Hour per Session</li>
+                <li>Interactive Q&A:* Included</li>
+                <li>Certificate:* Certificate of Completion will be issued upon successful completion</li>
+                <li>Enrollment Status:* *Registrations Open Now*</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Why Learn from This Course?</h3>
+              <p>This course has been carefully designed from *more than four decades of practical experience, research, consultation, observation, and teaching* in the field of Vishwakarma Vasthu Sciences.</p>
+              <p>The objective is not merely to share information, but to provide a structured learning experience that helps participants understand, analyze, and apply Vasthu principles with clarity and confidence.</p>
+            </div>
+            <div>
+              <h3>Begin Your Journey Today</h3>
+              <p>Join the *Vishwakarma Vasthu Sciences Foundation Course* and take the first step toward understanding the science of harmonious living. Learn to analyze your own home, build a strong foundation of knowledge, and prepare yourself for advanced 5 levels of learning.</p>
+              <h4>Vishwakarma Vasthu Sciences</h4>
+              <h4>To Make Your Tomorrows Better Tomorrows.</h4>
+            </div>
+        </div> -->
+    </div>
      <!-- levels2  -->
-    <div class="roadmap-grid roadmap-grid2 fade-up " style="margin-bottom:30px">
+    <div class="roadmap-grid roadmap-grid2 fade-up d-none" style="margin-bottom:30px" >
     <!-- Foundation Card -->
     <div class="level-card" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
       <!-- <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div> -->
@@ -3221,7 +3722,7 @@ max-width: fit-content !important;
 
 
 
-    <div class="text-center fade-up">
+    <div class="text-center fade-up d-none">
       <div class="banner-badge fade-up" style="text-align: center;
     display: table;
     justify-content: center;
@@ -3301,7 +3802,7 @@ max-width: fit-content !important;
     </div> -->
 
     <!-- levels2  -->
-    <div class="roadmap-grid fade-up">
+    <div class="roadmap-grid fade-up d-none">
     <!-- Foundation Card -->
     <div class="level-card" data-course="foundation" data-course-name="Foundation Course" data-img-src="./images/online-class/Foundation-logo.png">
       <div class="level-number"><img src="./images/online-class/Foundation-logo.png" alt="Foundation logo" onerror="this.src='https://placehold.co/70x70/C9A84C/fff?text=VVS'"></div>
@@ -3382,7 +3883,7 @@ max-width: fit-content !important;
   </div>
 </section>
 
-<div class="" style="background-color: var(--gray-light);">
+<div class="" style="">
 
      <div class="Certification">
       <div class="container">
@@ -3406,7 +3907,7 @@ max-width: fit-content !important;
     
     <h2 style="font-size: clamp(1rem, 4vw, 1.6rem); font-weight: 700; color: #fff; "class="m-0"   >✦ Vision ✦ </h2>  </div> 
     
-    <p>To spread awareness about practical, nature-based Vishwakarma Vasthu Sciences  <br>for healthier, peaceful and better living for all. <br> To create Better Tomorrows.</p>
+    <p>To spread awareness about practical, nature-based Vishwakarma Vasthu Sciences  <br>for healthier, peaceful and better living for all. To create Better Tomorrows.</p>
         </div>
       </div>
   </div>
@@ -3562,7 +4063,7 @@ max-width: fit-content !important;
     <div class="exp-card-bgm">
 
       <div class="banner-badge fade-up" style="text-align: center; display: table;justify-content: center;
-         margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 30px auto;">
+         margin: auto; background: #22a85a; color: #fff; font-weight: bold; margin: 0 auto 30px;">
          <h2 style="font-size: clamp(1rem, 4vw, 1.4rem); font-weight: 700; color: #fff; " class="m-0"  >✦ MY EXPERIENCE ✦</h2>  
          </div>
       <div class="exp-card fade-up">
@@ -3645,7 +4146,7 @@ prosperous life. </p>
 				<div class="widget text-widget">
 					<!-- <h4 class="widget-title">our newsletter</h4> -->
 					 <div class="ast_logo">
-					<a href="index.html"><img src="./images/logo/Vishwakarma-Vastu-Sciences.png" alt="Logo" title="Logo"></a>
+					<a href="index.html"><img src="./images/logo/Vishwakarma-Sciences-Academy.png" alt="Logo" title="Logo"></a>
 				</div>
 					<div class="ast_newsletter">
                         <img src="./images/Name-Strip.png" alt="">
@@ -3862,7 +4363,7 @@ Full Time consultant since 1985 (40+ years)</p> -->
         event.stopPropagation();
         event.preventDefault();
         
-        const card = this.closest('.level-card');
+        const card = this.closest('.level-card1');
         if (!card) return;
         
         // Get course name
@@ -3915,7 +4416,7 @@ Full Time consultant since 1985 (40+ years)</p> -->
     });
     
     // Ensure all cards have proper data attributes (using JPG images)
-    const allCards = document.querySelectorAll('.level-card');
+    const allCards = document.querySelectorAll('.level-card1');
     const defaultTitles = ['Foundation Course', 'Manu Course', 'Maya Course', 'Tvashta Course', 'Shilpi Course', 'Vishwagna Course'];
     const defaultJpgImages = [
       './images/online-class/Foundation.jpg',
